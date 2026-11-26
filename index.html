@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>Couvreur à Saint-Prix (95390) | CMS Expertise</title>
-<meta name="description" content="Couvreur à Saint-Prix (95390) : rénovation, réparation, zinguerie, démoussage, charpente et fenêtres de toit en Val d'Oise. Devis gratuit.">
+<title>Couvreur dans le Val-d’Oise (95) | CMS Expertise</title>
+<meta name="description" content="CMS Expertise accompagne particuliers, entreprises et acteurs du BTP dans leurs travaux de couverture, rénovation, zinguerie, charpente et entretien dans le Val-d’Oise et en Île-de-France.">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"RoofingContractor","name":"CMS Expertise","telephone":"+33758362224","email":"cms.expertise75@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Saint-Prix","postalCode":"95390","addressCountry":"FR"},"areaServed":["Val d'Oise","Île-de-France"]}</script>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@300;400;500&display=swap');
 *{box-sizing:border-box;margin:0;padding:0}
 :root{--ink:#151719;--ink2:#1c1f22;--ink3:#25282c;--gold:#c5a880;--off:#fbfaf8;--mut:#7d858e;--ff:'Outfit',sans-serif;--fd:'Cormorant Garamond',serif}
-html{scroll-behavior:smooth;overflow-x:hidden}
+html{scroll-behavior:auto;overflow-x:hidden;scroll-padding-top:100px}
 body{font-family:var(--ff);background:var(--off);color:#1a1a1a;overflow-x:hidden;line-height:1.6}
 a{color:inherit}:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
 #bar{position:fixed;top:0;left:0;height:3px;width:0;background:var(--gold);z-index:2000}
@@ -23,7 +23,9 @@ a{color:inherit}:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
 .pn{position:absolute;top:100%;left:-1rem;background:var(--ink);border:1px solid rgba(197,168,128,.2);padding:1.2rem 1.4rem;min-width:260px;display:none;box-shadow:0 20px 40px rgba(0,0,0,.4)}
 .dd:hover .pn{display:block}.pn a{text-transform:none;letter-spacing:0;font-size:.88rem;padding:.4rem 0}.pn small{display:block;color:var(--gold);font-size:.66rem;letter-spacing:.15em;text-transform:uppercase;margin:.6rem 0 .2rem}
 .burger{display:none;color:#fff;font-size:1.6rem;background:none;border:0;cursor:pointer}
-.rv{opacity:0;transform:translateY(34px);transition:opacity .9s,transform .9s cubic-bezier(.16,.84,.44,1)}.rv.v{opacity:1;transform:none}.d1{transition-delay:.12s}.d2{transition-delay:.24s}
+.rv{opacity:0;transform:translateY(48px) scale(.985);filter:blur(5px);transition:opacity .85s ease,transform .95s cubic-bezier(.16,.84,.24,1),filter .85s ease;will-change:opacity,transform,filter}.rv.v{opacity:1;transform:translateY(0) scale(1);filter:blur(0)}.d1{transition-delay:.12s}.d2{transition-delay:.24s}
+/* Entrées alternées pour donner plus de rythme au défilement */
+.rv.from-left{transform:translateX(-54px) scale(.985)}.rv.from-right{transform:translateX(54px) scale(.985)}.rv.from-left.v,.rv.from-right.v{transform:translateX(0) scale(1)}
 .hero{background:var(--ink);min-height:calc(100vh - 120px);display:grid;grid-template-columns:1.1fr .9fr;align-items:center;overflow:hidden}
 .hl{padding:4rem 3rem}
 .kick{display:inline-block;color:var(--gold);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;margin-bottom:1.6rem;border-bottom:1px solid var(--gold);padding-bottom:.3rem}
@@ -53,7 +55,7 @@ h1,.ttl{font-family:var(--fd);font-weight:400}h1{font-size:clamp(2.6rem,5vw,4.4r
 .gal{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}.gal figure{position:relative;height:340px;background:var(--ink3);overflow:hidden}.gal img{width:100%;height:100%;object-fit:cover;transition:.7s}.gal figure:hover img{transform:scale(1.08)}
 .gal figcaption{position:absolute;left:0;right:0;bottom:0;padding:3rem 1.3rem 1.2rem;background:linear-gradient(transparent,rgba(0,0,0,.85));color:#fff;font:400 1.3rem var(--fd)}.gal small{display:block;font:300 .7rem var(--ff);letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
 .chips{display:flex;flex-wrap:wrap;gap:.5rem;justify-content:center}.chips span,.chips button{padding:.45rem 1.1rem;border:1px solid rgba(0,0,0,.12);border-radius:100px;font:400 .82rem var(--ff);background:#fff;cursor:default}.chips .main{background:var(--ink);color:var(--gold);border-color:var(--ink)}
-.zone{display:flex;gap:.8rem;max-width:480px;margin:0 auto 1rem}.zone input{flex:1}.zmsg{text-align:center;min-height:1.5rem;margin-bottom:1.3rem;font-size:.94rem}
+.zone{display:flex;gap:.8rem;max-width:480px;margin:0 auto 1rem}.zone input{flex:1}.zmsg{text-align:center;min-height:1.5rem;margin-bottom:1.3rem;font-size:.94rem}.zmsg.neutral{color:var(--mut)}
 .map{width:100%;height:340px;border:0;margin-top:2.5rem;filter:grayscale(.6)}
 .tabs{display:flex;flex-wrap:wrap;gap:.5rem;justify-content:center;margin-bottom:2rem}.tabs button{padding:.55rem 1.2rem;border:1px solid rgba(0,0,0,.12);background:#fff;font:400 .82rem var(--ff);cursor:pointer;transition:.3s}.tabs button.on,.tabs button:hover{background:var(--ink);color:var(--gold);border-color:var(--ink)}
 .seo{max-width:800px;margin:0 auto;background:#fff;border:1px solid rgba(0,0,0,.06);padding:2.4rem;min-height:190px}.seo h3{font:600 1.6rem var(--fd);margin-bottom:.8rem}.seo p{color:var(--mut);font-weight:300}
@@ -93,18 +95,19 @@ i.ti{display:inline-block;width:1em;height:1em;vertical-align:-.15em;background:
 .mp{display:grid;grid-template-columns:1fr 1fr;background:#fff;border:1px solid rgba(0,0,0,.06);min-height:260px}.mp .pic{background:var(--ink3);display:flex;align-items:center;justify-content:center;font-size:5.5rem;color:var(--gold)}.mp .tx{padding:2.4rem}.mp h3{font:600 2rem var(--fd);margin-bottom:.6rem}.mp p{color:var(--mut);font-weight:300;margin-bottom:.8rem}
 .qb{max-width:760px;margin:0 auto;border:1px solid rgba(197,168,128,.25);padding:2.4rem}.qs{display:flex;gap:6px;margin-bottom:1.4rem}.qs i{flex:1;height:3px;background:rgba(255,255,255,.12)}.qs i.on{background:var(--gold)}.qq{font:400 1.7rem var(--fd);margin-bottom:1.2rem}
 .qo{display:grid;grid-template-columns:1fr 1fr;gap:.8rem}.qo button{background:transparent;border:1px solid rgba(255,255,255,.15);color:rgba(255,255,255,.85);padding:1rem;font:300 .95rem var(--ff);cursor:pointer;text-align:left;transition:.3s}.qo button:hover{border-color:var(--gold);color:var(--gold)}.qr2{text-align:center}.qr2 h3{font:400 2rem var(--fd);color:var(--gold);margin:.6rem 0}.qr2 p{color:rgba(255,255,255,.6);margin-bottom:1.4rem}
+.diag-meta{display:flex;justify-content:space-between;gap:1rem;color:rgba(255,255,255,.55);font-size:.78rem;margin-bottom:1rem}.qo button small{display:block;color:rgba(255,255,255,.48);font-size:.78rem;margin-top:.25rem}.diag-result{text-align:left}.diag-result .tag{display:inline-block;border:1px solid var(--gold);color:var(--gold);padding:.25rem .65rem;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase}.diag-result h3{font:400 clamp(1.8rem,4vw,2.6rem) var(--fd);color:var(--gold);margin:.7rem 0}.diag-result p{color:rgba(255,255,255,.75);margin:.55rem 0}.diag-result ul{padding-left:1.2rem;color:rgba(255,255,255,.75);margin:.8rem 0 1.2rem}.diag-result li{margin:.35rem 0}.diag-actions{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.4rem}.diag-actions .btn{margin:0}.diag-note{font-size:.8rem!important;color:rgba(255,255,255,.48)!important;border-top:1px solid rgba(255,255,255,.12);padding-top:1rem;margin-top:1.2rem!important}
 @media(max-width:900px){.grid3,.gal{grid-template-columns:1fr 1fr}.grid4{grid-template-columns:1fr 1fr}.two,.ct{grid-template-columns:1fr}.fg{grid-template-columns:1fr 1fr}}
 @media(max-width:768px){.nav{padding:0 1.2rem;height:70px}.burger{display:block}.logo-img{height:50px}
 .nl{display:none;position:absolute;top:100%;left:0;width:100%;flex-direction:column;align-items:flex-start;background:var(--ink);padding:1.4rem;gap:.8rem;max-height:80vh;overflow:auto}.nl.open{display:flex}.pn{display:block;position:static;border:0;box-shadow:none;padding:0 0 0 .8rem;min-width:0}
 .hero{grid-template-columns:1fr}.hl{padding:3rem 1.3rem;text-align:center}.badges{justify-content:center}.hr{height:300px;min-height:0}.hr:before{background:linear-gradient(to top,var(--ink),transparent 80%)}.btn.g{margin:.8rem 0 0}
 .grid3,.grid4,.gal,.row,.fg{grid-template-columns:1fr}.sec{padding:4rem 1.3rem}form{padding:1.5rem}.zone{flex-direction:column}
 input,select,textarea{font-size:16px}.pill{padding-left:1.1rem;gap:.4rem}.pill .num{font-size:.95rem}.pill .num span{display:none}.pill .btn{padding:.75rem 1.1rem;font-size:.72rem}.qo,.mp{grid-template-columns:1fr}.mp .pic{min-height:120px}.mp .tx{padding:1.6rem}.qb{padding:1.4rem}.rot{text-align:center}}
-@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none;filter:none}}
 </style>
 </head>
 <body>
 <div id="bar"></div>
-<div class="tk">Couvreur à Saint-Prix &amp; Val d'Oise · Devis gratuit · Garantie décennale</div>
+<div class="tk">Couverture &amp; rénovation dans le Val-d’Oise et en Île-de-France · Particuliers &amp; professionnels</div>
 <nav class="nav" id="nav">
   <a href="#" aria-label="CMS Expertise"><img src="logo sans fond.png" alt="CMS Expertise" class="logo-img" onerror="this.outerHTML='<span class=logo-txt>CMS <b>Expertise</b></span>'"></a>
   <button class="burger" id="bg" aria-label="Menu"><i class="ti ti-menu-2"></i></button>
@@ -112,17 +115,17 @@ input,select,textarea{font-size:16px}.pill{padding-left:1.1rem;gap:.4rem}.pill .
     <li><a data-t="top0">Accueil</a></li>
     <li class="dd"><a data-t="svc">Services ▾</a><div class="pn"><small>Couverture</small><a data-s="Rénovation de toiture">Couverture &amp; rénovation</a><a data-s="Réparation de toiture">Réparation de toiture</a><a data-s="Dépannage toiture">Dépannage toiture</a><a data-s="Zinguerie">Zinguerie &amp; gouttières</a><small>Entretien &amp; performance</small><a data-s="Démoussage de toiture">Démoussage &amp; nettoyage</a><a data-s="Isolation de toiture">Isolation &amp; sous-toiture</a><small>Structure &amp; confort</small><a data-s="Charpente bois">Charpente bois</a><a data-s="Fenêtre de toit">Fenêtres de toit</a></div></li>
     <li class="dd"><a data-t="zone">Zones ▾</a><div class="pn"><small>Priorité locale</small><a data-t="zone">Saint-Prix (95390)</a><a data-t="zone">Montmorency · Eaubonne</a><small>Val d'Oise</small><a data-t="zone">Enghien · Ermont · Taverny</a><a data-t="zone">Cergy · Pontoise</a></div></li>
-    <li><a data-t="real">Réalisations</a></li><li><a data-t="about">L'entreprise</a></li><li><a data-t="faq">FAQ</a></li>
+    <li><a data-t="real">Réalisations</a></li><li><a data-t="professionnels">Professionnels</a></li><li><a data-t="about">L'entreprise</a></li><li><a data-t="faq">FAQ</a></li>
     <li><a class="tel" data-tel>Appeler</a></li><li><a class="cta" data-t="contact">Devis gratuit</a></li>
   </ul>
 </nav>
 
 <header class="hero" id="top0">
   <div class="hl rv">
-    <div class="kick">Saint-Prix · Val d'Oise</div>
-    <h1>Couvreur à Saint-Prix. <em>Un toit sûr, des finitions soignées.</em></h1>
-    <p class="sub">Couverture, rénovation, zinguerie, démoussage et réparation de toiture. Diagnostic clair, normes respectées et devis gratuit, lisible et transparent.</p>
-    <button class="btn" data-t="contact">Demander mon devis</button><button class="btn g" data-t="svc">Nos services</button><a class="btn g tel" data-tel></a>
+    <div class="kick">Val-d’Oise · Île-de-France</div>
+    <h1>Votre partenaire toiture dans le Val-d’Oise. <em>Des solutions fiables, du particulier aux grands chantiers.</em></h1>
+    <p class="sub">Couverture, rénovation, zinguerie, entretien et réparation pour les maisons, immeubles, locaux professionnels et opérations pilotées par les acteurs du BTP. Une approche adaptée à chaque chantier.</p>
+    <button class="btn" data-t="contact">Présenter mon projet</button><button class="btn g" data-t="svc">Nos expertises</button><a class="btn g tel" data-tel></a>
     <div class="rot">Votre spécialiste en <b id="rt">&nbsp;</b></div><div class="badges"><div><b>Garantie décennale</b>sur les travaux concernés</div><div><b>Devis gratuit</b>lisible et transparent</div><div><b>Suivi de chantier</b>du diagnostic à la finition</div></div>
   </div>
   <div class="hr rv d2"><img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1000&auto=format&fit=crop&q=80" alt="Toiture rénovée" onerror="this.remove()"></div>
@@ -134,7 +137,7 @@ input,select,textarea{font-size:16px}.pill{padding-left:1.1rem;gap:.4rem}.pill .
     <div class="ph rv" id="about"><img src="photo-mahdi.jpg" alt="Mahdi Sandali, dirigeant de CMS Expertise" onerror="this.remove()"></div>
     <div class="rv d1">
       <div class="lab" style="text-align:left">CMS Expertise</div>
-      <h2>Un couvreur ne pose pas seulement une toiture. <em>Il protège votre maison.</em></h2>
+      <h2>Une toiture bien réalisée protège <em>un bâtiment et sa valeur.</em></h2>
       <p>Une toiture engage l'étanchéité, le confort et la valeur de votre habitation. Notre approche : comprendre le besoin avant de proposer, intervenir proprement et soigner les finitions.</p>
       <p>Deux couvreurs qualifiés, de la charpente bois à la couverture en passant par l'isolation et l'écran de sous-toiture : un interlocuteur unique, du diagnostic au contrôle final. — <b>Mahdi Sandali, dirigeant</b></p>
       <button class="btn" data-t="contact">Parlons de votre toiture</button>
@@ -152,7 +155,7 @@ input,select,textarea{font-size:16px}.pill{padding-left:1.1rem;gap:.4rem}.pill .
 
 <section class="sec" id="svc">
   <div class="lab rv">Savoir-faire toiture</div>
-  <h2 class="ttl rv d1">Des interventions pensées pour <em>durer.</em></h2>
+  <h2 class="ttl rv d1">Des interventions pensées pour <em>durer et s’adapter à chaque site.</em></h2>
   <p class="intro rv d2">Du diagnostic à la finition, chaque prestation répond à un besoin précis de protection, d'entretien ou de rénovation.</p>
   <div class="grid4" id="sv"></div>
 </section>
@@ -181,21 +184,35 @@ input,select,textarea{font-size:16px}.pill{padding-left:1.1rem;gap:.4rem}.pill .
   <div class="lab rv">Zone d'intervention</div>
   <h2 class="ttl rv d1">Saint-Prix d'abord. <em>Le Val d'Oise autour.</em></h2>
   <p class="intro rv d2">Basés à Saint-Prix, nous intervenons dans tout le Val d'Oise et dans toute l'Île-de-France. Vérifiez votre code postal, puis choisissez votre département et votre commune.</p>
-  <div class="zone"><input id="cp" inputmode="numeric" maxlength="5" placeholder="Ex : 95390" aria-label="Code postal"><button class="btn" id="cpb">Vérifier</button></div>
+  <div class="zone"><input id="cp" type="text" inputmode="numeric" autocomplete="postal-code" maxlength="5" pattern="[0-9]{5}" placeholder="Ex. : 95000" aria-label="Code postal à 5 chiffres"><button class="btn" id="cpb" type="button">Vérifier</button></div>
   <div class="zmsg" id="zmsg"></div>
   <div class="tabs" id="zt"></div><div class="chips" id="zc"></div>
   <iframe class="map" loading="lazy" title="Saint-Prix" src="https://www.google.com/maps?q=Saint-Prix+95390&output=embed"></iframe>
 </section>
 
+<section class="sec full" id="professionnels">
+  <div class="in">
+    <div class="lab rv">Partenaires &amp; professionnels</div>
+    <h2 class="ttl rv d1">Un interlocuteur toiture pour <em>vos bâtiments et vos opérations.</em></h2>
+    <p class="intro rv d2">CMS Expertise s’adresse aussi aux entreprises générales, groupes du BTP, gestionnaires de patrimoine, syndics, architectes, maîtres d’œuvre et collectivités. Chaque demande est étudiée selon le site, le périmètre des travaux et les contraintes de planning.</p>
+    <div class="grid3">
+      <article class="card rv"><span class="n">01</span><h3>Entreprises &amp; groupes BTP</h3><p>Étude de demandes en couverture, zinguerie, charpente, réparation et rénovation, y compris dans le cadre d’une consultation ou d’un partenariat de chantier.</p></article>
+      <article class="card rv d1"><span class="n">02</span><h3>Gestionnaires &amp; syndics</h3><p>Diagnostic, entretien, réparations et travaux sur maisons, immeubles, copropriétés et patrimoine immobilier.</p></article>
+      <article class="card rv d2"><span class="n">03</span><h3>Architectes &amp; maîtres d’œuvre</h3><p>Échange technique en amont, compréhension du lot toiture et coordination des interventions selon le cadre défini pour le projet.</p></article>
+    </div>
+    <div class="cs rv"><div><b>Vous représentez une entreprise ou un acteur du secteur du bâtiment ?</b><span>Présentez-nous votre besoin, votre calendrier et les modalités de consultation ou d’intervention.</span></div><button class="btn" data-t="contact">Contacter notre équipe</button></div>
+  </div>
+</section>
+
 <section class="sec full dark" style="padding:5.5rem 2rem;text-align:center">
   <div class="lab">Nos références</div><h2 class="ttl">Découvrez l'étendue de notre expertise</h2>
-  <p class="intro">Particuliers, architectes ou syndics : parcourez notre plaquette détaillant nos méthodes et nos garanties.</p>
+  <p class="intro">Particuliers, entreprises générales, groupes du BTP, architectes, syndics et gestionnaires : échangeons sur vos besoins en travaux, entretien ou partenariat.</p>
   <a class="btn" href="Brochure CMS.pdf" download><i class="ti ti-download"></i> Télécharger la plaquette</a>
 </section>
 
 <section class="sec">
   <div class="lab rv">Expertise locale</div>
-  <h2 class="ttl rv d1">Couvreur à Saint-Prix : <em>une approche complète.</em></h2>
+  <h2 class="ttl rv d1">Couverture dans le Val-d’Oise : <em>une approche complète.</em></h2>
   <div class="tabs" id="sb"></div><div class="seo" id="sp"></div>
 </section>
 
@@ -212,8 +229,9 @@ input,select,textarea{font-size:16px}.pill{padding-left:1.1rem;gap:.4rem}.pill .
     <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
     <div class="row"><div class="f"><label for="nom">Nom *</label><input id="nom" name="Nom" autocomplete="name"></div><div class="f"><label for="tel">Téléphone *</label><input id="tel" name="Téléphone" type="tel" autocomplete="tel"></div></div>
     <div class="row"><div class="f"><label for="email">E-mail *</label><input id="email" name="email" type="email" autocomplete="email"></div><div class="f"><label for="cpf">Code postal *</label><input id="cpf" name="Code postal" inputmode="numeric" maxlength="5"></div></div>
+    <div class="f"><label for="clientType">Vous êtes</label><select id="clientType" name="Type de client"><option value="Particulier">Particulier</option><option value="Entreprise / groupe BTP">Entreprise / groupe BTP</option><option value="Syndic / gestionnaire immobilier">Syndic / gestionnaire immobilier</option><option value="Architecte / maître d’œuvre">Architecte / maître d’œuvre</option><option value="Collectivité / établissement public">Collectivité / établissement public</option><option value="Autre professionnel">Autre professionnel</option></select></div>
     <div class="f"><label for="svc2">Votre besoin *</label><select id="svc2" name="Service"><option value="">Sélectionner une prestation</option></select></div>
-    <div class="f"><label for="msg">Quelques détails</label><textarea id="msg" name="Message" placeholder="Problème constaté, ancienneté de la toiture, fuite en cours…"></textarea></div>
+    <div class="f"><label for="msg">Quelques détails</label><textarea id="msg" name="Message" placeholder="Décrivez le bâtiment, le chantier, la surface ou le nombre de sites, les délais, les contraintes d’accès et le besoin constaté…"></textarea></div>
     <div class="f"><label for="ph">Photos (optionnel, 5 Mo max)</label><input id="ph" name="attachment" type="file" accept="image/*" multiple></div>
     <label class="chk"><input type="checkbox" id="rgpd"> J'accepte que mes informations soient utilisées uniquement pour traiter ma demande de devis.</label>
     <button class="btn send" id="sbm" type="submit">Envoyer ma demande</button><div id="res" role="status"></div>
@@ -222,8 +240,8 @@ input,select,textarea{font-size:16px}.pill{padding-left:1.1rem;gap:.4rem}.pill .
 
 <footer>
   <div class="fg">
-    <div><img src="logo sans fond.png" alt="CMS Expertise" class="logo-img" onerror="this.outerHTML='<span class=logo-txt>CMS <b>Expertise</b></span>'"><p style="margin-top:1rem">Couverture, rénovation, zinguerie et charpente à Saint-Prix et dans le Val d'Oise.</p><div class="qr"><img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://www.linkedin.com/in/mahdi-sandali/" alt="QR code LinkedIn"></div></div>
-    <div><h4>Contact</h4><a href="mailto:cms.expertise75@gmail.com">cms.expertise75@gmail.com</a><p>Saint-Prix (95390)</p><a class="tel" data-tel>Appeler</a></div>
+    <div><img src="logo sans fond.png" alt="CMS Expertise" class="logo-img" onerror="this.outerHTML='<span class=logo-txt>CMS <b>Expertise</b></span>'"><p style="margin-top:1rem">Couverture, rénovation, zinguerie et charpente pour particuliers et professionnels dans le Val-d’Oise et en Île-de-France.</p><div class="qr"><img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://www.linkedin.com/in/mahdi-sandali/" alt="QR code LinkedIn"></div></div>
+    <div><h4>Contact</h4><a href="mailto:cms.expertise75@gmail.com">cms.expertise75@gmail.com</a><p>Val-d’Oise (95) · Île-de-France</p><a class="tel" data-tel>Appeler</a></div>
     <div><h4>Services</h4><a data-s="Rénovation de toiture">Rénovation</a><a data-s="Réparation de toiture">Réparation</a><a data-s="Démoussage de toiture">Démoussage</a><a data-s="Zinguerie">Zinguerie</a></div>
     <div><h4>Entreprise</h4><a data-t="about">Notre approche</a><a data-t="real">Réalisations</a><a data-t="zone">Zone d'intervention</a><a data-t="contact">Contact</a></div>
   </div>
@@ -235,14 +253,26 @@ input,select,textarea{font-size:16px}.pill{padding-left:1.1rem;gap:.4rem}.pill .
 <script>
 const EMAIL="cms.expertise75@gmail.com",TEL="07 58 36 22 24";
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
-const go=id=>{const e=document.getElementById(id);if(e){scrollTo({top:e.getBoundingClientRect().top+scrollY-90,behavior:'smooth'});$('#nl').classList.remove('open')}};
+let scrollFrame=0;
+const stopScroll=()=>{if(scrollFrame){cancelAnimationFrame(scrollFrame);scrollFrame=0}};
+['wheel','touchstart','pointerdown','keydown'].forEach(evt=>addEventListener(evt,stopScroll,{passive:true}));
+const go=id=>{
+  const e=document.getElementById(id);if(!e)return;$('#nl').classList.remove('open');stopScroll();
+  const start=window.scrollY,target=Math.max(0,e.getBoundingClientRect().top+start-90),distance=target-start;
+  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches||Math.abs(distance)<2){window.scrollTo(0,target);return}
+  const duration=Math.min(1350,Math.max(650,Math.abs(distance)*0.72));let began=0;
+  // Défilement à ressort : accélération franche, léger dépassement puis stabilisation douce.
+  const ease=t=>{const c=1.18;return 1+(c+1)*Math.pow(t-1,3)+c*Math.pow(t-1,2)};
+  const animate=now=>{if(!began)began=now;const t=Math.min((now-began)/duration,1);window.scrollTo(0,start+distance*ease(t));if(t<1){scrollFrame=requestAnimationFrame(animate)}else{window.scrollTo(0,target);scrollFrame=0}};
+  scrollFrame=requestAnimationFrame(animate);
+};
 const SV=["Rénovation de toiture","Réparation de toiture","Dépannage toiture","Démoussage de toiture","Zinguerie","Charpente bois","Fenêtre de toit","Isolation de toiture","Autre projet toiture"];
 $('#svc2').innerHTML+=SV.map(s=>`<option>${s}</option>`).join('');
 document.addEventListener('click',e=>{const s=e.target.closest('[data-s]');if(s){$('#svc2').value=s.dataset.s;go('contact');return}const t=e.target.closest('[data-t]');if(t){e.preventDefault();go(t.dataset.t==='top0'?'top0':t.dataset.t)}});
 $('#bg').onclick=()=>$('#nl').classList.toggle('open');
 if(TEL){$$('.tel').forEach(e=>{e.style.display=e.classList.contains('btn')?'inline-block':'block';e.href='tel:+33'+TEL.replace(/\D/g,'').slice(1);e.textContent=TEL})}
 addEventListener('scroll',()=>{$('#top').classList.toggle('show',scrollY>500);$('#bar').style.width=scrollY/(document.body.scrollHeight-innerHeight)*100+'%'},{passive:true});
-$('#top').onclick=()=>scrollTo({top:0,behavior:'smooth'});
+$('#top').onclick=()=>go('top0');
 const mq=["Couverture","Rénovation","Zinguerie","Démoussage","Réparation","Charpente","Fenêtres de toit","Isolation"].map(x=>`<span>${x}</span>`).join('');$('#mqi').innerHTML=mq+mq;
 const W=[["Diagnostic sur site","Observation de la toiture et écoute de vos besoins avant toute proposition."],["Devis gratuit et lisible","Besoin identifié, travaux proposés et principaux postes détaillés."],["Garantie décennale","Pour les travaux concernés, l'entreprise intervient avec une assurance décennale."],["Normes respectées","Isolants et écrans de sous-toiture posés selon les règles en vigueur."],["Chantier protégé","Accès, abords et zones de travail organisés pour limiter les nuisances."],["Un interlocuteur clair","Vous savez ce qui va être fait, et dans quel ordre."]];
 $('#why').innerHTML=W.map((w,i)=>`<div class="card rv d${i%3}"><span class="n">0${i+1}</span><h3>${w[0]}</h3><p>${w[1]}</p></div>`).join('');
@@ -250,15 +280,16 @@ const S=[["Couverture & rénovation","Réfection complète ou partielle : tuiles
 $('#sv').innerHTML=S.map((s,i)=>`<div class="card rv d${i%3}"><span class="n">0${i+1}</span><h3>${s[0]}</h3><p>${s[1]}</p><button class="lnk" data-s="${s[2]}">Demander un devis →</button></div>`).join('');
 const P=[["Comprendre","Votre besoin, le contexte de la toiture et la priorité du chantier."],["Diagnostiquer","Identifier les points à traiter avant de définir une solution cohérente."],["Intervenir","Travaux soignés, protection du chantier et finitions maîtrisées."],["Contrôler","Vérification des détails essentiels avant la restitution."]];
 $('#st').innerHTML=P.map((p,i)=>`<div class="card rv d${i%3}"><span class="n">0${i+1}</span><h3>${p[0]}</h3><p>${p[1]}</p></div>`).join('');
-const T=[["Couvreur Saint-Prix","Une toiture associe couverture, étanchéité, évacuation des eaux, ventilation et zinguerie. Un défaut localisé peut avoir des effets loin dans le bâtiment : nous cherchons donc d'abord l'origine du problème et l'état général du toit avant de décider des travaux."],["Rénovation","Rénovation complète ou reprise de zones fragiles : le choix du matériau, la compatibilité avec l'existant et la qualité des finitions comptent autant que l'aspect. Nous distinguons réparation ponctuelle et reprise plus globale."],["Entretien","Nettoyage et démoussage limitent l'humidité retenue et protègent la couverture. La méthode dépend du matériau et de son état : le support est observé avant de choisir la technique."],["Fuite & réparation","Une trace d'humidité n'indique pas toujours l'endroit exact de l'infiltration. Nous remontons le trajet de l'eau, puis réparons de façon ciblée plutôt que de refaire tout le toit."],["Décennale","Pour les travaux concernés, la garantie décennale couvre, dans les conditions du contrat d'assurance, certains désordres graves après réception. Les justificatifs peuvent être présentés."],["Devis","Un bon devis détaille la nature des travaux, les zones concernées et les matériaux. Votre commune, le problème constaté et quelques photos suffisent pour démarrer."]];
+const T=[["Couverture dans le Val-d’Oise","Une toiture associe couverture, étanchéité, évacuation des eaux, ventilation et zinguerie. Un défaut localisé peut avoir des effets loin dans le bâtiment : nous cherchons donc d'abord l'origine du problème et l'état général du toit avant de décider des travaux."],["Rénovation","Rénovation complète ou reprise de zones fragiles : le choix du matériau, la compatibilité avec l'existant et la qualité des finitions comptent autant que l'aspect. Nous distinguons réparation ponctuelle et reprise plus globale."],["Entretien","Nettoyage et démoussage limitent l'humidité retenue et protègent la couverture. La méthode dépend du matériau et de son état : le support est observé avant de choisir la technique."],["Fuite & réparation","Une trace d'humidité n'indique pas toujours l'endroit exact de l'infiltration. Nous remontons le trajet de l'eau, puis réparons de façon ciblée plutôt que de refaire tout le toit."],["Décennale","Pour les travaux concernés, la garantie décennale couvre, dans les conditions du contrat d'assurance, certains désordres graves après réception. Les justificatifs peuvent être présentés."],["Devis","Un bon devis détaille la nature des travaux, les zones concernées et les matériaux. Votre commune, le problème constaté et quelques photos suffisent pour démarrer."]];
 $('#sb').innerHTML=T.map((t,i)=>`<button data-i="${i}">${t[0]}</button>`).join('');
 const st=i=>{$$('#sb button').forEach((b,j)=>b.classList.toggle('on',i==j));$('#sp').innerHTML=`<h3>${T[i][0]}</h3><p>${T[i][1]}</p>`};$('#sb').onclick=e=>{const b=e.target.closest('button');if(b)st(b.dataset.i)};st(0);
-const F=[["Faut-il refaire toute la toiture en cas d'infiltration ?","Pas forcément. L'eau peut venir d'une tuile déplacée, d'un raccord ou du faîtage. Le diagnostic détermine si une réparation ponctuelle suffit."],["Le devis est-il gratuit ?","Oui. Il détaille le périmètre des travaux pour que vous compreniez ce qui sera réalisé."],["Quels matériaux de couverture proposez-vous ?","Tuiles, ardoise, shingle, zinc, cuivre et acier, avec isolants et écrans de sous-toiture conformes."],["À quelle fréquence démousser une toiture ?","En général tous les 5 à 10 ans selon l'exposition, la végétation et le matériau."],["Les travaux sont-ils couverts par une garantie décennale ?","Les travaux concernés le sont, dans les conditions du contrat d'assurance. Les justificatifs peuvent être présentés."],["Intervenez-vous hors de Saint-Prix ?","Oui, dans tout le Val d'Oise et en Île-de-France. Indiquez votre code postal dans le formulaire."]];
+const F=[["Faut-il refaire toute la toiture en cas d'infiltration ?","Pas forcément. L'eau peut venir d'une tuile déplacée, d'un raccord ou du faîtage. Le diagnostic détermine si une réparation ponctuelle suffit."],["Le devis est-il gratuit ?","Oui. Il détaille le périmètre des travaux pour que vous compreniez ce qui sera réalisé."],["Quels matériaux de couverture proposez-vous ?","Tuiles, ardoise, shingle, zinc, cuivre et acier, avec isolants et écrans de sous-toiture conformes."],["À quelle fréquence démousser une toiture ?","En général tous les 5 à 10 ans selon l'exposition, la végétation et le matériau."],["Les travaux sont-ils couverts par une garantie décennale ?","Les travaux concernés le sont, dans les conditions du contrat d'assurance. Les justificatifs peuvent être présentés."],["Intervenez-vous hors de votre commune de départ ?","Oui, dans tout le Val d'Oise et en Île-de-France. Indiquez votre code postal dans le formulaire."]];
 $('#fq').innerHTML=F.map(f=>`<details><summary>${f[0]}</summary><p>${f[1]}</p></details>`).join('');
-function cz(){const v=$('#cp').value.trim(),z=$('#zmsg');if(!/^\d{5}$/.test(v)){z.style.color='#a93226';z.textContent='Saisissez un code postal à 5 chiffres.';return}
-if(['75','77','78','91','92','93','94','95'].includes(v.slice(0,2))){z.style.color='#1e8449';z.textContent=v==='95390'?'Vous êtes dans notre secteur prioritaire, Saint-Prix.':'Nous intervenons chez vous : parlons de votre projet.'}else{z.style.color='#a93226';z.textContent='Hors Île-de-France : contactez-nous, nous étudierons votre demande.'}}
-$('#cpb').onclick=cz;$('#cp').onkeydown=e=>e.key==='Enter'&&cz();
-const io=new IntersectionObserver(l=>l.forEach(e=>{if(e.isIntersecting){e.target.classList.add('v');io.unobserve(e.target)}}),{threshold:.1});$$('.rv').forEach(e=>io.observe(e));
+const cpInput=$('#cp'),cpMessage=$('#zmsg');
+function cz(){const v=cpInput.value.trim();if(!/^\d{5}$/.test(v)){cpMessage.className='zmsg';cpMessage.style.color='#a93226';cpMessage.textContent='Saisissez un code postal composé de 5 chiffres.';return}const dept=v.slice(0,2);if(['75','77','78','91','92','93','94','95'].includes(dept)){cpMessage.className='zmsg';cpMessage.style.color='#1e8449';cpMessage.textContent=dept==='95'?'Code postal du Val-d’Oise : vous êtes dans notre département principal. Contactez-nous pour étudier votre projet.':'Code postal en Île-de-France : votre demande peut être étudiée par notre équipe.'}else{cpMessage.className='zmsg';cpMessage.style.color='#a93226';cpMessage.textContent='Ce code postal est hors de notre zone habituelle d’intervention. Contactez-nous pour vérifier la faisabilité.'}}
+cpInput.addEventListener('input',()=>{const clean=cpInput.value.replace(/\D/g,'').slice(0,5);if(cpInput.value!==clean)cpInput.value=clean;if(!clean){cpMessage.textContent='';return}if(clean.length<5){cpMessage.className='zmsg neutral';cpMessage.textContent=`Encore ${5-clean.length} chiffre(s) à saisir.`;return}cz()});
+$('#cpb').addEventListener('click',cz);cpInput.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();cz()}});
+const revealItems=$$('.rv');revealItems.forEach((el,i)=>{if(!el.classList.contains('from-left')&&!el.classList.contains('from-right'))el.classList.add(i%2?'from-right':'from-left')});const io=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('v');io.unobserve(entry.target)}}),{threshold:.12,rootMargin:'0px 0px -45px 0px'});revealItems.forEach(el=>io.observe(el));
 $('#fm').addEventListener('submit',async e=>{e.preventDefault();const f=e.target,res=$('#res'),btn=$('#sbm');res.className='';res.style.display='none';let ok=true;
 [['nom',v=>v.trim()],['tel',v=>v.replace(/\D/g,'').length>=9],['email',v=>/^\S+@\S+\.\S+$/.test(v)],['cpf',v=>/^\d{5}$/.test(v.trim())],['svc2',v=>v]].forEach(([id,fn])=>{const el=$('#'+id),bad=!fn(el.value);el.classList.toggle('err',bad);if(bad)ok=false});
 if(!$('#rgpd').checked)ok=false;
@@ -285,11 +316,81 @@ const MT=[["Ardoise","ti-square-rotated","Élégance intemporelle, idéale pour 
 $('#mt').innerHTML=MT.map((m,i)=>`<button data-i="${i}">${m[0]}</button>`).join('');
 const sm=i=>{const m=MT[i];$$('#mt button').forEach((b,j)=>b.classList.toggle('on',i==j));$('#mpn').innerHTML=`<div class="pic"><i class="ti ${m[1]}"></i></div><div class="tx"><h3>${m[0]}</h3><p>${m[2]}</p><p style="color:#1a1a1a">Durée de vie indicative : <b>${m[3]}</b></p><button class="btn" data-s="Rénovation de toiture">Demander un devis</button></div>`};
 $('#mt').onclick=e=>{const b=e.target.closest('button');if(b)sm(+b.dataset.i)};sm(0);
-const Q=[["Quel est votre besoin principal ?",[["Une fuite ou un dégât","Dépannage toiture"],["Un toit sale ou moussu","Démoussage de toiture"],["Refaire ou isoler la toiture","Rénovation de toiture"],["Ajouter de la lumière","Fenêtre de toit"]]],["Quel type de bien ?",[["Maison"],["Immeuble"],["Local professionnel"],["Autre"]]],["Quand souhaitez-vous intervenir ?",[["Au plus vite"],["Sous 1 à 3 mois"],["Je prépare un projet"],["Je ne sais pas encore"]]]];
-let qi=0,qa="Rénovation de toiture";
-const qr=()=>{const b=$('#qb');if(qi>=Q.length){b.innerHTML=`<div class="qr2"><i class="ti ti-circle-check" style="font-size:2.6rem;color:var(--gold)"></i><h3>${qa}</h3><p>C'est le service qui correspond le mieux à votre besoin.</p><button class="btn" data-s="${qa}">Demander un devis</button> <button class="btn g" id="rs">Recommencer</button></div>`;$('#rs').onclick=()=>{qi=0;qa="Rénovation de toiture";qr()};return}
-b.innerHTML=`<div class="qs">${Q.map((_,i)=>`<i class="${i<=qi?'on':''}"></i>`).join('')}</div><div class="qq">${Q[qi][0]}</div><div class="qo">${Q[qi][1].map((o,i)=>`<button data-i="${i}">${o[0]}</button>`).join('')}</div>`;
-b.querySelectorAll('.qo button').forEach(x=>x.onclick=()=>{const o=Q[qi][1][x.dataset.i];if(o[1])qa=o[1];qi++;qr()})};qr();
+const Q=[
+ {title:"Quel est le sujet principal de votre demande ?",hint:"Choisissez la situation qui se rapproche le plus de votre besoin.",options:[
+  ["Une fuite ou une infiltration","Eau qui entre, auréole au plafond, humidité"],
+  ["Des tuiles ou éléments abîmés","Éléments déplacés, cassés ou manquants"],
+  ["Une toiture à entretenir","Mousse, lichens, salissures ou végétation"],
+  ["Une rénovation ou une isolation","Toiture ancienne, inconfort thermique, projet global"],
+  ["Des gouttières ou raccords à reprendre","Évacuation d'eau, solins, abergements, noues"],
+  ["Une charpente ou une structure","Bois déformé, traces d'humidité, affaissement"],
+  ["Une fenêtre de toit","Création, remplacement ou problème d'étanchéité"]
+ ]},
+ {title:"Qu'avez-vous constaté exactement ?",hint:"Cette précision affine l'orientation et les points à vérifier.",options:[
+  ["Une fuite active ou de l'eau qui coule","L'eau entre actuellement ou après chaque pluie"],
+  ["Des traces d'humidité ou une auréole","Tache, peinture qui cloque, odeur ou moisissure"],
+  ["Des éléments visiblement détériorés","Tuiles cassées, zinc abîmé, bois fragilisé"],
+  ["Un encrassement progressif","Mousse, lichens, feuilles ou dépôts"],
+  ["Une perte de chaleur ou de confort","Combles froids, chaleur excessive, isolation à améliorer"],
+  ["Un projet préventif ou esthétique","Je souhaite anticiper ou améliorer l'aspect du toit"],
+  ["Je ne sais pas identifier le problème","J'ai besoin d'un avis professionnel"]
+ ]},
+ {title:"Sur quel type de bâtiment faut-il intervenir ?",hint:"Le contexte du bâtiment aide à préparer la visite.",options:[
+  ["Maison individuelle","Maison principale ou secondaire"],
+  ["Immeuble ou copropriété","Parties communes, toiture collective"],
+  ["Bâtiment professionnel ou commercial","Bureaux, commerce, atelier ou entrepôt"],
+  ["Bâtiment public ou autre bâtiment","Équipement, bâtiment collectif ou autre"]
+ ]},
+ {title:"Quel est votre délai souhaité ?",hint:"En cas de danger immédiat, ne montez pas sur le toit et sécurisez la zone depuis le sol.",options:[
+  ["Urgent : dès que possible","Fuite active ou dégradation qui s'aggrave"],
+  ["Rapidement : dans les prochaines semaines","Intervention à organiser prochainement"],
+  ["Dans les 1 à 3 mois","Projet planifié"],
+  ["Je prépare mon projet","Je souhaite d'abord être conseillé"]
+ ]}
+];
+let qi=0;const answers=[];
+const serviceFor=(a)=>{
+ const main=a[0]||0,detail=a[1]||6,urgent=a[3]===0;
+ const map=[
+  ["Réparation de toiture","Une recherche de l'origine de l'infiltration puis une réparation adaptée sont à privilégier.","Vérifier les tuiles, les raccords, le faîtage et les points singuliers. En cas de fuite active, protéger les biens à l'intérieur sans accéder au toit."],
+  ["Réparation de toiture","Les éléments de couverture doivent être contrôlés et remplacés ou refixés si nécessaire.","Contrôler la zone abîmée, les fixations, les éléments voisins et l'étanchéité sous-jacente."],
+  ["Démoussage de toiture","Un entretien adapté au matériau et à son état peut limiter l'accumulation de végétation.","Identifier le matériau, le niveau d'encrassement et les éventuelles fragilités avant de choisir la méthode d'entretien."],
+  ["Rénovation de toiture","Un état des lieux permettra de distinguer les réparations nécessaires d'une rénovation plus complète.","Examiner la couverture, l'écran sous-toiture, la ventilation et l'isolation selon le périmètre du projet."],
+  ["Zinguerie","Les gouttières, descentes et raccords d'étanchéité sont à contrôler pour assurer une bonne évacuation de l'eau.","Vérifier les pentes, les jonctions, les fixations, les soudures et les évacuations."],
+  ["Charpente bois","La structure doit être examinée pour apprécier l'origine et l'étendue des désordres.","Contrôler les éléments porteurs, les assemblages, les traces d'humidité et les éventuelles déformations."],
+  ["Fenêtre de toit","La pose, le remplacement ou la reprise d'étanchéité autour de la fenêtre sont à étudier.","Contrôler le raccord périphérique, les abords de couverture et l'état de la fenêtre."]
+ ];
+ let [service,why,checks]=map[main];
+ if(main===0 && detail===0) why="Une fuite active nécessite d'abord de limiter les dégâts, puis de localiser précisément le point d'entrée de l'eau.";
+ if(main===0 && detail===1) why="Les traces visibles peuvent être éloignées du point d'entrée de l'eau : une vérification de la toiture et des raccords est nécessaire.";
+ if(main===3 && detail===4){service="Isolation de toiture";why="Votre priorité semble être le confort thermique : l'isolation et la ventilation des combles sont à étudier avec l'état de la couverture.";checks="Examiner l'isolation existante, les ponts thermiques, la ventilation et l'état de la couverture avant de définir les travaux.";}
+ if(main===1 && detail===2) checks="Contrôler les éléments cassés ou déplacés, leur mode de fixation et les zones voisines pour éviter une nouvelle infiltration.";
+ if(main===4 && detail===0){service="Dépannage toiture";why="Si l'eau déborde ou s'infiltre actuellement, la priorité est de sécuriser la situation et de vérifier les évacuations et raccords.";}
+ if(main===5 && detail===1) why="Les traces d'humidité peuvent affecter le bois à terme : il faut identifier la source de l'humidité avant toute réparation.";
+ const urgency=urgent?"Priorité élevée à organiser rapidement":a[3]===1?"À planifier prochainement":a[3]===2?"Projet à programmer":"Phase de conseil et de préparation";
+ const building=["maison individuelle","immeuble ou copropriété","bâtiment professionnel ou commercial","bâtiment public ou autre bâtiment"][a[2]||0];
+ let extra="";
+ if(a[2]===1)extra="Pour une copropriété, pensez à préciser le bâtiment, l'accès à la toiture et, si possible, la zone concernée.";
+ if(a[2]===2 || a[2]===3)extra="Pour un bâtiment professionnel ou collectif, indiquez si possible la surface approximative, les contraintes d'accès et les horaires possibles.";
+ if(detail===6)extra+=(extra?" ":"")+"Si le problème n'est pas clairement identifiable, des photos prises depuis un endroit sûr peuvent aider à préparer le premier échange.";
+ return {service,why,checks,urgency,building,extra,urgent};
+};
+const renderDiag=()=>{
+ const b=$('#qb');
+ if(qi>=Q.length){
+  const r=serviceFor(answers),labels=Q.map((q,i)=>q.options[answers[i]][0]);
+  b.innerHTML=`<div class="diag-result"><span class="tag">Votre orientation personnalisée</span><h3>${r.service}</h3><p><b>${r.why}</b></p><p>${r.checks}</p><p><b>Votre situation :</b> ${labels[0]} · ${labels[1]} · ${r.building}.</p><p><b>Délai souhaité :</b> ${r.urgency}.</p>${r.extra?`<p>${r.extra}</p>`:''}<ul><li>Un premier échange permettra de préciser la zone et l'étendue des travaux.</li><li>Le diagnostic sur place confirmera les causes et les solutions adaptées.</li><li>Un devis détaillé pourra ensuite être établi selon les travaux retenus.</li></ul><div class="diag-actions"><button class="btn" id="diagContact">Demander un devis pour ce besoin</button><button class="btn g" id="diagBack">Modifier mes réponses</button><button class="btn g" id="diagReset">Recommencer</button></div><p class="diag-note">Cette orientation est indicative et ne remplace pas une inspection de la toiture. Ne montez jamais sur le toit pour prendre des photos ou vérifier un désordre. En cas de danger immédiat, éloignez-vous de la zone concernée.</p></div>`;
+  $('#diagContact').onclick=()=>{const msg=$('#msg');msg.value=`Diagnostic express CMS Expertise :\nBesoin : ${labels[0]}\nConstat : ${labels[1]}\nBâtiment : ${r.building}\nDélai : ${r.urgency}\nOrientation : ${r.service}\n\nPrécisions complémentaires : `;$('#svc2').value=r.service;go('contact')};
+  $('#diagBack').onclick=()=>{qi=Q.length-1;renderDiag()};$('#diagReset').onclick=resetDiag;return;
+ }
+ const q=Q[qi],chosen=answers[qi];
+ b.innerHTML=`<div class="diag-meta"><span>QUESTION ${qi+1} / ${Q.length}</span><span>${Math.round(qi/Q.length*100)} %</span></div><div class="qs">${Q.map((_,i)=>`<i class="${i<=qi?'on':''}"></i>`).join('')}</div><div class="qq">${q.title}</div><p style="color:rgba(255,255,255,.55);font-size:.88rem;margin:-.6rem 0 1.1rem">${q.hint}</p><div class="qo">${q.options.map((o,i)=>`<button type="button" data-i="${i}" aria-pressed="${chosen===i?'true':'false'}" style="${chosen===i?'border-color:var(--gold);color:var(--gold)':''}">${o[0]}<small>${o[1]}</small></button>`).join('')}</div><div class="diag-actions">${qi>0?'<button class="btn g" id="diagPrev">← Précédent</button>':''}${chosen!==undefined?'<button class="btn" id="diagNext">Continuer →</button>':''}<button class="btn g" id="diagReset">Recommencer</button></div>`;
+ b.querySelectorAll('.qo button').forEach(x=>x.onclick=()=>{answers[qi]=Number(x.dataset.i);renderDiag()});
+ const next=$('#diagNext');if(next)next.onclick=()=>{if(answers[qi]!==undefined){qi++;renderDiag()}};
+ const prev=$('#diagPrev');if(prev)prev.onclick=()=>{qi--;renderDiag()};$('#diagReset').onclick=resetDiag;
+};
+function resetDiag(){qi=0;answers.length=0;renderDiag()}
+renderDiag();
 const RW=["rénovation de toiture","réparation de toiture","zinguerie","démoussage","charpente bois","fenêtres de toit"];let ri=0,rc=0,rd=0,pz=0;
 setInterval(()=>{if(pz>0){pz--;return}const w=RW[ri],el=$('#rt');if(!rd){el.textContent=w.slice(0,++rc);if(rc==w.length){rd=1;pz=20}}else{el.textContent=w.slice(0,--rc);if(!rc){rd=0;ri=(ri+1)%RW.length}}},80);
 </script>
