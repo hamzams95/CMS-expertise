@@ -390,7 +390,7 @@ setInterval(()=>{if(pz>0){pz--;return}const w=RW[ri],el=$('#rt');if(!rd){el.text
 /* Rideau doré + images */
 (()=>{
 const st=document.createElement('style');
-st.textContent='#cur{position:fixed;inset:0;background:linear-gradient(90deg,#c5a880,#d9c29c);z-index:2500;transform:translateX(-101%);pointer-events:none}#cur img{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);height:clamp(70px,16vw,130px);width:auto;max-width:70vw;object-fit:contain;filter:brightness(0);opacity:.9}#cur span{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font:italic 2rem "Cormorant Garamond",serif;color:#151719}@keyframes land{0%{box-shadow:inset 0 5px 0 #c5a880,inset 0 0 140px rgba(197,168,128,.3)}100%{box-shadow:inset 0 5px 0 transparent,inset 0 0 0 transparent}}.land{animation:land 1.4s ease-out}';
+st.textContent='#cur{position:fixed;inset:0;background:linear-gradient(90deg,#c5a880,#d9c29c);z-index:2500;transform:translateX(-101%);pointer-events:none}#cur img{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);height:clamp(70px,16vw,130px);width:auto;max-width:70vw;object-fit:contain;}#cur span{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font:italic 2rem "Cormorant Garamond",serif;color:#151719}@keyframes land{0%{box-shadow:inset 0 5px 0 #c5a880,inset 0 0 140px rgba(197,168,128,.3)}100%{box-shadow:inset 0 5px 0 transparent,inset 0 0 0 transparent}}.land{animation:land 1.4s ease-out}';
 document.head.appendChild(st);
 const cur=document.createElement('div');cur.id='cur';cur.innerHTML='<img src="logo sans fond.png" alt="" onerror="this.outerHTML=\'<span>CMS Expertise</span>\'">';document.body.prepend(cur);
 const wait=ms=>new Promise(r=>setTimeout(r,ms));let busy=false;
