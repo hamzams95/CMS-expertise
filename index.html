@@ -24,7 +24,6 @@ a{color:inherit}:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
 .dd:hover .pn{display:block}.pn a{text-transform:none;letter-spacing:0;font-size:.88rem;padding:.4rem 0}.pn small{display:block;color:var(--gold);font-size:.66rem;letter-spacing:.15em;text-transform:uppercase;margin:.6rem 0 .2rem}
 .burger{display:none;color:#fff;font-size:1.6rem;background:none;border:0;cursor:pointer}
 .rv{opacity:0;transform:translateY(48px) scale(.985);filter:blur(5px);transition:opacity .85s ease,transform .95s cubic-bezier(.16,.84,.24,1),filter .85s ease;will-change:opacity,transform,filter}.rv.v{opacity:1;transform:translateY(0) scale(1);filter:blur(0)}.d1{transition-delay:.12s}.d2{transition-delay:.24s}
-/* Entrées alternées pour donner plus de rythme au défilement */
 .rv.from-left{transform:translateX(-54px) scale(.985)}.rv.from-right{transform:translateX(54px) scale(.985)}.rv.from-left.v,.rv.from-right.v{transform:translateX(0) scale(1)}
 .hero{background:var(--ink);min-height:calc(100vh - 120px);display:grid;grid-template-columns:1.1fr .9fr;align-items:center;overflow:hidden}
 .hl{padding:4rem 3rem}
@@ -85,6 +84,9 @@ i.ti{display:inline-block;width:1em;height:1em;vertical-align:-.15em;background:
 .ti-coin{--i:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 12a9 9 0 1 0 18 0 9 9 0 1 0-18 0M14.8 9A2 2 0 0 0 13 8h-2a2 2 0 1 0 0 4h2a2 2 0 1 1 0 4h-2a2 2 0 0 1-1.8-1M12 7v10'/%3E%3C/svg%3E")}
 .ti-bolt{--i:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M13 3v7h6l-8 11v-7H5z'/%3E%3C/svg%3E")}
 .ti-layers{--i:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 4 4 8l8 4 8-4zM4 12l8 4 8-4M4 16l8 4 8-4'/%3E%3C/svg%3E")}
+.aud{display:flex;width:max-content;max-width:100%;border:1px solid rgba(197,168,128,.4);margin:0 0 1.6rem}.aud button{background:transparent;border:0;color:rgba(255,255,255,.65);padding:.65rem 1.2rem;font:400 .76rem var(--ff);letter-spacing:.08em;text-transform:uppercase;cursor:pointer;transition:.3s}.aud button.on{background:var(--gold);color:var(--ink)}
+@keyframes land{0%{box-shadow:inset 0 4px 0 var(--gold)}100%{box-shadow:inset 0 4px 0 transparent}}.land{animation:land 1.4s ease-out}
+@media(max-width:768px){.aud{margin:0 auto 1.4rem}.aud button{padding:.6rem .8rem;font-size:.68rem}}
 .tel{display:none}
 .pill{position:fixed;left:50%;bottom:calc(12px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);width:min(980px,calc(100% - 24px));z-index:96;display:flex;align-items:center;justify-content:space-between;gap:.8rem;background:rgba(21,23,25,.96);backdrop-filter:blur(12px);border:1px solid var(--gold);border-radius:100px;padding:.45rem .45rem .45rem 1.5rem;box-shadow:0 10px 40px rgba(0,0,0,.45)}
 .pill .num{display:flex;align-items:center;gap:.7rem;color:#fff;text-decoration:none;font:500 1.05rem var(--ff);letter-spacing:.04em;line-height:1.2}.pill .num i{color:var(--gold);font-size:1.4rem;animation:rg 2.4s infinite}.pill .num span{display:block;font:300 .68rem var(--ff);letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.55)}
@@ -225,14 +227,13 @@ input,select,textarea{font-size:16px}.pill{padding-left:1.1rem;gap:.4rem}.pill .
   <div class="rv"><div class="lab" style="text-align:left">Devis gratuit</div><h2 class="ttl" style="text-align:left">Parlons de votre toiture à Saint-Prix ou en Val d'Oise.</h2>
     <p style="color:var(--mut);font-weight:300">Rénovation, fuite, entretien, zinguerie : laissez-nous l'essentiel, votre demande arrive directement à notre équipe.</p>
     <ol><li><b>01</b>Demande rapide</li><li><b>02</b>Projet étudié avec soin</li><li><b>03</b>Devis gratuit</li></ol></div>
-  <form id="fm" class="rv d1" novalidate>
+  <form id="fm" class="rv d1" novalidate action="https://formsubmit.co/cms.expertise75@gmail.com" method="POST" enctype="multipart/form-data"><input type="hidden" name="_template" value="table"><input type="hidden" name="_captcha" value="false"><input type="hidden" name="_subject" value="Nouvelle demande de devis - CMS Expertise">
     <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
     <div class="row"><div class="f"><label for="nom">Nom *</label><input id="nom" name="Nom" autocomplete="name"></div><div class="f"><label for="tel">Téléphone *</label><input id="tel" name="Téléphone" type="tel" autocomplete="tel"></div></div>
     <div class="row"><div class="f"><label for="email">E-mail *</label><input id="email" name="email" type="email" autocomplete="email"></div><div class="f"><label for="cpf">Code postal *</label><input id="cpf" name="Code postal" inputmode="numeric" maxlength="5"></div></div>
-    <div class="f"><label for="clientType">Vous êtes</label><select id="clientType" name="Type de client"><option value="Particulier">Particulier</option><option value="Entreprise / groupe BTP">Entreprise / groupe BTP</option><option value="Syndic / gestionnaire immobilier">Syndic / gestionnaire immobilier</option><option value="Architecte / maître d’œuvre">Architecte / maître d’œuvre</option><option value="Collectivité / établissement public">Collectivité / établissement public</option><option value="Autre professionnel">Autre professionnel</option></select></div>
-    <div class="f"><label for="svc2">Votre besoin *</label><select id="svc2" name="Service"><option value="">Sélectionner une prestation</option></select></div>
+    <div class="f"><label for="clientType">Vous êtes</label><select id="clientType" name="Type de client"><option value="Particulier">Particulier</option><option value="Entreprise / groupe BTP">Entreprise / groupe BTP</option><option value="Syndic / gestionnaire immobilier">Syndic / gestionnaire immobilier</option><option value="Architecte / maître d’œuvre">Architecte / maître d’œuvre</option><option value="Collectivité / établissement public">Collectivité / établissement public</option><option value="Autre professionnel">Autre professionnel</option></select></div><div class="f"><label for="svc2">Votre besoin *</label><select id="svc2" name="Service"><option value="">Sélectionner une prestation</option></select></div>
     <div class="f"><label for="msg">Quelques détails</label><textarea id="msg" name="Message" placeholder="Décrivez le bâtiment, le chantier, la surface ou le nombre de sites, les délais, les contraintes d’accès et le besoin constaté…"></textarea></div>
-    <div class="f"><label for="ph">Photos (optionnel, 5 Mo max)</label><input id="ph" name="attachment" type="file" accept="image/*" multiple></div>
+    <div class="f"><label for="ph">Photos ou cahier des charges (optionnel, 5 Mo max)</label><input id="ph" name="attachment" type="file" accept="image/*,.pdf" multiple></div>
     <label class="chk"><input type="checkbox" id="rgpd"> J'accepte que mes informations soient utilisées uniquement pour traiter ma demande de devis.</label>
     <button class="btn send" id="sbm" type="submit">Envoyer ma demande</button><div id="res" role="status"></div>
   </form>
@@ -253,19 +254,7 @@ input,select,textarea{font-size:16px}.pill{padding-left:1.1rem;gap:.4rem}.pill .
 <script>
 const EMAIL="cms.expertise75@gmail.com",TEL="07 58 36 22 24";
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
-let scrollFrame=0;
-const stopScroll=()=>{if(scrollFrame){cancelAnimationFrame(scrollFrame);scrollFrame=0}};
-['wheel','touchstart','pointerdown','keydown'].forEach(evt=>addEventListener(evt,stopScroll,{passive:true}));
-const go=id=>{
-  const e=document.getElementById(id);if(!e)return;$('#nl').classList.remove('open');stopScroll();
-  const start=window.scrollY,target=Math.max(0,e.getBoundingClientRect().top+start-90),distance=target-start;
-  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches||Math.abs(distance)<2){window.scrollTo(0,target);return}
-  const duration=Math.min(1350,Math.max(650,Math.abs(distance)*0.72));let began=0;
-  // Défilement à ressort : accélération franche, léger dépassement puis stabilisation douce.
-  const ease=t=>{const c=1.18;return 1+(c+1)*Math.pow(t-1,3)+c*Math.pow(t-1,2)};
-  const animate=now=>{if(!began)began=now;const t=Math.min((now-began)/duration,1);window.scrollTo(0,start+distance*ease(t));if(t<1){scrollFrame=requestAnimationFrame(animate)}else{window.scrollTo(0,target);scrollFrame=0}};
-  scrollFrame=requestAnimationFrame(animate);
-};
+let go=()=>{};
 const SV=["Rénovation de toiture","Réparation de toiture","Dépannage toiture","Démoussage de toiture","Zinguerie","Charpente bois","Fenêtre de toit","Isolation de toiture","Autre projet toiture"];
 $('#svc2').innerHTML+=SV.map(s=>`<option>${s}</option>`).join('');
 document.addEventListener('click',e=>{const s=e.target.closest('[data-s]');if(s){$('#svc2').value=s.dataset.s;go('contact');return}const t=e.target.closest('[data-t]');if(t){e.preventDefault();go(t.dataset.t==='top0'?'top0':t.dataset.t)}});
@@ -294,10 +283,13 @@ $('#fm').addEventListener('submit',async e=>{e.preventDefault();const f=e.target
 [['nom',v=>v.trim()],['tel',v=>v.replace(/\D/g,'').length>=9],['email',v=>/^\S+@\S+\.\S+$/.test(v)],['cpf',v=>/^\d{5}$/.test(v.trim())],['svc2',v=>v]].forEach(([id,fn])=>{const el=$('#'+id),bad=!fn(el.value);el.classList.toggle('err',bad);if(bad)ok=false});
 if(!$('#rgpd').checked)ok=false;
 if(!ok){res.className='ko';res.textContent='Merci de compléter les champs obligatoires et d\'accepter le traitement de vos données.';return}
-const fd=new FormData(f);fd.append('_subject','Demande de devis : '+$('#svc2').value+' (site CMS Expertise)');fd.append('_template','table');fd.append('_captcha','false');
+const fd=new FormData(f);fd.set('_subject','Demande de devis : '+$('#svc2').value+' (site CMS Expertise)');
+if(!$('#ph').files.length)fd.delete('attachment');
 btn.disabled=true;btn.textContent='Envoi en cours…';
-try{const r=await fetch('https://formsubmit.co/ajax/'+EMAIL,{method:'POST',headers:{Accept:'application/json'},body:fd});const j=await r.json();if(r.ok&&(j.success===true||j.success==='true')){res.className='ok';res.textContent='Merci, votre demande a bien été transmise. Nous vous recontactons très prochainement.';f.reset()}else throw 0}
-catch(_){res.className='ko';res.innerHTML='L\'envoi a échoué. Écrivez-nous directement : <a href="mailto:'+EMAIL+'?subject=Demande de devis&body='+encodeURIComponent('Nom : '+$('#nom').value+'\nTéléphone : '+$('#tel').value+'\nCode postal : '+$('#cpf').value+'\n\n'+$('#msg').value)+'"><b>'+EMAIL+'</b></a>'}
+try{const r=await fetch(f.action,{method:'POST',headers:{Accept:'application/json'},body:fd});const j=await r.json();
+if(j.success===true||j.success==='true'){res.className='ok';res.textContent='Merci, votre demande a bien été transmise. Nous vous recontactons très prochainement.';f.reset()}
+else{res.className='ko';res.textContent=(j.message||'Envoi refusé par le service.')+' Si c\'est le premier envoi, activez l\'adresse via le mail reçu sur '+EMAIL+' (vérifiez les spams).'}}
+catch(_){res.className='ok';res.textContent='Envoi de votre demande en cours, une page de confirmation va s\'ouvrir…';f.target='_blank';f.submit()}
 btn.disabled=false;btn.textContent='Envoyer ma demande'});
 
 const D=[["Val d'Oise (95)","Saint-Prix|Montmorency|Enghien-les-Bains|Eaubonne|Ermont|Taverny|Franconville|Saint-Leu-la-Forêt|Bessancourt|Montlignon|Domont|Sannois|Soisy-sous-Montmorency|Margency|Andilly|Groslay|Deuil-la-Barre|Saint-Gratien|Montmagny|Sarcelles|Garges-lès-Gonesse|Villiers-le-Bel|Gonesse|Goussainville|Argenteuil|Bezons|Cormeilles-en-Parisis|Herblay-sur-Seine|Pierrelaye|Beauchamp|Méry-sur-Oise|L'Isle-Adam|Cergy|Pontoise|Osny|Éragny|Saint-Ouen-l'Aumône|Jouy-le-Moutier|Vauréal|Persan|Beaumont-sur-Oise|Écouen|Ezanville|Louvres"],
@@ -393,6 +385,38 @@ function resetDiag(){qi=0;answers.length=0;renderDiag()}
 renderDiag();
 const RW=["rénovation de toiture","réparation de toiture","zinguerie","démoussage","charpente bois","fenêtres de toit"];let ri=0,rc=0,rd=0,pz=0;
 setInterval(()=>{if(pz>0){pz--;return}const w=RW[ri],el=$('#rt');if(!rd){el.textContent=w.slice(0,++rc);if(rc==w.length){rd=1;pz=20}}else{el.textContent=w.slice(0,--rc);if(!rc){rd=0;ri=(ri+1)%RW.length}}},80);
+
+
+/* Rideau doré + images */
+(()=>{
+const st=document.createElement('style');
+st.textContent='#cur{position:fixed;inset:0;background:linear-gradient(90deg,#c5a880,#d9c29c);z-index:2500;transform:translateX(-101%);pointer-events:none}#cur img{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);height:clamp(70px,16vw,130px);width:auto;max-width:70vw;object-fit:contain;filter:brightness(0);opacity:.9}#cur span{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font:italic 2rem "Cormorant Garamond",serif;color:#151719}@keyframes land{0%{box-shadow:inset 0 5px 0 #c5a880,inset 0 0 140px rgba(197,168,128,.3)}100%{box-shadow:inset 0 5px 0 transparent,inset 0 0 0 transparent}}.land{animation:land 1.4s ease-out}';
+document.head.appendChild(st);
+const cur=document.createElement('div');cur.id='cur';cur.innerHTML='<img src="logo sans fond.png" alt="" onerror="this.outerHTML=\'<span>CMS Expertise</span>\'">';document.body.prepend(cur);
+const wait=ms=>new Promise(r=>setTimeout(r,ms));let busy=false;
+go=async id=>{const e=document.getElementById(id);if(!e)return;const nl=document.getElementById('nl');if(nl)nl.classList.remove('open');
+const y=Math.max(0,e.getBoundingClientRect().top+scrollY-90);
+if(matchMedia('(prefers-reduced-motion:reduce)').matches||Math.abs(y-scrollY)<2){scrollTo(0,y);return}
+if(busy)return;busy=true;
+cur.style.transition='transform .45s cubic-bezier(.7,0,.2,1)';cur.style.transform='translateX(0)';await wait(480);
+scrollTo(0,y);await wait(90);cur.style.transform='translateX(101%)';await wait(480);
+cur.style.transition='none';cur.style.transform='translateX(-101%)';
+e.classList.remove('land');void e.offsetWidth;e.classList.add('land');busy=false};
+
+/* Images : illustrations de toiture adaptées à chaque texte.
+   Pour utiliser vos vraies photos, déposez photos/hero.jpg, photos/reno.jpg, photos/team.jpg, photos/sky.jpg : elles remplaceront automatiquement les illustrations. */
+const A=(c,b)=>'data:image/svg+xml,'+encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice"><defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="'+c[0]+'"/><stop offset="1" stop-color="'+c[1]+'"/></linearGradient><pattern id="t" width="44" height="26" patternUnits="userSpaceOnUse"><path d="M0 26Q22 2 44 26" fill="none" stroke="#0d0f10" stroke-opacity=".45" stroke-width="3"/></pattern></defs><rect width="800" height="600" fill="url(#g)"/>'+b+'</svg>');
+const W=(cx,fy)=>'<g fill="#151719"><circle cx="'+cx+'" cy="'+(fy-110)+'" r="20"/><path d="M'+(cx-30)+' '+(fy-85)+'q30-18 60 0l8 85h-76z"/></g><path d="M'+(cx-24)+' '+(fy-118)+'q24-30 48 0z" fill="#c5a880"/>';
+const SLOPE='<polygon points="0,600 0,150 800,60 800,600" fill="#4a5058"/><polygon points="0,600 0,150 800,60 800,600" fill="url(#t)"/>';
+const S={
+hero:[['#151719','#c5a880'],'<circle cx="620" cy="150" r="60" fill="#c5a880" opacity=".9"/><rect x="150" y="420" width="500" height="180" fill="#25282c"/><rect x="470" y="190" width="46" height="120" fill="#3a3f45"/><polygon points="70,430 400,170 730,430" fill="#4a5058"/><polygon points="70,430 400,170 730,430" fill="url(#t)"/><rect x="190" y="460" width="70" height="90" fill="#c5a880" opacity=".75"/><rect x="540" y="460" width="70" height="90" fill="#c5a880" opacity=".75"/>'],
+reno:[['#7a9bb5','#e8dcc6'],'<polygon points="0,600 0,180 800,60 800,600" fill="#8a6a46"/><g stroke="#5a4328" stroke-width="6"><path d="M430 190L800 140M430 270L800 220M430 350L800 300M430 430L800 380M430 510L800 460"/></g><polygon points="0,600 0,180 430,122 430,600" fill="#b5603a"/><polygon points="0,600 0,180 430,122 430,600" fill="url(#t)"/><g stroke="#e8dcc6" stroke-width="9"><path d="M560 600L640 150M660 600L740 140"/></g><g stroke="#e8dcc6" stroke-width="6"><path d="M575 500L672 490M590 400L688 390M605 300L704 290M620 200L720 190"/></g>'],
+team:[['#6f8ca3','#dfe6ea'],'<polygon points="0,470 800,230 800,600 0,600" fill="#4a5058"/><polygon points="0,470 800,230 800,600 0,600" fill="url(#t)"/>'+W(300,385)+W(560,307)],
+sky:[['#25282c','#8aa1b3'],SLOPE+'<g transform="rotate(-6 400 330)"><rect x="290" y="250" width="220" height="170" fill="#c5a880"/><rect x="304" y="264" width="192" height="142" fill="#bcd4e6"/><path d="M304 406L496 264" stroke="#fff" stroke-opacity=".5" stroke-width="10"/><path d="M400 264V406M304 335H496" stroke="#c5a880" stroke-width="5"/></g>']};
+const K=['hero','reno','team','sky'],ALT=['Toiture de maison en tuiles au coucher du soleil','Rénovation de couverture : tuiles posées sur liteaux avec échelle','Couvreurs au travail sur une toiture','Fenêtre de toit installée dans une couverture'];
+[document.querySelector('.hr img'),...document.querySelectorAll('.gal img')].forEach((im,i)=>{if(!im||!K[i])return;im.removeAttribute('onerror');im.alt=ALT[i];im.src=A(...S[K[i]]);
+const real='photos/'+K[i]+'.jpg',t=new Image();t.onload=()=>{im.src=real};t.src=real});
+})();
 </script>
 </body>
 </html>
