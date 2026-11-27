@@ -36,7 +36,7 @@ h1,.ttl{font-family:var(--fd);font-weight:400}h1{font-size:clamp(2.6rem,5vw,4.4r
 .btn:hover{background:#fff;border-color:#fff;transform:translateY(-3px)}.btn.g{background:transparent;color:rgba(255,255,255,.85);border-color:rgba(255,255,255,.3);margin-left:.7rem}.btn.g:hover{color:var(--gold);border-color:var(--gold);background:transparent}
 .btn.dark-outline{background:transparent;color:var(--ink);border-color:var(--ink)}.btn.dark-outline:hover{background:var(--ink);color:var(--gold)}
 .badges{display:flex;gap:2rem;flex-wrap:wrap;margin-top:1.8rem;color:rgba(255,255,255,.6);font-size:.8rem}.badges b{display:block;color:var(--gold);font:600 1.05rem var(--fd)}
-.hr{position:relative;height:100%;min-height:520px;background:var(--ink3);overflow:hidden}.hr img{width:100%;height:100%;object-fit:cover;opacity:.62;filter:grayscale(20%);animation:zm 22s ease-in-out infinite alternate}@keyframes zm{to{transform:scale(1.1)}}
+.hr{position:relative;height:100%;min-height:520px;background:var(--ink3);overflow:hidden}.hr img{width:100%;height:100%;object-fit:cover;opacity:.88;filter:none;animation:zm 22s ease-in-out infinite alternate}@keyframes zm{to{transform:scale(1.1)}}
 .hr:before{content:'';position:absolute;inset:0;background:linear-gradient(to right,var(--ink),transparent 55%);z-index:1}
 
 /* MARQUEE & SECTIONS */
@@ -57,7 +57,7 @@ h1,.ttl{font-family:var(--fd);font-weight:400}h1{font-size:clamp(2.6rem,5vw,4.4r
 .cs{background:var(--ink);color:#fff;display:flex;gap:1.5rem;justify-content:space-between;align-items:center;flex-wrap:wrap;padding:2rem 2.4rem;margin-top:2.4rem}.cs b{font:400 1.5rem var(--fd)}.cs span{display:block;color:rgba(255,255,255,.55);font-size:.88rem}
 .steps .card{background:transparent;border-color:rgba(255,255,255,.08);text-align:center}.steps h3{color:#fff}.steps p{color:rgba(255,255,255,.5)}
 
-/* NOUVEAU : SÉLECTEUR PARTICULIERS / ENTREPRISES */
+/* SÉLECTEUR PARTICULIERS / ENTREPRISES */
 .aud-switch{display:flex;justify-content:center;margin:0 auto 3rem;max-width:640px;background:#fff;border:1px solid rgba(21,23,25,.12);padding:6px;box-shadow:0 12px 35px rgba(0,0,0,.04)}
 .aud-switch button{flex:1;padding:1.1rem 1.4rem;border:0;background:transparent;color:var(--mut);font:500 .82rem var(--ff);letter-spacing:.1em;text-transform:uppercase;cursor:pointer;transition:.35s;display:flex;flex-direction:column;align-items:center;gap:.25rem}
 .aud-switch button small{font:300 .74rem var(--ff);text-transform:none;letter-spacing:0;opacity:.8}
@@ -82,36 +82,65 @@ h1,.ttl{font-family:var(--fd);font-weight:400}h1{font-size:clamp(2.6rem,5vw,4.4r
 .gal figcaption{position:absolute;left:0;right:0;bottom:0;padding:3rem 1.3rem 1.2rem;background:linear-gradient(transparent,rgba(0,0,0,.88));color:#fff;font:400 1.3rem var(--fd)}.gal small{display:block;font:300 .7rem var(--ff);letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
 .real-cta-bar{margin-top:2.5rem;text-align:center;padding:2.4rem;background:#fff;border:1px solid rgba(197,168,128,.35);display:flex;flex-direction:column;align-items:center;gap:1rem}
 
-/* NOUVEAU : SOUS-SITE RÉALISATIONS (VUE DÉDIÉE) */
+/* =====================================================================
+   SOUS-SITE RÉALISATIONS (PORTFOLIO COMPLET)
+===================================================================== */
 #subsite-realisations{display:none;min-height:100vh;background:var(--off)}
 body.in-subsite #main-site{display:none}
 body.in-subsite #subsite-realisations{display:block}
 .sub-nav{position:sticky;top:0;z-index:1000;display:flex;align-items:center;justify-content:space-between;padding:0 3rem;height:84px;background:var(--ink);border-bottom:1px solid rgba(197,168,128,.25)}
-.sub-nav-left{display:flex;align-items:center;gap:1.5rem}
+.sub-nav-left{display:flex;align-items:center;gap:1.2rem}
 .sub-badge{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink);background:var(--gold);padding:.3rem .75rem;font-weight:500}
+.sub-links{display:flex;gap:1.6rem;list-style:none}
+.sub-links a{color:rgba(255,255,255,.75);text-decoration:none;font-size:.76rem;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;transition:.3s}
+.sub-links a:hover{color:var(--gold)}
 .sub-hero{background:var(--ink);color:#fff;padding:5rem 2rem 4.5rem;text-align:center;border-bottom:1px solid rgba(197,168,128,.15);position:relative}
 .sub-hero h1{font-size:clamp(2.4rem,4.5vw,3.8rem);margin-bottom:1rem}
-.sub-hero p{color:rgba(255,255,255,.6);max-width:680px;margin:0 auto 2rem;font-weight:300}
-.sub-stats{display:flex;justify-content:center;gap:3rem;flex-wrap:wrap;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.08);max-width:760px;margin:0 auto}
-.sub-stats div b{display:block;font:600 1.8rem var(--fd);color:var(--gold)}
-.sub-stats div span{font-size:.76rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.55)}
+.sub-hero p{color:rgba(255,255,255,.6);max-width:720px;margin:0 auto 2rem;font-weight:300}
+.sub-stats{display:flex;justify-content:center;gap:3rem;flex-wrap:wrap;padding-top:1.8rem;border-top:1px solid rgba(255,255,255,.08);max-width:860px;margin:0 auto}
+.sub-stats div b{display:block;font:600 1.9rem var(--fd);color:var(--gold)}
+.sub-stats div span{font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.55)}
 
 .proj-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2.2rem;margin-top:2rem}
 .proj-card{background:#fff;border:1px solid rgba(0,0,0,.07);overflow:hidden;display:flex;flex-direction:column;transition:.45s;box-shadow:0 12px 30px rgba(0,0,0,.03)}
 .proj-card:hover{transform:translateY(-6px);box-shadow:0 24px 48px rgba(0,0,0,.08)}
-.proj-img{position:relative;height:320px;background:var(--ink3);overflow:hidden}
+.proj-img{position:relative;height:310px;background:var(--ink3);overflow:hidden;cursor:pointer}
 .proj-img img{width:100%;height:100%;object-fit:cover;transition:.7s}
 .proj-card:hover .proj-img img{transform:scale(1.06)}
 .proj-cat{position:absolute;top:1rem;left:1rem;background:rgba(21,23,25,.92);color:var(--gold);border:1px solid rgba(197,168,128,.4);padding:.35rem .85rem;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase}
 .proj-loc{position:absolute;bottom:1rem;right:1rem;background:rgba(255,255,255,.95);color:var(--ink);padding:.3rem .75rem;font-size:.75rem;font-weight:500}
+.proj-year{position:absolute;top:1rem;right:1rem;background:var(--gold);color:var(--ink);padding:.25rem .6rem;font-size:.7rem;font-weight:500}
 .proj-body{padding:2rem;flex:1;display:flex;flex-direction:column}
-.proj-meta{display:flex;gap:1.2rem;flex-wrap:wrap;font-size:.76rem;color:var(--gold);text-transform:uppercase;letter-spacing:.1em;margin-bottom:.6rem;font-weight:500}
+.proj-meta{display:flex;gap:.8rem;flex-wrap:wrap;font-size:.74rem;color:var(--gold);text-transform:uppercase;letter-spacing:.08em;margin-bottom:.6rem;font-weight:500}
 .proj-body h3{font:600 1.65rem/1.2 var(--fd);margin-bottom:.8rem;color:var(--ink)}
 .proj-body p{color:var(--mut);font-weight:300;font-size:.94rem;margin-bottom:1.2rem}
 .proj-specs{background:var(--off);padding:1rem 1.2rem;border-left:2px solid var(--gold);margin-bottom:1.4rem;font-size:.84rem}
 .proj-specs div{margin-bottom:.3rem;color:#333}.proj-specs div:last-child{margin-bottom:0}
 .proj-specs strong{color:var(--ink);font-weight:500}
 .proj-foot{margin-top:auto;display:flex;justify-content:space-between;align-items:center;padding-top:1rem;border-top:1px solid rgba(0,0,0,.06)}
+
+/* ÉLÉMENTS SUPPLÉMENTAIRES DU SOUS-SITE (AVANT/APRÈS, GARANTIES, AVIS) */
+.ba-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.8rem;margin-top:2rem}
+.ba-card{background:#fff;border:1px solid rgba(0,0,0,.07);padding:2rem;position:relative;border-top:3px solid var(--gold)}
+.ba-tag{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-weight:500;margin-bottom:.5rem;display:block}
+.ba-card h3{font:600 1.45rem var(--fd);margin-bottom:1rem}
+.ba-step{padding:.8rem 1rem;margin-bottom:.7rem;font-size:.86rem}
+.ba-before{background:#fdf3f2;border-left:3px solid #c0392b;color:#5a2a25}
+.ba-after{background:#f2faf5;border-left:3px solid #1e8449;color:#1b4d2e;margin-bottom:0}
+.ba-step strong{display:block;font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;margin-bottom:.2rem}
+
+.cert-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4rem;margin-top:2rem}
+.cert-box{background:rgba(255,255,255,.04);border:1px solid rgba(197,168,128,.25);padding:1.8rem;text-align:center}
+.cert-box i{font-size:2.2rem;color:var(--gold);margin-bottom:.8rem}
+.cert-box h4{font:400 1.35rem var(--fd);color:#fff;margin-bottom:.5rem}
+.cert-box p{font-size:.84rem;color:rgba(255,255,255,.6);font-weight:300}
+
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem;margin-top:2rem}
+.testi-card{background:#fff;border:1px solid rgba(0,0,0,.06);padding:2rem;box-shadow:0 12px 30px rgba(0,0,0,.03);display:flex;flex-direction:column;justify-content:space-between}
+.testi-stars{color:var(--gold);letter-spacing:2px;font-size:.95rem;margin-bottom:.8rem}
+.testi-card blockquote{font:italic 1.15rem/1.5 var(--fd);color:#25282c;margin-bottom:1.2rem}
+.testi-author strong{display:block;font-size:.88rem;color:var(--ink)}
+.testi-author span{font-size:.78rem;color:var(--mut)}
 
 /* MODALE DÉTAIL CHANTIER */
 .modal-bg{position:fixed;inset:0;background:rgba(15,17,19,.88);backdrop-filter:blur(6px);z-index:2200;display:none;align-items:center;justify-content:center;padding:1.5rem}
@@ -149,6 +178,7 @@ i.ti{display:inline-block;width:1em;height:1em;vertical-align:-.15em;background:
 .ti-arrow-right{--i:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12h14M13 18l6-6-6-6'/%3E%3C/svg%3E")}
 .ti-download{--i:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2M7 11l5 5 5-5M12 4v12'/%3E%3C/svg%3E")}
 .ti-circle-check{--i:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 12a9 9 0 1 0 18 0 9 9 0 1 0-18 0M9 12l2 2 4-4'/%3E%3C/svg%3E")}
+.ti-shield-check{--i:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3l8 4v5c0 5-3.5 9-8 10-4.5-1-8-5-8-10V7l8-4zM9 12l2 2 4-4'/%3E%3C/svg%3E")}
 .ti-square-rotated{--i:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3l9 9-9 9-9-9z'/%3E%3C/svg%3E")}
 .ti-layout-grid{--i:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z'/%3E%3C/svg%3E")}
 .ti-brand-terraform{--i:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3l8 4.5v9L12 21l-8-4.5v-9z'/%3E%3C/svg%3E")}
@@ -167,11 +197,11 @@ i.ti{display:inline-block;width:1em;height:1em;vertical-align:-.15em;background:
 .qb{max-width:760px;margin:0 auto;border:1px solid rgba(197,168,128,.25);padding:2.4rem}.qs{display:flex;gap:6px;margin-bottom:1.4rem}.qs i{flex:1;height:3px;background:rgba(255,255,255,.12)}.qs i.on{background:var(--gold)}.qq{font:400 1.7rem var(--fd);margin-bottom:1.2rem}
 .qo{display:grid;grid-template-columns:1fr 1fr;gap:.8rem}.qo button{background:transparent;border:1px solid rgba(255,255,255,.15);color:rgba(255,255,255,.85);padding:1rem;font:300 .95rem var(--ff);cursor:pointer;text-align:left;transition:.3s}.qo button:hover{border-color:var(--gold);color:var(--gold)}.qr2{text-align:center}.qr2 h3{font:400 2rem var(--fd);color:var(--gold);margin:.6rem 0}.qr2 p{color:rgba(255,255,255,.6);margin-bottom:1.4rem}
 .diag-meta{display:flex;justify-content:space-between;gap:1rem;color:rgba(255,255,255,.55);font-size:.78rem;margin-bottom:1rem}.qo button small{display:block;color:rgba(255,255,255,.48);font-size:.78rem;margin-top:.25rem}.diag-result{text-align:left}.diag-result .tag{display:inline-block;border:1px solid var(--gold);color:var(--gold);padding:.25rem .65rem;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase}.diag-result h3{font:400 clamp(1.8rem,4vw,2.6rem) var(--fd);color:var(--gold);margin:.7rem 0}.diag-result p{color:rgba(255,255,255,.75);margin:.55rem 0}.diag-result ul{padding-left:1.2rem;color:rgba(255,255,255,.75);margin:.8rem 0 1.2rem}.diag-result li{margin:.35rem 0}.diag-actions{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.4rem}.diag-actions .btn{margin:0}.diag-note{font-size:.8rem!important;color:rgba(255,255,255,.48)!important;border-top:1px solid rgba(255,255,255,.12);padding-top:1rem;margin-top:1.2rem!important}
-@media(max-width:900px){.grid3,.gal,.proj-grid{grid-template-columns:1fr 1fr}.grid4{grid-template-columns:1fr 1fr}.two,.ct,.aud-panel{grid-template-columns:1fr}.fg{grid-template-columns:1fr 1fr}}
+@media(max-width:960px){.sub-links{display:none}.grid3,.gal,.proj-grid,.ba-grid,.testi-grid{grid-template-columns:1fr 1fr}.grid4,.cert-grid{grid-template-columns:1fr 1fr}.two,.ct,.aud-panel{grid-template-columns:1fr}.fg{grid-template-columns:1fr 1fr}}
 @media(max-width:768px){.nav,.sub-nav{padding:0 1.2rem;height:70px}.burger{display:block}.logo-img{height:50px}
 .nl{display:none;position:absolute;top:100%;left:0;width:100%;flex-direction:column;align-items:flex-start;background:var(--ink);padding:1.4rem;gap:.8rem;max-height:80vh;overflow:auto}.nl.open{display:flex}.pn{display:block;position:static;border:0;box-shadow:none;padding:0 0 0 .8rem;min-width:0}
 .hero{grid-template-columns:1fr}.hl{padding:3rem 1.3rem;text-align:center}.badges{justify-content:center}.hr{height:300px;min-height:0}.hr:before{background:linear-gradient(to top,var(--ink),transparent 80%)}.btn.g{margin:.8rem 0 0}
-.grid3,.grid4,.gal,.row,.fg,.proj-grid,.aud-list{grid-template-columns:1fr}.sec{padding:4rem 1.3rem}form{padding:1.5rem}.zone{flex-direction:column}
+.grid3,.grid4,.gal,.row,.fg,.proj-grid,.aud-list,.ba-grid,.cert-grid,.testi-grid{grid-template-columns:1fr}.sec{padding:4rem 1.3rem}form{padding:1.5rem}.zone{flex-direction:column}
 .aud-panel{padding:1.8rem 1.4rem}.sub-badge{display:none}
 input,select,textarea{font-size:16px}.pill{padding-left:1.1rem;gap:.4rem}.pill .num{font-size:.95rem}.pill .num span{display:none}.pill .btn{padding:.75rem 1.1rem;font-size:.72rem}.qo,.mp{grid-template-columns:1fr}.mp .pic{min-height:120px}.mp .tx{padding:1.6rem}.qb{padding:1.4rem}.rot{text-align:center}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none;filter:none}}
@@ -215,11 +245,11 @@ input,select,textarea{font-size:16px}.pill{padding-left:1.1rem;gap:.4rem}.pill .
         <div><b>Suivi de chantier</b>du diagnostic à la finition</div>
       </div>
     </div>
-    <div class="hr rv d2"><img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1000&auto=format&fit=crop&q=80" alt="Toiture rénovée" onerror="this.remove()"></div>
+    <div class="hr rv d2"><img src="photo-principale.jpg" alt="CMS Expertise - Enveloppe du bâtiment et couverture" data-fallback="hero"></div>
   </header>
   <div class="mq" aria-hidden="true"><div id="mqi"></div></div>
 
-  <!-- NOUVELLE SECTION : CHOIX PARTICULIERS / ENTREPRISES -->
+  <!-- SECTION : CHOIX PARTICULIERS / ENTREPRISES -->
   <section class="sec" id="profils">
     <div class="lab rv">Espaces dédiés</div>
     <h2 class="ttl rv d1">Vous êtes un <em>particulier</em> ou une <em>entreprise</em> ?</h2>
@@ -273,13 +303,13 @@ input,select,textarea{font-size:16px}.pill{padding-left:1.1rem;gap:.4rem}.pill .
     <h2 class="ttl rv d1">Le travail se juge aussi <em>à l'œil.</em></h2>
     <p class="intro rv d2">Réhabilitation d'immeubles collectifs, zinguerie à tasseaux, étanchéité au plomb et rénovation de couverture : découvrez nos interventions sur le terrain.</p>
     <div class="gal rv">
-      <figure data-open-subsite="immeuble"><img src="chantier-immeuble.jpg" alt="Réhabilitation d'immeuble collectif R+5" data-fallback="hero"><figcaption><small>Enveloppe &amp; Façade · R+5</small>Réhabilitation globale d'immeuble</figcaption></figure>
-      <figure data-open-subsite="zinguerie"><img src="chantier-zinc.jpg" alt="Façonnage zinc à tasseaux" data-fallback="reno"><figcaption><small>Zinguerie sur mesure</small>Habillage de bandeau zinc à tasseaux</figcaption></figure>
-      <figure data-open-subsite="toiture"><img src="chantier-toiture.jpg" alt="Rénovation et nettoyage de toiture tuiles" data-fallback="team"><figcaption><small>Couverture &amp; Rénovation</small>Remise à neuf de toiture terre cuite</figcaption></figure>
+      <figure data-open-subsite="immeuble"><img src="chantier-1.jpg" alt="Réhabilitation d'immeuble collectif R+5" data-fallback="hero"><figcaption><small>Enveloppe &amp; Façade · R+5</small>Réhabilitation globale d'immeuble</figcaption></figure>
+      <figure data-open-subsite="zinguerie"><img src="chantier-2.jpg" alt="Façonnage zinc à tasseaux" data-fallback="reno"><figcaption><small>Zinguerie sur mesure</small>Habillage de bandeau zinc à tasseaux</figcaption></figure>
+      <figure data-open-subsite="toiture"><img src="chantier-4.jpg" alt="Rénovation et nettoyage de toiture tuiles" data-fallback="team"><figcaption><small>Couverture &amp; Rénovation</small>Remise à neuf de toiture terre cuite</figcaption></figure>
     </div>
     <div class="real-cta-bar rv">
       <div class="lab" style="margin-bottom:0">Portfolio complet des chantiers</div>
-      <h3 style="font:400 1.8rem var(--fd)">Explorez nos réalisations en détail (photos, nature des travaux, fiches techniques)</h3>
+      <h3 style="font:400 1.8rem var(--fd)">Explorez nos 12 références chantiers (photos, nature des travaux, avant/après et fiches techniques)</h3>
       <button class="btn" data-open-subsite="all">Voir nos réalisations <i class="ti ti-arrow-right"></i></button>
     </div>
   </section>
@@ -351,16 +381,23 @@ input,select,textarea{font-size:16px}.pill{padding-left:1.1rem;gap:.4rem}.pill .
 </div>
 
 <!-- =====================================================================
-     SOUS-SITE : PORTFOLIO DES RÉALISATIONS & CHANTIERS
+     SOUS-SITE : PORTFOLIO DES RÉALISATIONS, AVANT/APRÈS, GARANTIES & AVIS
 ====================================================================== -->
 <div id="subsite-realisations" aria-label="Site dédié aux réalisations CMS Expertise">
+  <div class="tk">Portfolio Officiel des Chantiers · Enveloppe du Bâtiment &amp; Couverture — Val-d’Oise &amp; Île-de-France</div>
   <nav class="sub-nav">
     <div class="sub-nav-left">
       <a href="#" data-close-subsite aria-label="Retour à l'accueil CMS Expertise"><img src="logo sans fond.png" alt="CMS Expertise" class="logo-img" onerror="this.outerHTML='<span class=logo-txt>CMS <b>Expertise</b></span>'"></a>
       <span class="sub-badge">Portfolio Chantiers</span>
     </div>
+    <ul class="sub-links">
+      <li><a data-sub-scroll="sub-catalogue">Réalisations</a></li>
+      <li><a data-sub-scroll="sub-avant-apres">Avant / Après</a></li>
+      <li><a data-sub-scroll="sub-garanties">Garanties &amp; Sécurité</a></li>
+      <li><a data-sub-scroll="sub-avis">Avis Clients</a></li>
+    </ul>
     <div style="display:flex;gap:.8rem;align-items:center">
-      <button class="btn g" style="margin-left:0" data-close-subsite><i class="ti ti-arrow-left"></i> Retour au site</button>
+      <button class="btn g" style="margin-left:0" data-close-subsite><i class="ti ti-arrow-left"></i> Site principal</button>
       <button class="btn" data-subsite-devis="Projet similaire à une réalisation">Demander un devis</button>
     </div>
   </nav>
@@ -368,34 +405,135 @@ input,select,textarea{font-size:16px}.pill{padding-left:1.1rem;gap:.4rem}.pill .
   <header class="sub-hero">
     <div class="kick">Références &amp; Savoir-faire terrain · Île-de-France</div>
     <h1>Nos chantiers réalisés <em>en enveloppe du bâtiment.</em></h1>
-    <p>Découvrez une sélection de nos interventions auprès des syndics, professionnels du BTP et particuliers : réhabilitation de façades, zinguerie sur mesure, points singuliers en plomb et rénovation de toitures.</p>
+    <p>Explorez nos réalisations auprès des syndics de copropriété, entreprises générales du BTP, architectes et particuliers : réhabilitation d'immeubles, façonnage zinc sur mesure, étanchéité au plomb, isolation extérieure et couverture.</p>
     <div class="sub-stats">
+      <div><b>+120</b><span>Ouvrages &amp; chantiers suivis</span></div>
       <div><b>100 %</b><span>Sur mesure &amp; conforme DTU</span></div>
-      <div><b>95 &amp; IDF</b><span>Intervention rapide</span></div>
+      <div><b>95 &amp; IDF</b><span>Réactivité d'intervention</span></div>
       <div><b>Décennale</b><span>Garantie sur les ouvrages</span></div>
     </div>
   </header>
 
-  <section class="sec" style="padding-top:4rem">
-    <div class="lab">Filtrer par nature de travaux</div>
+  <!-- 1. CATALOGUE COMPLET DES 12 RÉALISATIONS -->
+  <section class="sec" id="sub-catalogue" style="padding-top:4.5rem">
+    <div class="lab">Catalogue des opérations</div>
+    <h2 class="ttl">Sélection de <em>chantiers réalisés.</em></h2>
+    <p class="intro">Filtrez par corps d'état ou cliquez sur une réalisation pour consulter sa fiche technique détaillée.</p>
     <div class="tabs" id="proj-filters">
-      <button class="on" data-filter="all">Tous les chantiers</button>
+      <button class="on" data-filter="all">Tous les chantiers (12)</button>
       <button data-filter="immeuble">Immeubles &amp; Façades</button>
       <button data-filter="zinguerie">Zinguerie &amp; Étanchéité</button>
       <button data-filter="toiture">Couverture &amp; Toiture</button>
-      <button data-filter="ite">Isolation &amp; Échafaudage</button>
+      <button data-filter="ite">Isolation &amp; Charpente</button>
     </div>
 
     <div class="proj-grid" id="proj-grid"></div>
+  </section>
+
+  <!-- 2. ÉTUDES DE CAS : AVANT / APRÈS -->
+  <section class="sec" id="sub-avant-apres" style="padding-top:1rem">
+    <div class="lab">Diagnostic &amp; Résultat</div>
+    <h2 class="ttl">Études de cas : <em>Avant / Après intervention.</em></h2>
+    <p class="intro">Chaque pathologie du bâtiment appelle une réponse technique ciblée pour stopper les désordres et valoriser durablement le bien.</p>
+    <div class="ba-grid">
+      <article class="ba-card">
+        <span class="ba-tag">Zinguerie &amp; Bandeaux · Copropriété</span>
+        <h3>Infiltrations en nez de balcon et dégradation d'enduit</h3>
+        <div class="ba-step ba-before"><strong>Avant intervention</strong>Maçonneries de bandeaux poreuses, traces de ruissellement et fissuration des nez de dalle exposés aux pluies battantes.</div>
+        <div class="ba-step ba-after"><strong>Après intervention CMS Expertise</strong>Façonnage et pose d'un habillage complet en zinc naturel à tasseaux avec relevé en solin et goutte d'eau : étanchéité totale et finition architecturale nette.</div>
+      </article>
+      <article class="ba-card">
+        <span class="ba-tag">Point singulier · Toiture tuiles</span>
+        <h3>Infiltration autour d'une souche de cheminée</h3>
+        <div class="ba-step ba-before"><strong>Avant intervention</strong>Solins ciment fissurés et bavette d'origine percée provoquant des auréoles d'humidité dans les combles à chaque épisode pluvieux.</div>
+        <div class="ba-step ba-after"><strong>Après intervention CMS Expertise</strong>Dépose de l'ancien abergement, façonnage sur mesure d'un entourage complet en feuille de plomb épousant les tuiles et pose d'une bande porte-solin encastrée.</div>
+      </article>
+      <article class="ba-card">
+        <span class="ba-tag">Entretien &amp; Rénovation · Résidentiel</span>
+        <h3>Couverture terre cuite saturée de mousses et lichens</h3>
+        <div class="ba-step ba-before"><strong>Avant intervention</strong>Accumulation épaisse de végétation retenant l'humidité sur les tuiles mécaniques, risque de gel et obstruction des gouttières.</div>
+        <div class="ba-step ba-after"><strong>Après intervention CMS Expertise</strong>Mise en sécurité par échelles de toit, nettoyage haute performance contrôlé, remplacement des tuiles gélives et application d'un hydrofuge protecteur.</div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 3. MOYENS, SÉCURITÉ & CERTIFICATIONS -->
+  <section class="sec full dark" id="sub-garanties" style="padding:5.5rem 2rem">
+    <div class="in">
+      <div class="lab">Engagements &amp; Conformité</div>
+      <h2 class="ttl">Des moyens techniques <em>à la hauteur de vos exigences.</em></h2>
+      <p class="intro">Pour les syndics, architectes, entreprises générales et particuliers : chaque intervention respecte un protocole strict de sécurité et de qualité.</p>
+      <div class="cert-grid">
+        <div class="cert-box">
+          <i class="ti ti-shield-check"></i>
+          <h4>Garantie Décennale</h4>
+          <p>Couverture assurantielle RC Pro et Décennale à jour pour les travaux d'enveloppe, couverture et zinguerie.</p>
+        </div>
+        <div class="cert-box">
+          <i class="ti ti-circle-check"></i>
+          <h4>Conformité DTU</h4>
+          <p>Mise en œuvre conforme aux Documents Techniques Unifiés (DTU série 40 couverture et zinguerie).</p>
+        </div>
+        <div class="cert-box">
+          <i class="ti ti-layers"></i>
+          <h4>Sécurité &amp; Grande Hauteur</h4>
+          <p>Échafaudages multidirectionnels, filets pare-gravats, lignes de vie et EPI réglementaires en site occupé.</p>
+        </div>
+        <div class="cert-box">
+          <i class="ti ti-brand-terraform"></i>
+          <h4>Façonnage Sur Mesure</h4>
+          <p>Pliage de précision (zinc, plomb, acier, aluminium) adapté aux côtes exactes de chaque ouvrage.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. TÉMOIGNAGES CLIENTS & DONNEURS D'ORDRE -->
+  <section class="sec" id="sub-avis">
+    <div class="lab">Retours d'expérience</div>
+    <h2 class="ttl">Ils nous ont confié <em>leur bâtiment.</em></h2>
+    <p class="intro">La satisfaction de nos clients et partenaires repose sur la tenue des délais, la propreté des chantiers et la qualité des finitions.</p>
+    <div class="testi-grid">
+      <article class="testi-card">
+        <div>
+          <div class="testi-stars">★★★★★</div>
+          <blockquote>« Intervention très propre sur notre immeuble en copropriété. L'échafaudage a été monté dans les temps et les habillages zinc en façade sont impeccables. »</blockquote>
+        </div>
+        <div class="testi-author">
+          <strong>Gestionnaire de Copropriété</strong>
+          <span>Réhabilitation façade &amp; zinguerie · Val-d’Oise (95)</span>
+        </div>
+      </article>
+      <article class="testi-card">
+        <div>
+          <div class="testi-stars">★★★★★</div>
+          <blockquote>« Réactivité exemplaire suite à une infiltration autour de notre cheminée. Diagnostic clair, abergement en plomb refait à neuf et plus aucune trace d'eau. »</blockquote>
+        </div>
+        <div class="testi-author">
+          <strong>Propriétaire particulier</strong>
+          <span>Étanchéité souche &amp; couverture · Saint-Prix (95)</span>
+        </div>
+      </article>
+      <article class="testi-card">
+        <div>
+          <div class="testi-stars">★★★★★</div>
+          <blockquote>« Un partenaire fiable sur le lot enveloppe et zinguerie. Les relevés de cotes sont précis et la coordination avec nos équipes sur le chantier s'est faite sans accroc. »</blockquote>
+        </div>
+        <div class="testi-author">
+          <strong>Conducteur de travaux BTP</strong>
+          <span>Opération d'isolation extérieure &amp; bardage · Île-de-France</span>
+        </div>
+      </article>
+    </div>
 
     <div class="cs" style="margin-top:4rem">
       <div>
-        <b>Vous avez un chantier similaire à chiffrer ?</b>
-        <span>Transmettez-nous vos plans, photos ou cahier des charges pour une étude technique gratuite.</span>
+        <b>Vous avez un projet ou un appel d'offres à étudier ?</b>
+        <span>Transmettez-nous vos plans, photos ou cahier des charges pour une étude technique et un chiffrage gratuit.</span>
       </div>
       <div style="display:flex;gap:.8rem;flex-wrap:wrap">
-        <button class="btn" data-subsite-devis="Étude de chantier">Chiffrer mon projet</button>
-        <button class="btn g" style="margin-left:0" data-close-subsite>Retour à l'accueil</button>
+        <button class="btn" data-subsite-devis="Étude de chantier depuis le portfolio">Chiffrer mon projet</button>
+        <button class="btn g" style="margin-left:0" data-close-subsite>Retour au site principal</button>
       </div>
     </div>
   </section>
@@ -518,18 +656,20 @@ $$('.aud-switch button').forEach(btn => btn.onclick = () => renderAudience(btn.d
 renderAudience('particulier');
 
 /* =====================================================================
-   DONNÉES : SOUS-SITE RÉALISATIONS (VOS CHANTIERS)
+   DONNÉES : 12 RÉALISATIONS DU PORTFOLIO (FACILEMENT MODIFIABLES)
+   -> Remplacez simplement 'chantier-1.jpg' ... 'chantier-12.jpg' par vos propres photos
 ===================================================================== */
 const PROJECTS = [
   {
     id: "chantier-1",
     cat: "immeuble",
     catLabel: "Immeubles & Façades",
+    year: "2026",
     title: "Réhabilitation globale de façade et habillages — Immeuble R+5",
     location: "Île-de-France",
     client: "Copropriété / Bailleur",
     nature: "Enveloppe extérieure, habillage de bandeaux, finitions façade",
-    img: "chantier-immeuble.jpg",
+    img: "chantier-1.jpg",
     fallback: "hero",
     summary: "Intervention complète sur un bâtiment collectif de 5 étages comprenant la remise à neuf des façades claires, la création de lignes architecturales verticales anthracite et l'habillage complet des nez de balcons.",
     details: [
@@ -543,11 +683,12 @@ const PROJECTS = [
     id: "chantier-2",
     cat: "zinguerie",
     catLabel: "Zinguerie & Étanchéité",
+    year: "2026",
     title: "Façonnage et pose d'habillage zinc à tasseaux sur bandeau",
     location: "Val-d’Oise (95)",
     client: "Copropriété / Rénovation",
     nature: "Zinguerie sur mesure, couverture à tasseaux, solins et soudures",
-    img: "chantier-zinc.jpg",
+    img: "chantier-2.jpg",
     fallback: "reno",
     summary: "Réalisation artisanale d'une couverture de bandeau en zinc naturel à tasseaux avec relevés d'étanchéité façonnés sur mesure et soudures à l'étain.",
     details: [
@@ -561,11 +702,12 @@ const PROJECTS = [
     id: "chantier-3",
     cat: "zinguerie",
     catLabel: "Zinguerie & Étanchéité",
+    year: "2026",
     title: "Étanchéité et abergement de souche de cheminée en plomb",
     location: "Val-d’Oise (95)",
     client: "Particulier / Résidentiel",
     nature: "Point singulier, façonnage du plomb, solin et raccord tuiles",
-    img: "chantier-plomb.jpg",
+    img: "chantier-3.jpg",
     fallback: "sky",
     summary: "Reprise complète de l'étanchéité autour d'une souche de cheminée enduite sur couverture en tuiles terre cuite grand moule.",
     details: [
@@ -579,11 +721,12 @@ const PROJECTS = [
     id: "chantier-4",
     cat: "toiture",
     catLabel: "Couverture & Toiture",
+    year: "2026",
     title: "Rénovation, démoussage et remise à neuf d'une couverture tuiles",
     location: "Val-d’Oise (95)",
     client: "Résidence collective",
     nature: "Nettoyage haute performance, révision de couverture, traitement",
-    img: "chantier-toiture.jpg",
+    img: "chantier-4.jpg",
     fallback: "team",
     summary: "Remise en état d'un grand versant en tuiles mécaniques terre cuite fortement encrassé par les mousses et lichens, avec mise en sécurité par échelles de toit.",
     details: [
@@ -596,12 +739,13 @@ const PROJECTS = [
   {
     id: "chantier-5",
     cat: "ite",
-    catLabel: "Isolation & Échafaudage",
+    catLabel: "Isolation & Charpente",
+    year: "2026",
     title: "Isolation thermique par l'extérieur (ITE) et pare-pluie en hauteur",
     location: "Île-de-France",
     client: "Entreprise BTP / Marché collectif",
     nature: "ITE, pose d'isolant, pare-pluie, échafaudage grande hauteur",
-    img: "chantier-ite.jpg",
+    img: "chantier-5.jpg",
     fallback: "hero",
     summary: "Travaux d'enveloppe thermique sur façade d'immeuble sous échafaudage complet : mise en œuvre de l'isolant et de l'écran pare-pluie haute perméabilité.",
     details: [
@@ -615,11 +759,12 @@ const PROJECTS = [
     id: "chantier-6",
     cat: "toiture",
     catLabel: "Couverture & Toiture",
+    year: "2026",
     title: "Réfection de couverture et souches sur immeuble ancien",
     location: "Val-d’Oise (95)",
     client: "Syndic de copropriété",
     nature: "Couverture tuiles, échafaudage fileté, sécurité collective",
-    img: "chantier-collectif.jpg",
+    img: "chantier-6.jpg",
     fallback: "team",
     summary: "Intervention en site occupé sur un immeuble collectif R+4 avec installation d'un échafaudage périphérique fileté pour la révision de la toiture et des souches.",
     details: [
@@ -628,6 +773,120 @@ const PROJECTS = [
       "Reprise des faîtages, rives et raccords d'étanchéité.",
       "Maintien de l'accès des résidents pendant toute la durée de l'opération."
     ]
+  },
+  {
+    id: "chantier-7",
+    cat: "zinguerie",
+    catLabel: "Zinguerie & Étanchéité",
+    year: "2025",
+    title: "Pose de couvertines en zinc prépatiné Quartz sur acrotères",
+    location: "Montmorency (95)",
+    client: "Architecte / Bâtiment tertiaire",
+    nature: "Couvertines zinc à joint debout, pattes de fixation invisibles",
+    img: "chantier-7.jpg",
+    fallback: "reno",
+    summary: "Protection des murs acrotères d'un immeuble de bureaux par la pose de couvertines façonnées en zinc Quartz avec goutte d'eau déportée.",
+    details: [
+      "Façonnage sur mesure selon les largeurs variables des murs acrotères.",
+      "Fixation sur pattes coulissantes en acier galvanisé sans percement apparent.",
+      "Réalisation des jonctions par éclisses et joints de dilatation réglementaires.",
+      "Protection durable des enduits de façade contre les coulures."
+    ]
+  },
+  {
+    id: "chantier-8",
+    cat: "toiture",
+    catLabel: "Couverture & Toiture",
+    year: "2025",
+    title: "Réfection complète d'une toiture en ardoise naturelle",
+    location: "Enghien-les-Bains (95)",
+    client: "Particulier / Demeure de caractère",
+    nature: "Ardoise naturelle, crochets inox, faîtage zinc et noues",
+    img: "chantier-8.jpg",
+    fallback: "hero",
+    summary: "Dépose de l'ancienne couverture vétuste et pose à neuf d'une couverture en ardoise naturelle posée au crochet inox sur voligeage bois.",
+    details: [
+      "Dépose complète, tri et évacuation en centre agréé des anciens matériaux.",
+      "Pose d'un écran de sous-toiture HPV respirant et contre-lattage ventilé.",
+      "Pose des ardoises naturelles avec crochets inox teintés et réalisation des noues fermées.",
+      "Habillage des lucarnes et pose d'un faîtage ventilé en zinc."
+    ]
+  },
+  {
+    id: "chantier-9",
+    cat: "immeuble",
+    catLabel: "Immeubles & Façades",
+    year: "2025",
+    title: "Bardage métallique et habillage de pignon aveugle",
+    location: "Ermont (95)",
+    client: "Bailleur social / Copropriété",
+    nature: "Ossature secondaire, isolant minéral, bardage acier laqué",
+    img: "chantier-9.jpg",
+    fallback: "sky",
+    summary: "Traitement thermique et esthétique d'un mur pignon exposé aux intempéries par la mise en œuvre d'un bardage ventilé sur ossature métallique.",
+    details: [
+      "Pose d'équerres de bardage et d'une isolation thermique continue en laine minérale.",
+      "Installation des profilés porteurs et grilles anti-rongeurs en pied de bardage.",
+      "Pose des lames de bardage métallique et habillage des tableaux et angles.",
+      "Suppression des ponts thermiques et valorisation esthétique de l'immeuble."
+    ]
+  },
+  {
+    id: "chantier-10",
+    cat: "ite",
+    catLabel: "Isolation & Charpente",
+    year: "2025",
+    title: "Création de verrière de toit et reprise de chevrons bois",
+    location: "Saint-Prix (95)",
+    client: "Particulier",
+    nature: "Charpente traditionnelle, chevêtre bois, fenêtres de toit",
+    img: "chantier-10.jpg",
+    fallback: "sky",
+    summary: "Aménagement de combles avec création d'un chevêtre structurel en bois massif et installation d'une batterie de trois fenêtres de toit.",
+    details: [
+      "Renforcement des pannes et réalisation d'un chevêtre bois assemblé selon les charges.",
+      "Pose des fenêtres de toit avec blocs isolants périphériques et raccords d'étanchéité.",
+      "Raccordement soigné avec les tuiles terre cuite existantes.",
+      "Apport maximal de lumière naturelle et étanchéité à l'air garantie."
+    ]
+  },
+  {
+    id: "chantier-11",
+    cat: "zinguerie",
+    catLabel: "Zinguerie & Étanchéité",
+    year: "2025",
+    title: "Remplacement complet des gouttières pendantes et descentes EP",
+    location: "Eaubonne (95)",
+    client: "Particulier / Pavillon",
+    nature: "Gouttières demi-rondes zinc 33, naissances, dauphins fonte",
+    img: "chantier-11.jpg",
+    fallback: "reno",
+    summary: "Dépose des anciennes gouttières PVC déformées et installation d'un réseau complet d'évacuation des eaux pluviales en zinc naturel soudé.",
+    details: [
+      "Réglage précis des pentes d'écoulement et pose de crochets galvanisés tous les 50 cm.",
+      "Assemblage et soudure à l'étain des longueurs de gouttières demi-rondes.",
+      "Pose des tuyaux de descente zinc et raccordement aux regards avec dauphins fonte en pied.",
+      "Test d'écoulement et contrôle de l'absence de rétention d'eau."
+    ]
+  },
+  {
+    id: "chantier-12",
+    cat: "immeuble",
+    catLabel: "Immeubles & Façades",
+    year: "2025",
+    title: "Mise en sécurité et révision d'enveloppe sur bâtiment industriel",
+    location: "Cergy-Pontoise (95)",
+    client: "Entreprise / Groupe BTP",
+    nature: "Bac acier, translucides, chéneaux encaissés et étanchéité",
+    img: "chantier-12.jpg",
+    fallback: "team",
+    summary: "Maintenance curative et préventive de la couverture et des évacuations d'eaux pluviales d'un bâtiment d'activité de 1 200 m².",
+    details: [
+      "Nettoyage complet des chéneaux encaissés et reprise de l'étanchéité des jonctions.",
+      "Remplacement des plaques translucides vieillissantes et resserrage des fixations.",
+      "Pose de filets de sous-face et respect strict du plan de prévention du site.",
+      "Remise d'un rapport photographique complet avant / après intervention."
+    ]
   }
 ];
 
@@ -635,8 +894,9 @@ function renderProjects(filter = "all") {
   const list = filter === "all" ? PROJECTS : PROJECTS.filter(p => p.cat === filter);
   $('#proj-grid').innerHTML = list.map(p => `
     <article class="proj-card">
-      <div class="proj-img">
+      <div class="proj-img" data-proj-detail="${p.id}">
         <span class="proj-cat">${p.catLabel}</span>
+        <span class="proj-year">${p.year}</span>
         <span class="proj-loc">${p.location}</span>
         <img src="${p.img}" alt="${p.title}" data-fallback="${p.fallback}">
       </div>
@@ -674,7 +934,7 @@ function openProjectModal(id) {
   img.dataset.fallback = p.fallback;
   applyImageFallbacks(img.parentElement);
   $('#modal-body').innerHTML = `
-    <div class="proj-meta"><span>${p.catLabel}</span><span>•</span><span>${p.location}</span><span>•</span><span>${p.client}</span></div>
+    <div class="proj-meta"><span>${p.catLabel}</span><span>•</span><span>${p.location}</span><span>•</span><span>${p.client}</span><span>•</span><span>${p.year}</span></div>
     <h2 style="font:400 2.2rem/1.15 var(--fd);margin-bottom:1rem">${p.title}</h2>
     <p style="color:var(--mut);font-weight:300;margin-bottom:1.4rem">${p.summary}</p>
     <h4 style="font:600 1.25rem var(--fd);margin-bottom:.7rem">Détails techniques de l'intervention :</h4>
@@ -768,6 +1028,13 @@ document.addEventListener('click', e => {
   if (closeSub) {
     e.preventDefault();
     closeSubsite('top0');
+    return;
+  }
+  const subScroll = e.target.closest('[data-sub-scroll]');
+  if (subScroll) {
+    e.preventDefault();
+    const target = document.getElementById(subScroll.dataset.subScroll);
+    if (target) scrollTo({ top: Math.max(0, target.getBoundingClientRect().top + scrollY - 90), behavior: 'smooth' });
     return;
   }
   const subDevis = e.target.closest('[data-subsite-devis]');
