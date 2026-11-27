@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>Couvreur dans le Val-d’Oise (95) | CMS Expertise</title>
-<meta name="description" content="CMS Expertise accompagne particuliers, entreprises et acteurs du BTP dans leurs travaux de couverture, rénovation, zinguerie, charpente et entretien dans le Val-d’Oise et en Île-de-France.">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"RoofingContractor","name":"CMS Expertise","telephone":"+33758362224","email":"cms.expertise75@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Saint-Prix","postalCode":"95390","addressCountry":"FR"},"areaServed":["Val d'Oise","Île-de-France"]}</script>
+<title>Enveloppe du bâtiment & Couverture dans le Val-d’Oise (95) | CMS Expertise</title>
+<meta name="description" content="CMS Expertise accompagne particuliers, entreprises et acteurs du BTP dans leurs travaux d'enveloppe du bâtiment, couverture, zinguerie, isolation et rénovation dans le Val-d’Oise et en Île-de-France.">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"RoofingContractor","name":"CMS Expertise","telephone":"+33758362224","email":"contact@cmsexpertise.com","address":{"@type":"PostalAddress","streetAddress":"11 Rue Gambetta","addressLocality":"Saint-Prix","postalCode":"95390","addressCountry":"FR"},"areaServed":["Val d'Oise","Île-de-France"]}</script>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@300;400;500&display=swap');
 *{box-sizing:border-box;margin:0;padding:0}
@@ -25,16 +25,21 @@ a{color:inherit}:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
 .burger{display:none;color:#fff;font-size:1.6rem;background:none;border:0;cursor:pointer}
 .rv{opacity:0;transform:translateY(48px) scale(.985);filter:blur(5px);transition:opacity .85s ease,transform .95s cubic-bezier(.16,.84,.24,1),filter .85s ease;will-change:opacity,transform,filter}.rv.v{opacity:1;transform:translateY(0) scale(1);filter:blur(0)}.d1{transition-delay:.12s}.d2{transition-delay:.24s}
 .rv.from-left{transform:translateX(-54px) scale(.985)}.rv.from-right{transform:translateX(54px) scale(.985)}.rv.from-left.v,.rv.from-right.v{transform:translateX(0) scale(1)}
+
+/* HERO */
 .hero{background:var(--ink);min-height:calc(100vh - 120px);display:grid;grid-template-columns:1.1fr .9fr;align-items:center;overflow:hidden}
 .hl{padding:4rem 3rem}
 .kick{display:inline-block;color:var(--gold);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;margin-bottom:1.6rem;border-bottom:1px solid var(--gold);padding-bottom:.3rem}
 h1,.ttl{font-family:var(--fd);font-weight:400}h1{font-size:clamp(2.6rem,5vw,4.4rem);color:#fff;line-height:1.05;margin-bottom:1.3rem}em{color:var(--gold)}
 .sub{color:rgba(255,255,255,.55);font-weight:300;font-size:1.04rem;max-width:520px;margin-bottom:2.2rem}
-.btn{display:inline-block;padding:.9rem 2rem;font:500 .8rem var(--ff);letter-spacing:.08em;text-transform:uppercase;cursor:pointer;border:1px solid var(--gold);background:var(--gold);color:var(--ink);transition:.35s;text-decoration:none}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.9rem 2rem;font:500 .8rem var(--ff);letter-spacing:.08em;text-transform:uppercase;cursor:pointer;border:1px solid var(--gold);background:var(--gold);color:var(--ink);transition:.35s;text-decoration:none}
 .btn:hover{background:#fff;border-color:#fff;transform:translateY(-3px)}.btn.g{background:transparent;color:rgba(255,255,255,.85);border-color:rgba(255,255,255,.3);margin-left:.7rem}.btn.g:hover{color:var(--gold);border-color:var(--gold);background:transparent}
+.btn.dark-outline{background:transparent;color:var(--ink);border-color:var(--ink)}.btn.dark-outline:hover{background:var(--ink);color:var(--gold)}
 .badges{display:flex;gap:2rem;flex-wrap:wrap;margin-top:1.8rem;color:rgba(255,255,255,.6);font-size:.8rem}.badges b{display:block;color:var(--gold);font:600 1.05rem var(--fd)}
 .hr{position:relative;height:100%;min-height:520px;background:var(--ink3);overflow:hidden}.hr img{width:100%;height:100%;object-fit:cover;opacity:.62;filter:grayscale(20%);animation:zm 22s ease-in-out infinite alternate}@keyframes zm{to{transform:scale(1.1)}}
 .hr:before{content:'';position:absolute;inset:0;background:linear-gradient(to right,var(--ink),transparent 55%);z-index:1}
+
+/* MARQUEE & SECTIONS */
 .mq{background:var(--ink2);overflow:hidden;white-space:nowrap;border-top:1px solid rgba(255,255,255,.05);padding:1.1rem 0}
 .mq div{display:inline-block;animation:mv 28s linear infinite}.mq span{font:italic 1.5rem var(--fd);color:rgba(255,255,255,.55);margin:0 1.6rem}.mq span:after{content:'◆';color:var(--gold);font-size:.6rem;margin-left:3.2rem}@keyframes mv{to{transform:translateX(-50%)}}
 .sec{padding:6.5rem 2rem;max-width:1120px;margin:0 auto}.full{max-width:none}.in{max-width:1120px;margin:0 auto}
@@ -51,8 +56,72 @@ h1,.ttl{font-family:var(--fd);font-weight:400}h1{font-size:clamp(2.6rem,5vw,4.4r
 .two h2{font:400 2.6rem/1.1 var(--fd);margin-bottom:1.2rem}.two p{color:var(--mut);font-weight:300;margin-bottom:1.1rem}
 .cs{background:var(--ink);color:#fff;display:flex;gap:1.5rem;justify-content:space-between;align-items:center;flex-wrap:wrap;padding:2rem 2.4rem;margin-top:2.4rem}.cs b{font:400 1.5rem var(--fd)}.cs span{display:block;color:rgba(255,255,255,.55);font-size:.88rem}
 .steps .card{background:transparent;border-color:rgba(255,255,255,.08);text-align:center}.steps h3{color:#fff}.steps p{color:rgba(255,255,255,.5)}
-.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}.gal figure{position:relative;height:340px;background:var(--ink3);overflow:hidden}.gal img{width:100%;height:100%;object-fit:cover;transition:.7s}.gal figure:hover img{transform:scale(1.08)}
-.gal figcaption{position:absolute;left:0;right:0;bottom:0;padding:3rem 1.3rem 1.2rem;background:linear-gradient(transparent,rgba(0,0,0,.85));color:#fff;font:400 1.3rem var(--fd)}.gal small{display:block;font:300 .7rem var(--ff);letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+
+/* NOUVEAU : SÉLECTEUR PARTICULIERS / ENTREPRISES */
+.aud-switch{display:flex;justify-content:center;margin:0 auto 3rem;max-width:640px;background:#fff;border:1px solid rgba(21,23,25,.12);padding:6px;box-shadow:0 12px 35px rgba(0,0,0,.04)}
+.aud-switch button{flex:1;padding:1.1rem 1.4rem;border:0;background:transparent;color:var(--mut);font:500 .82rem var(--ff);letter-spacing:.1em;text-transform:uppercase;cursor:pointer;transition:.35s;display:flex;flex-direction:column;align-items:center;gap:.25rem}
+.aud-switch button small{font:300 .74rem var(--ff);text-transform:none;letter-spacing:0;opacity:.8}
+.aud-switch button.on{background:var(--ink);color:var(--gold)}
+.aud-switch button.on small{color:rgba(255,255,255,.75)}
+.aud-panel{display:grid;grid-template-columns:1.1fr .9fr;gap:2.5rem;background:#fff;border:1px solid rgba(0,0,0,.06);padding:3rem;box-shadow:0 20px 50px rgba(0,0,0,.04);align-items:center;animation:fadePanel .45s ease}
+@keyframes fadePanel{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.aud-panel .tag-aud{display:inline-block;color:var(--gold);font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;border-bottom:1px solid var(--gold);padding-bottom:.25rem;margin-bottom:1rem}
+.aud-panel h3{font:400 2.2rem/1.15 var(--fd);margin-bottom:1rem;color:var(--ink)}
+.aud-panel p{color:var(--mut);font-weight:300;margin-bottom:1.3rem}
+.aud-list{list-style:none;margin-bottom:1.8rem;display:grid;grid-template-columns:1fr 1fr;gap:.85rem}
+.aud-list li{display:flex;align-items:flex-start;gap:.6rem;font-size:.9rem;color:#2c3035}
+.aud-list li i{color:var(--gold);font-size:1.1rem;margin-top:.15rem;flex-shrink:0}
+.aud-box{background:var(--ink);color:#fff;padding:2.2rem;border-left:3px solid var(--gold)}
+.aud-box h4{font:400 1.5rem var(--fd);color:var(--gold);margin-bottom:.8rem}
+.aud-box ul{list-style:none;margin-bottom:1.6rem}
+.aud-box li{font-size:.86rem;color:rgba(255,255,255,.72);padding:.45rem 0;border-bottom:1px solid rgba(255,255,255,.08)}
+.aud-box li:last-child{border-bottom:0}
+
+/* GALERIE APERÇU + CTA VERS SOUS-SITE */
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}.gal figure{position:relative;height:340px;background:var(--ink3);overflow:hidden;cursor:pointer}.gal img{width:100%;height:100%;object-fit:cover;transition:.7s}.gal figure:hover img{transform:scale(1.08)}
+.gal figcaption{position:absolute;left:0;right:0;bottom:0;padding:3rem 1.3rem 1.2rem;background:linear-gradient(transparent,rgba(0,0,0,.88));color:#fff;font:400 1.3rem var(--fd)}.gal small{display:block;font:300 .7rem var(--ff);letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+.real-cta-bar{margin-top:2.5rem;text-align:center;padding:2.4rem;background:#fff;border:1px solid rgba(197,168,128,.35);display:flex;flex-direction:column;align-items:center;gap:1rem}
+
+/* NOUVEAU : SOUS-SITE RÉALISATIONS (VUE DÉDIÉE) */
+#subsite-realisations{display:none;min-height:100vh;background:var(--off)}
+body.in-subsite #main-site{display:none}
+body.in-subsite #subsite-realisations{display:block}
+.sub-nav{position:sticky;top:0;z-index:1000;display:flex;align-items:center;justify-content:space-between;padding:0 3rem;height:84px;background:var(--ink);border-bottom:1px solid rgba(197,168,128,.25)}
+.sub-nav-left{display:flex;align-items:center;gap:1.5rem}
+.sub-badge{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink);background:var(--gold);padding:.3rem .75rem;font-weight:500}
+.sub-hero{background:var(--ink);color:#fff;padding:5rem 2rem 4.5rem;text-align:center;border-bottom:1px solid rgba(197,168,128,.15);position:relative}
+.sub-hero h1{font-size:clamp(2.4rem,4.5vw,3.8rem);margin-bottom:1rem}
+.sub-hero p{color:rgba(255,255,255,.6);max-width:680px;margin:0 auto 2rem;font-weight:300}
+.sub-stats{display:flex;justify-content:center;gap:3rem;flex-wrap:wrap;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.08);max-width:760px;margin:0 auto}
+.sub-stats div b{display:block;font:600 1.8rem var(--fd);color:var(--gold)}
+.sub-stats div span{font-size:.76rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.55)}
+
+.proj-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2.2rem;margin-top:2rem}
+.proj-card{background:#fff;border:1px solid rgba(0,0,0,.07);overflow:hidden;display:flex;flex-direction:column;transition:.45s;box-shadow:0 12px 30px rgba(0,0,0,.03)}
+.proj-card:hover{transform:translateY(-6px);box-shadow:0 24px 48px rgba(0,0,0,.08)}
+.proj-img{position:relative;height:320px;background:var(--ink3);overflow:hidden}
+.proj-img img{width:100%;height:100%;object-fit:cover;transition:.7s}
+.proj-card:hover .proj-img img{transform:scale(1.06)}
+.proj-cat{position:absolute;top:1rem;left:1rem;background:rgba(21,23,25,.92);color:var(--gold);border:1px solid rgba(197,168,128,.4);padding:.35rem .85rem;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase}
+.proj-loc{position:absolute;bottom:1rem;right:1rem;background:rgba(255,255,255,.95);color:var(--ink);padding:.3rem .75rem;font-size:.75rem;font-weight:500}
+.proj-body{padding:2rem;flex:1;display:flex;flex-direction:column}
+.proj-meta{display:flex;gap:1.2rem;flex-wrap:wrap;font-size:.76rem;color:var(--gold);text-transform:uppercase;letter-spacing:.1em;margin-bottom:.6rem;font-weight:500}
+.proj-body h3{font:600 1.65rem/1.2 var(--fd);margin-bottom:.8rem;color:var(--ink)}
+.proj-body p{color:var(--mut);font-weight:300;font-size:.94rem;margin-bottom:1.2rem}
+.proj-specs{background:var(--off);padding:1rem 1.2rem;border-left:2px solid var(--gold);margin-bottom:1.4rem;font-size:.84rem}
+.proj-specs div{margin-bottom:.3rem;color:#333}.proj-specs div:last-child{margin-bottom:0}
+.proj-specs strong{color:var(--ink);font-weight:500}
+.proj-foot{margin-top:auto;display:flex;justify-content:space-between;align-items:center;padding-top:1rem;border-top:1px solid rgba(0,0,0,.06)}
+
+/* MODALE DÉTAIL CHANTIER */
+.modal-bg{position:fixed;inset:0;background:rgba(15,17,19,.88);backdrop-filter:blur(6px);z-index:2200;display:none;align-items:center;justify-content:center;padding:1.5rem}
+.modal-bg.open{display:flex}
+.modal-box{background:#fff;max-width:860px;width:100%;max-height:90vh;overflow-y:auto;position:relative;border-top:4px solid var(--gold);animation:fadePanel .35s ease}
+.modal-close{position:absolute;top:1rem;right:1rem;width:40px;height:40px;background:var(--ink);color:var(--gold);border:1px solid var(--gold);font-size:1.3rem;cursor:pointer;z-index:2}
+.modal-img{height:380px;background:var(--ink3)}.modal-img img{width:100%;height:100%;object-fit:cover}
+.modal-content{padding:2.4rem}
+
+/* RESTE DU CSS D'ORIGINE */
 .chips{display:flex;flex-wrap:wrap;gap:.5rem;justify-content:center}.chips span,.chips button{padding:.45rem 1.1rem;border:1px solid rgba(0,0,0,.12);border-radius:100px;font:400 .82rem var(--ff);background:#fff;cursor:default}.chips .main{background:var(--ink);color:var(--gold);border-color:var(--ink)}
 .zone{display:flex;gap:.8rem;max-width:480px;margin:0 auto 1rem}.zone input{flex:1}.zmsg{text-align:center;min-height:1.5rem;margin-bottom:1.3rem;font-size:.94rem}.zmsg.neutral{color:var(--mut)}
 .map{width:100%;height:340px;border:0;margin-top:2.5rem;filter:grayscale(.6)}
@@ -64,7 +133,7 @@ form{background:#fff;border:1px solid rgba(0,0,0,.06);padding:2.6rem;box-shadow:
 .row{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem}.f{margin-bottom:1.2rem}.f label{display:block;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:.5rem}
 input,select,textarea{width:100%;background:#fff;border:1px solid rgba(0,0,0,.14);font:400 .96rem var(--ff);padding:.9rem 1rem;transition:.3s;border-radius:0}input:focus,select:focus,textarea:focus{outline:0;border-color:var(--gold);box-shadow:0 0 0 1px var(--gold)}textarea{min-height:110px;resize:vertical}.err{border-color:#c0392b!important}
 .chk{display:flex;gap:.7rem;font-size:.8rem;color:var(--mut);margin-bottom:1.2rem}.chk input{width:auto;margin-top:.3rem}
-.send{width:100%;background:var(--ink);color:#fff;border-color:var(--ink)}.send:hover{background:var(--gold);color:var(--ink);border-color:var(--gold)}.send:disabled{opacity:.6;cursor:wait}
+.send{width:100%;background:var(--ink);color:#fff;border-color:var(--ink);justify-content:center}.send:hover{background:var(--gold);color:var(--ink);border-color:var(--gold)}.send:disabled{opacity:.6;cursor:wait}
 #res{display:none;padding:1.1rem;margin-top:1.2rem;font-size:.9rem;text-align:center}#res.ok{display:block;background:rgba(46,160,90,.07);border:1px solid rgba(46,160,90,.3);color:#1e8449}#res.ko{display:block;background:rgba(192,57,43,.06);border:1px solid rgba(192,57,43,.25);color:#a93226}.hp{position:absolute;left:-9999px}
 footer{background:var(--ink);color:#fff;padding:4.5rem 2rem 7rem}.fg{max-width:1100px;margin:0 auto 2.5rem;display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:3rem}
 footer h4{font:400 1.25rem var(--fd);margin-bottom:1rem}footer p,footer a{font-size:.85rem;color:rgba(255,255,255,.55);font-weight:300;text-decoration:none;display:block;margin-bottom:.4rem;cursor:pointer}footer a:hover{color:var(--gold)}
@@ -76,6 +145,8 @@ i.ti{display:inline-block;width:1em;height:1em;vertical-align:-.15em;background:
 .ti-phone{--i:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5l1.5-2.5 5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2'/%3E%3C/svg%3E")}
 .ti-phone-call{--i:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5l1.5-2.5 5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2M15 7a2 2 0 0 1 2 2M15 3a6 6 0 0 1 6 6'/%3E%3C/svg%3E")}
 .ti-arrow-up{--i:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 5v14M18 11l-6-6-6 6'/%3E%3C/svg%3E")}
+.ti-arrow-left{--i:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M19 12H5M11 18l-6-6 6-6'/%3E%3C/svg%3E")}
+.ti-arrow-right{--i:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12h14M13 18l6-6-6-6'/%3E%3C/svg%3E")}
 .ti-download{--i:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2M7 11l5 5 5-5M12 4v12'/%3E%3C/svg%3E")}
 .ti-circle-check{--i:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 12a9 9 0 1 0 18 0 9 9 0 1 0-18 0M9 12l2 2 4-4'/%3E%3C/svg%3E")}
 .ti-square-rotated{--i:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3l9 9-9 9-9-9z'/%3E%3C/svg%3E")}
@@ -84,9 +155,7 @@ i.ti{display:inline-block;width:1em;height:1em;vertical-align:-.15em;background:
 .ti-coin{--i:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 12a9 9 0 1 0 18 0 9 9 0 1 0-18 0M14.8 9A2 2 0 0 0 13 8h-2a2 2 0 1 0 0 4h2a2 2 0 1 1 0 4h-2a2 2 0 0 1-1.8-1M12 7v10'/%3E%3C/svg%3E")}
 .ti-bolt{--i:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M13 3v7h6l-8 11v-7H5z'/%3E%3C/svg%3E")}
 .ti-layers{--i:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 4 4 8l8 4 8-4zM4 12l8 4 8-4M4 16l8 4 8-4'/%3E%3C/svg%3E")}
-.aud{display:flex;width:max-content;max-width:100%;border:1px solid rgba(197,168,128,.4);margin:0 0 1.6rem}.aud button{background:transparent;border:0;color:rgba(255,255,255,.65);padding:.65rem 1.2rem;font:400 .76rem var(--ff);letter-spacing:.08em;text-transform:uppercase;cursor:pointer;transition:.3s}.aud button.on{background:var(--gold);color:var(--ink)}
-@keyframes land{0%{box-shadow:inset 0 4px 0 var(--gold)}100%{box-shadow:inset 0 4px 0 transparent}}.land{animation:land 1.4s ease-out}
-@media(max-width:768px){.aud{margin:0 auto 1.4rem}.aud button{padding:.6rem .8rem;font-size:.68rem}}
+
 .tel{display:none}
 .pill{position:fixed;left:50%;bottom:calc(12px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);width:min(980px,calc(100% - 24px));z-index:96;display:flex;align-items:center;justify-content:space-between;gap:.8rem;background:rgba(21,23,25,.96);backdrop-filter:blur(12px);border:1px solid var(--gold);border-radius:100px;padding:.45rem .45rem .45rem 1.5rem;box-shadow:0 10px 40px rgba(0,0,0,.45)}
 .pill .num{display:flex;align-items:center;gap:.7rem;color:#fff;text-decoration:none;font:500 1.05rem var(--ff);letter-spacing:.04em;line-height:1.2}.pill .num i{color:var(--gold);font-size:1.4rem;animation:rg 2.4s infinite}.pill .num span{display:block;font:300 .68rem var(--ff);letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.55)}
@@ -98,197 +167,671 @@ i.ti{display:inline-block;width:1em;height:1em;vertical-align:-.15em;background:
 .qb{max-width:760px;margin:0 auto;border:1px solid rgba(197,168,128,.25);padding:2.4rem}.qs{display:flex;gap:6px;margin-bottom:1.4rem}.qs i{flex:1;height:3px;background:rgba(255,255,255,.12)}.qs i.on{background:var(--gold)}.qq{font:400 1.7rem var(--fd);margin-bottom:1.2rem}
 .qo{display:grid;grid-template-columns:1fr 1fr;gap:.8rem}.qo button{background:transparent;border:1px solid rgba(255,255,255,.15);color:rgba(255,255,255,.85);padding:1rem;font:300 .95rem var(--ff);cursor:pointer;text-align:left;transition:.3s}.qo button:hover{border-color:var(--gold);color:var(--gold)}.qr2{text-align:center}.qr2 h3{font:400 2rem var(--fd);color:var(--gold);margin:.6rem 0}.qr2 p{color:rgba(255,255,255,.6);margin-bottom:1.4rem}
 .diag-meta{display:flex;justify-content:space-between;gap:1rem;color:rgba(255,255,255,.55);font-size:.78rem;margin-bottom:1rem}.qo button small{display:block;color:rgba(255,255,255,.48);font-size:.78rem;margin-top:.25rem}.diag-result{text-align:left}.diag-result .tag{display:inline-block;border:1px solid var(--gold);color:var(--gold);padding:.25rem .65rem;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase}.diag-result h3{font:400 clamp(1.8rem,4vw,2.6rem) var(--fd);color:var(--gold);margin:.7rem 0}.diag-result p{color:rgba(255,255,255,.75);margin:.55rem 0}.diag-result ul{padding-left:1.2rem;color:rgba(255,255,255,.75);margin:.8rem 0 1.2rem}.diag-result li{margin:.35rem 0}.diag-actions{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.4rem}.diag-actions .btn{margin:0}.diag-note{font-size:.8rem!important;color:rgba(255,255,255,.48)!important;border-top:1px solid rgba(255,255,255,.12);padding-top:1rem;margin-top:1.2rem!important}
-@media(max-width:900px){.grid3,.gal{grid-template-columns:1fr 1fr}.grid4{grid-template-columns:1fr 1fr}.two,.ct{grid-template-columns:1fr}.fg{grid-template-columns:1fr 1fr}}
-@media(max-width:768px){.nav{padding:0 1.2rem;height:70px}.burger{display:block}.logo-img{height:50px}
+@media(max-width:900px){.grid3,.gal,.proj-grid{grid-template-columns:1fr 1fr}.grid4{grid-template-columns:1fr 1fr}.two,.ct,.aud-panel{grid-template-columns:1fr}.fg{grid-template-columns:1fr 1fr}}
+@media(max-width:768px){.nav,.sub-nav{padding:0 1.2rem;height:70px}.burger{display:block}.logo-img{height:50px}
 .nl{display:none;position:absolute;top:100%;left:0;width:100%;flex-direction:column;align-items:flex-start;background:var(--ink);padding:1.4rem;gap:.8rem;max-height:80vh;overflow:auto}.nl.open{display:flex}.pn{display:block;position:static;border:0;box-shadow:none;padding:0 0 0 .8rem;min-width:0}
 .hero{grid-template-columns:1fr}.hl{padding:3rem 1.3rem;text-align:center}.badges{justify-content:center}.hr{height:300px;min-height:0}.hr:before{background:linear-gradient(to top,var(--ink),transparent 80%)}.btn.g{margin:.8rem 0 0}
-.grid3,.grid4,.gal,.row,.fg{grid-template-columns:1fr}.sec{padding:4rem 1.3rem}form{padding:1.5rem}.zone{flex-direction:column}
+.grid3,.grid4,.gal,.row,.fg,.proj-grid,.aud-list{grid-template-columns:1fr}.sec{padding:4rem 1.3rem}form{padding:1.5rem}.zone{flex-direction:column}
+.aud-panel{padding:1.8rem 1.4rem}.sub-badge{display:none}
 input,select,textarea{font-size:16px}.pill{padding-left:1.1rem;gap:.4rem}.pill .num{font-size:.95rem}.pill .num span{display:none}.pill .btn{padding:.75rem 1.1rem;font-size:.72rem}.qo,.mp{grid-template-columns:1fr}.mp .pic{min-height:120px}.mp .tx{padding:1.6rem}.qb{padding:1.4rem}.rot{text-align:center}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none;filter:none}}
 </style>
 </head>
 <body>
 <div id="bar"></div>
-<div class="tk">Couverture &amp; rénovation dans le Val-d’Oise et en Île-de-France · Particuliers &amp; professionnels</div>
-<nav class="nav" id="nav">
-  <a href="#" aria-label="CMS Expertise"><img src="logo sans fond.png" alt="CMS Expertise" class="logo-img" onerror="this.outerHTML='<span class=logo-txt>CMS <b>Expertise</b></span>'"></a>
-  <button class="burger" id="bg" aria-label="Menu"><i class="ti ti-menu-2"></i></button>
-  <ul class="nl" id="nl">
-    <li><a data-t="top0">Accueil</a></li>
-    <li class="dd"><a data-t="svc">Services ▾</a><div class="pn"><small>Couverture</small><a data-s="Rénovation de toiture">Couverture &amp; rénovation</a><a data-s="Réparation de toiture">Réparation de toiture</a><a data-s="Dépannage toiture">Dépannage toiture</a><a data-s="Zinguerie">Zinguerie &amp; gouttières</a><small>Entretien &amp; performance</small><a data-s="Démoussage de toiture">Démoussage &amp; nettoyage</a><a data-s="Isolation de toiture">Isolation &amp; sous-toiture</a><small>Structure &amp; confort</small><a data-s="Charpente bois">Charpente bois</a><a data-s="Fenêtre de toit">Fenêtres de toit</a></div></li>
-    <li class="dd"><a data-t="zone">Zones ▾</a><div class="pn"><small>Priorité locale</small><a data-t="zone">Saint-Prix (95390)</a><a data-t="zone">Montmorency · Eaubonne</a><small>Val d'Oise</small><a data-t="zone">Enghien · Ermont · Taverny</a><a data-t="zone">Cergy · Pontoise</a></div></li>
-    <li><a data-t="real">Réalisations</a></li><li><a data-t="professionnels">Professionnels</a></li><li><a data-t="about">L'entreprise</a></li><li><a data-t="faq">FAQ</a></li>
-    <li><a class="tel" data-tel>Appeler</a></li><li><a class="cta" data-t="contact">Devis gratuit</a></li>
-  </ul>
-</nav>
 
-<header class="hero" id="top0">
-  <div class="hl rv">
-    <div class="kick">Val-d’Oise · Île-de-France</div>
-    <h1>Votre partenaire toiture dans le Val-d’Oise. <em>Des solutions fiables, du particulier aux grands chantiers.</em></h1>
-    <p class="sub">Couverture, rénovation, zinguerie, entretien et réparation pour les maisons, immeubles, locaux professionnels et opérations pilotées par les acteurs du BTP. Une approche adaptée à chaque chantier.</p>
-    <button class="btn" data-t="contact">Présenter mon projet</button><button class="btn g" data-t="svc">Nos expertises</button><a class="btn g tel" data-tel></a>
-    <div class="rot">Votre spécialiste en <b id="rt">&nbsp;</b></div><div class="badges"><div><b>Garantie décennale</b>sur les travaux concernés</div><div><b>Devis gratuit</b>lisible et transparent</div><div><b>Suivi de chantier</b>du diagnostic à la finition</div></div>
-  </div>
-  <div class="hr rv d2"><img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1000&auto=format&fit=crop&q=80" alt="Toiture rénovée" onerror="this.remove()"></div>
-</header>
-<div class="mq" aria-hidden="true"><div id="mqi"></div></div>
+<!-- =====================================================================
+     SITE PRINCIPAL
+====================================================================== -->
+<div id="main-site">
+  <div class="tk">Enveloppe du bâtiment, couverture &amp; zinguerie dans le Val-d’Oise (95) · Particuliers &amp; Professionnels</div>
+  <nav class="nav" id="nav">
+    <a href="#" aria-label="CMS Expertise"><img src="logo sans fond.png" alt="CMS Expertise" class="logo-img" onerror="this.outerHTML='<span class=logo-txt>CMS <b>Expertise</b></span>'"></a>
+    <button class="burger" id="bg" aria-label="Menu"><i class="ti ti-menu-2"></i></button>
+    <ul class="nl" id="nl">
+      <li><a data-t="top0">Accueil</a></li>
+      <li><a data-t="profils">Particuliers / Pros</a></li>
+      <li class="dd"><a data-t="svc">Services ▾</a><div class="pn"><small>Enveloppe &amp; Couverture</small><a data-s="Rénovation de toiture">Couverture &amp; rénovation</a><a data-s="Réparation de toiture">Réparation de toiture</a><a data-s="Dépannage toiture">Dépannage toiture</a><a data-s="Zinguerie">Zinguerie &amp; étanchéité</a><small>Performance &amp; Façade</small><a data-s="Isolation de toiture">Isolation &amp; ITE</a><a data-s="Démoussage de toiture">Démoussage &amp; entretien</a><small>Structure &amp; Ouvertures</small><a data-s="Charpente bois">Charpente bois</a><a data-s="Fenêtre de toit">Fenêtres de toit</a></div></li>
+      <li><a data-open-subsite="all">Réalisations ↗</a></li>
+      <li><a data-t="zone">Zones</a></li>
+      <li><a data-t="about">L'entreprise</a></li>
+      <li><a data-t="faq">FAQ</a></li>
+      <li><a class="tel" data-tel>Appeler</a></li>
+      <li><a class="cta" data-t="contact">Devis gratuit</a></li>
+    </ul>
+  </nav>
 
-<section class="sec">
-  <div class="two">
-    <div class="ph rv" id="about"><img src="photo-mahdi.jpg" alt="Mahdi Sandali, dirigeant de CMS Expertise" onerror="this.remove()"></div>
-    <div class="rv d1">
-      <div class="lab" style="text-align:left">CMS Expertise</div>
-      <h2>Une toiture bien réalisée protège <em>un bâtiment et sa valeur.</em></h2>
-      <p>Une toiture engage l'étanchéité, le confort et la valeur de votre habitation. Notre approche : comprendre le besoin avant de proposer, intervenir proprement et soigner les finitions.</p>
-      <p>Deux couvreurs qualifiés, de la charpente bois à la couverture en passant par l'isolation et l'écran de sous-toiture : un interlocuteur unique, du diagnostic au contrôle final. — <b>Mahdi Sandali, dirigeant</b></p>
-      <button class="btn" data-t="contact">Parlons de votre toiture</button>
+  <header class="hero" id="top0">
+    <div class="hl rv">
+      <div class="kick">Enveloppe du bâtiment · Val-d’Oise &amp; Île-de-France</div>
+      <h1>Votre partenaire en enveloppe du bâtiment. <em>Des solutions fiables, du particulier aux grands chantiers.</em></h1>
+      <p class="sub">Couverture, zinguerie technique, isolation extérieure, rénovation et entretien pour les maisons individuelles, copropriétés, immeubles collectifs et opérations pilotées par les acteurs du BTP.</p>
+      <button class="btn" data-t="contact">Présenter mon projet</button>
+      <button class="btn g" data-open-subsite="all">Voir nos réalisations</button>
+      <div class="rot">Votre spécialiste en <b id="rt">&nbsp;</b></div>
+      <div class="badges">
+        <div><b>Garantie décennale</b>sur les travaux concernés</div>
+        <div><b>Devis gratuit</b>lisible et transparent</div>
+        <div><b>Suivi de chantier</b>du diagnostic à la finition</div>
+      </div>
     </div>
-  </div>
-</section>
+    <div class="hr rv d2"><img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1000&auto=format&fit=crop&q=80" alt="Toiture rénovée" onerror="this.remove()"></div>
+  </header>
+  <div class="mq" aria-hidden="true"><div id="mqi"></div></div>
 
-<section class="sec full dark"><div class="in">
-  <div class="lab rv">Pourquoi nous choisir</div>
-  <h2 class="ttl rv d1">Plus qu'un devis : <em>une toiture comprise, expliquée et suivie.</em></h2>
-  <p class="intro rv d2">Vous savez ce qui est nécessaire, ce qui est optionnel et pourquoi. Pas de jargon, pas de ligne floue.</p>
-  <div class="grid3 steps" id="why"></div>
-  <div class="cs rv"><div><b>Besoin d'un avis sur votre toiture ?</b><span>Envoyez votre demande, nous cadrons ensuite le diagnostic et le devis.</span></div><button class="btn" data-t="contact">Demander mon devis gratuit</button></div>
-</div></section>
+  <!-- NOUVELLE SECTION : CHOIX PARTICULIERS / ENTREPRISES -->
+  <section class="sec" id="profils">
+    <div class="lab rv">Espaces dédiés</div>
+    <h2 class="ttl rv d1">Vous êtes un <em>particulier</em> ou une <em>entreprise</em> ?</h2>
+    <p class="intro rv d2">Sélectionnez votre profil pour découvrir notre accompagnement sur mesure, nos garanties et nos modalités d'intervention.</p>
 
-<section class="sec" id="svc">
-  <div class="lab rv">Savoir-faire toiture</div>
-  <h2 class="ttl rv d1">Des interventions pensées pour <em>durer et s’adapter à chaque site.</em></h2>
-  <p class="intro rv d2">Du diagnostic à la finition, chaque prestation répond à un besoin précis de protection, d'entretien ou de rénovation.</p>
-  <div class="grid4" id="sv"></div>
-</section>
-
-<section class="sec" id="mat"><div class="lab rv">Matériaux</div><h2 class="ttl rv d1">Six matériaux, <em>un seul interlocuteur.</em></h2><p class="intro rv d2">Comparez les matériaux. Données indicatives, variables selon la pose et l'exposition.</p><div class="tabs" id="mt"></div><div class="mp rv" id="mpn"></div></section>
-<section class="sec full" style="background:var(--gold);padding:3.5rem 2rem;text-align:center;color:var(--ink)"><div class="in"><h2 class="ttl" style="margin-bottom:.6rem">Fuite ou dégât sur votre toiture ?</h2><p style="margin-bottom:1.4rem">Appelez-nous, nous vous orientons immédiatement.</p><a class="btn" style="background:var(--ink);color:#fff;border-color:var(--ink)" href="tel:+33758362224"><i class="ti ti-phone"></i> 07 58 36 22 24</a></div></section>
-<section class="sec full dark" id="diag" style="padding:6rem 1.3rem"><div class="lab rv">Diagnostic express</div><h2 class="ttl rv d1">Trouvez le service <em>qu'il vous faut.</em></h2><p class="intro rv d2">Trois questions, une orientation immédiate.</p><div class="qb rv" id="qb"></div></section>
-<section class="sec full dark" id="proc"><div class="in">
-  <div class="lab rv">Une méthode lisible</div>
-  <h2 class="ttl rv d1">Du premier échange au chantier, <em>sans zone floue.</em></h2>
-  <div class="grid4 steps" style="margin-top:2.5rem" id="st"></div>
-</div></section>
-
-<section class="sec" id="real">
-  <div class="lab rv">Réalisations</div>
-  <h2 class="ttl rv d1">Le travail se juge aussi <em>à l'œil.</em></h2>
-  <p class="intro rv d2">Rénovation, zinguerie, détails de finition : un aperçu de nos interventions.</p>
-  <div class="gal rv">
-    <figure><img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=700&auto=format&fit=crop&q=75" alt="Rénovation de couverture" onerror="this.remove()"><figcaption><small>Rénovation complète</small>Couverture ardoise &amp; tuile</figcaption></figure>
-    <figure><img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=700&auto=format&fit=crop&q=75" alt="Équipe sur chantier" onerror="this.remove()"><figcaption><small>Sur le chantier</small>Notre équipe</figcaption></figure>
-    <figure><img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=700&auto=format&fit=crop&q=75" alt="Fenêtre de toit" onerror="this.remove()"><figcaption><small>Fenêtre de toit</small>Pose &amp; étanchéité</figcaption></figure>
-  </div>
-</section>
-
-<section class="sec" id="zone" style="padding-top:2rem">
-  <div class="lab rv">Zone d'intervention</div>
-  <h2 class="ttl rv d1">Saint-Prix d'abord. <em>Le Val d'Oise autour.</em></h2>
-  <p class="intro rv d2">Basés à Saint-Prix, nous intervenons dans tout le Val d'Oise et dans toute l'Île-de-France. Vérifiez votre code postal, puis choisissez votre département et votre commune.</p>
-  <div class="zone"><input id="cp" type="text" inputmode="numeric" autocomplete="postal-code" maxlength="5" pattern="[0-9]{5}" placeholder="Ex. : 95000" aria-label="Code postal à 5 chiffres"><button class="btn" id="cpb" type="button">Vérifier</button></div>
-  <div class="zmsg" id="zmsg"></div>
-  <div class="tabs" id="zt"></div><div class="chips" id="zc"></div>
-  <iframe class="map" loading="lazy" title="Saint-Prix" src="https://www.google.com/maps?q=Saint-Prix+95390&output=embed"></iframe>
-</section>
-
-<section class="sec full" id="professionnels">
-  <div class="in">
-    <div class="lab rv">Partenaires &amp; professionnels</div>
-    <h2 class="ttl rv d1">Un interlocuteur toiture pour <em>vos bâtiments et vos opérations.</em></h2>
-    <p class="intro rv d2">CMS Expertise s’adresse aussi aux entreprises générales, groupes du BTP, gestionnaires de patrimoine, syndics, architectes, maîtres d’œuvre et collectivités. Chaque demande est étudiée selon le site, le périmètre des travaux et les contraintes de planning.</p>
-    <div class="grid3">
-      <article class="card rv"><span class="n">01</span><h3>Entreprises &amp; groupes BTP</h3><p>Étude de demandes en couverture, zinguerie, charpente, réparation et rénovation, y compris dans le cadre d’une consultation ou d’un partenariat de chantier.</p></article>
-      <article class="card rv d1"><span class="n">02</span><h3>Gestionnaires &amp; syndics</h3><p>Diagnostic, entretien, réparations et travaux sur maisons, immeubles, copropriétés et patrimoine immobilier.</p></article>
-      <article class="card rv d2"><span class="n">03</span><h3>Architectes &amp; maîtres d’œuvre</h3><p>Échange technique en amont, compréhension du lot toiture et coordination des interventions selon le cadre défini pour le projet.</p></article>
+    <div class="aud-switch rv" role="tablist" aria-label="Choisir votre profil">
+      <button type="button" class="on" data-aud="particulier" role="tab" aria-selected="true">
+        <span>Je suis un Particulier</span>
+        <small>Maison individuelle, rénovation &amp; dépannage</small>
+      </button>
+      <button type="button" data-aud="entreprise" role="tab" aria-selected="false">
+        <span>Je suis une Entreprise / Pro</span>
+        <small>BTP, syndics, architectes &amp; immeubles</small>
+      </button>
     </div>
-    <div class="cs rv"><div><b>Vous représentez une entreprise ou un acteur du secteur du bâtiment ?</b><span>Présentez-nous votre besoin, votre calendrier et les modalités de consultation ou d’intervention.</span></div><button class="btn" data-t="contact">Contacter notre équipe</button></div>
+
+    <div id="aud-container" class="rv"></div>
+  </section>
+
+  <section class="sec" style="padding-top:1rem">
+    <div class="two">
+      <div class="ph rv" id="about"><img src="photo-mahdi.jpg" alt="Mahdi Sandali, dirigeant de CMS Expertise" onerror="this.remove()"></div>
+      <div class="rv d1">
+        <div class="lab" style="text-align:left">CMS Expertise · Saint-Prix (95)</div>
+        <h2>L’enveloppe du bâtiment protège <em>votre patrimoine et sa valeur.</em></h2>
+        <p>De la couverture traditionnelle aux façonnages de zinguerie sur mesure et à l'isolation thermique par l'extérieur, chaque ouvrage engage l'étanchéité et la pérennité du bâti.</p>
+        <p>Notre approche : comprendre les contraintes techniques du site avant de proposer, sécuriser les accès et soigner chaque finition. Un interlocuteur unique, du diagnostic au contrôle final. — <b>Mahdi Sandali, dirigeant</b></p>
+        <button class="btn" data-t="contact">Parlons de votre projet</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec full dark"><div class="in">
+    <div class="lab rv">Pourquoi nous choisir</div>
+    <h2 class="ttl rv d1">Plus qu'un devis : <em>un ouvrage compris, expliqué et suivi.</em></h2>
+    <p class="intro rv d2">Vous savez ce qui est nécessaire, ce qui est optionnel et pourquoi. Pas de jargon, pas de ligne floue.</p>
+    <div class="grid3 steps" id="why"></div>
+    <div class="cs rv"><div><b>Besoin d'un avis technique sur votre bâtiment ?</b><span>Envoyez votre demande, nous cadrons ensuite le diagnostic et le devis.</span></div><button class="btn" data-t="contact">Demander mon devis gratuit</button></div>
+  </div></section>
+
+  <section class="sec" id="svc">
+    <div class="lab rv">Savoir-faire &amp; Métiers</div>
+    <h2 class="ttl rv d1">Des interventions pensées pour <em>durer et s’adapter à chaque site.</em></h2>
+    <p class="intro rv d2">Du diagnostic à la finition, chaque prestation répond à un besoin précis de protection, d'entretien ou de réhabilitation de l'enveloppe du bâtiment.</p>
+    <div class="grid4" id="sv"></div>
+  </section>
+
+  <!-- APERÇU RÉALISATIONS + BOUTON VERS LE SOUS-SITE -->
+  <section class="sec" id="real" style="padding-top:1rem">
+    <div class="lab rv">Chantiers réalisés</div>
+    <h2 class="ttl rv d1">Le travail se juge aussi <em>à l'œil.</em></h2>
+    <p class="intro rv d2">Réhabilitation d'immeubles collectifs, zinguerie à tasseaux, étanchéité au plomb et rénovation de couverture : découvrez nos interventions sur le terrain.</p>
+    <div class="gal rv">
+      <figure data-open-subsite="immeuble"><img src="chantier-immeuble.jpg" alt="Réhabilitation d'immeuble collectif R+5" data-fallback="hero"><figcaption><small>Enveloppe &amp; Façade · R+5</small>Réhabilitation globale d'immeuble</figcaption></figure>
+      <figure data-open-subsite="zinguerie"><img src="chantier-zinc.jpg" alt="Façonnage zinc à tasseaux" data-fallback="reno"><figcaption><small>Zinguerie sur mesure</small>Habillage de bandeau zinc à tasseaux</figcaption></figure>
+      <figure data-open-subsite="toiture"><img src="chantier-toiture.jpg" alt="Rénovation et nettoyage de toiture tuiles" data-fallback="team"><figcaption><small>Couverture &amp; Rénovation</small>Remise à neuf de toiture terre cuite</figcaption></figure>
+    </div>
+    <div class="real-cta-bar rv">
+      <div class="lab" style="margin-bottom:0">Portfolio complet des chantiers</div>
+      <h3 style="font:400 1.8rem var(--fd)">Explorez nos réalisations en détail (photos, nature des travaux, fiches techniques)</h3>
+      <button class="btn" data-open-subsite="all">Voir nos réalisations <i class="ti ti-arrow-right"></i></button>
+    </div>
+  </section>
+
+  <section class="sec" id="mat"><div class="lab rv">Matériaux</div><h2 class="ttl rv d1">Six matériaux, <em>un seul interlocuteur.</em></h2><p class="intro rv d2">Comparez les matériaux. Données indicatives, variables selon la pose et l'exposition.</p><div class="tabs" id="mt"></div><div class="mp rv" id="mpn"></div></section>
+  <section class="sec full" style="background:var(--gold);padding:3.5rem 2rem;text-align:center;color:var(--ink)"><div class="in"><h2 class="ttl" style="margin-bottom:.6rem">Fuite ou dégât sur votre bâtiment ?</h2><p style="margin-bottom:1.4rem">Appelez-nous, nous vous orientons immédiatement.</p><a class="btn" style="background:var(--ink);color:#fff;border-color:var(--ink)" href="tel:+33758362224"><i class="ti ti-phone"></i> 07 58 36 22 24</a></div></section>
+  <section class="sec full dark" id="diag" style="padding:6rem 1.3rem"><div class="lab rv">Diagnostic express</div><h2 class="ttl rv d1">Trouvez le service <em>qu'il vous faut.</em></h2><p class="intro rv d2">Quatre questions, une orientation immédiate.</p><div class="qb rv" id="qb"></div></section>
+  <section class="sec full dark" id="proc"><div class="in">
+    <div class="lab rv">Une méthode lisible</div>
+    <h2 class="ttl rv d1">Du premier échange au chantier, <em>sans zone floue.</em></h2>
+    <div class="grid4 steps" style="margin-top:2.5rem" id="st"></div>
+  </div></section>
+
+  <section class="sec" id="zone">
+    <div class="lab rv">Zone d'intervention</div>
+    <h2 class="ttl rv d1">Saint-Prix d'abord. <em>Le Val d'Oise et l'Île-de-France autour.</em></h2>
+    <p class="intro rv d2">Basés au 11 Rue Gambetta à Saint-Prix (95390), nous intervenons dans tout le Val d'Oise et en Île-de-France. Vérifiez votre code postal ci-dessous.</p>
+    <div class="zone"><input id="cp" type="text" inputmode="numeric" autocomplete="postal-code" maxlength="5" pattern="[0-9]{5}" placeholder="Ex. : 95390" aria-label="Code postal à 5 chiffres"><button class="btn" id="cpb" type="button">Vérifier</button></div>
+    <div class="zmsg" id="zmsg"></div>
+    <div class="tabs" id="zt"></div><div class="chips" id="zc"></div>
+    <iframe class="map" loading="lazy" title="Saint-Prix" src="https://www.google.com/maps?q=11+Rue+Gambetta+Saint-Prix+95390&output=embed"></iframe>
+  </section>
+
+  <section class="sec full dark" style="padding:5.5rem 2rem;text-align:center">
+    <div class="lab">Documentation &amp; Références</div><h2 class="ttl">Découvrez l'étendue de notre expertise</h2>
+    <p class="intro">Particuliers, entreprises générales, groupes du BTP, architectes, syndics et gestionnaires : consultez nos réalisations ou téléchargez notre plaquette.</p>
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+      <button class="btn" data-open-subsite="all">Voir nos réalisations <i class="ti ti-arrow-right"></i></button>
+      <a class="btn g" style="margin-left:0" href="plaquette_cms_expertise.pdf" download><i class="ti ti-download"></i> Télécharger la plaquette</a>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="lab rv">Expertise locale</div>
+    <h2 class="ttl rv d1">Enveloppe du bâtiment dans le Val-d’Oise : <em>une approche complète.</em></h2>
+    <div class="tabs" id="sb"></div><div class="seo" id="sp"></div>
+  </section>
+
+  <section class="sec" id="faq" style="padding-top:2rem">
+    <div class="lab rv">Questions fréquentes</div><h2 class="ttl rv d1">Avant de nous confier <em>votre chantier.</em></h2>
+    <div class="faq rv" id="fq"></div>
+  </section>
+
+  <section class="sec full" id="contact" style="background:#fff"><div class="ct">
+    <div class="rv"><div class="lab" style="text-align:left">Devis gratuit</div><h2 class="ttl" style="text-align:left">Parlons de votre projet à Saint-Prix ou en Île-de-France.</h2>
+      <p style="color:var(--mut);font-weight:300">Couverture, zinguerie, isolation extérieure, rénovation : laissez-nous l'essentiel, votre demande arrive directement à notre équipe.</p>
+      <ol><li><b>01</b>Demande rapide</li><li><b>02</b>Étude technique sur site</li><li><b>03</b>Devis détaillé &amp; gratuit</li></ol></div>
+    <form id="fm" class="rv d1" novalidate action="https://formsubmit.co/contact@cmsexpertise.com" method="POST" enctype="multipart/form-data"><input type="hidden" name="_template" value="table"><input type="hidden" name="_captcha" value="false"><input type="hidden" name="_subject" value="Nouvelle demande de devis - CMS Expertise">
+      <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <div class="row"><div class="f"><label for="nom">Nom / Société *</label><input id="nom" name="Nom" autocomplete="name"></div><div class="f"><label for="tel">Téléphone *</label><input id="tel" name="Téléphone" type="tel" autocomplete="tel"></div></div>
+      <div class="row"><div class="f"><label for="email">E-mail *</label><input id="email" name="email" type="email" autocomplete="email"></div><div class="f"><label for="cpf">Code postal *</label><input id="cpf" name="Code postal" inputmode="numeric" maxlength="5"></div></div>
+      <div class="f"><label for="clientType">Vous êtes</label><select id="clientType" name="Type de client"><option value="Particulier">Particulier</option><option value="Entreprise / groupe BTP">Entreprise / groupe BTP</option><option value="Syndic / gestionnaire immobilier">Syndic / gestionnaire immobilier</option><option value="Architecte / maître d’œuvre">Architecte / maître d’œuvre</option><option value="Collectivité / établissement public">Collectivité / établissement public</option><option value="Autre professionnel">Autre professionnel</option></select></div><div class="f"><label for="svc2">Votre besoin *</label><select id="svc2" name="Service"><option value="">Sélectionner une prestation</option></select></div>
+      <div class="f"><label for="msg">Quelques détails</label><textarea id="msg" name="Message" placeholder="Décrivez le bâtiment, le chantier, la surface ou le nombre de sites, les délais, les contraintes d’accès et le besoin constaté…"></textarea></div>
+      <div class="f"><label for="ph">Photos ou cahier des charges (optionnel, 5 Mo max)</label><input id="ph" name="attachment" type="file" accept="image/*,.pdf" multiple></div>
+      <label class="chk"><input type="checkbox" id="rgpd"> J'accepte que mes informations soient utilisées uniquement pour traiter ma demande de devis.</label>
+      <button class="btn send" id="sbm" type="submit">Envoyer ma demande</button><div id="res" role="status"></div>
+    </form>
+  </div></section>
+
+  <footer>
+    <div class="fg">
+      <div><img src="logo sans fond.png" alt="CMS Expertise" class="logo-img" onerror="this.outerHTML='<span class=logo-txt>CMS <b>Expertise</b></span>'"><p style="margin-top:1rem">Enveloppe du bâtiment, couverture, zinguerie, isolation et charpente pour particuliers et professionnels dans le Val-d’Oise et en Île-de-France.</p><p style="font-size:.76rem;color:rgba(255,255,255,.35)">SIRET : 840 067 755 00032 · 11 Rue Gambetta, 95390 Saint-Prix</p><div class="qr"><img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://www.linkedin.com/in/mahdi-sandali/" alt="QR code LinkedIn"></div></div>
+      <div><h4>Contact</h4><a href="mailto:contact@cmsexpertise.com">contact@cmsexpertise.com</a><p>11 Rue Gambetta, 95390 Saint-Prix</p><a class="tel" data-tel>07 58 36 22 24</a></div>
+      <div><h4>Services</h4><a data-s="Rénovation de toiture">Couverture &amp; rénovation</a><a data-s="Zinguerie">Zinguerie &amp; étanchéité</a><a data-s="Isolation de toiture">Isolation &amp; ITE</a><a data-open-subsite="all">Nos réalisations</a></div>
+      <div><h4>Navigation</h4><a data-t="profils">Particuliers / Entreprises</a><a data-t="about">L'entreprise</a><a data-t="zone">Zone d'intervention</a><a data-t="contact">Demander un devis</a></div>
+    </div>
+    <div class="fb"><span>© 2026 CMS Expertise — Enveloppe du bâtiment</span><span><a href="#">Mentions légales</a><a href="#">Confidentialité</a></span></div>
+  </footer>
+</div>
+
+<!-- =====================================================================
+     SOUS-SITE : PORTFOLIO DES RÉALISATIONS & CHANTIERS
+====================================================================== -->
+<div id="subsite-realisations" aria-label="Site dédié aux réalisations CMS Expertise">
+  <nav class="sub-nav">
+    <div class="sub-nav-left">
+      <a href="#" data-close-subsite aria-label="Retour à l'accueil CMS Expertise"><img src="logo sans fond.png" alt="CMS Expertise" class="logo-img" onerror="this.outerHTML='<span class=logo-txt>CMS <b>Expertise</b></span>'"></a>
+      <span class="sub-badge">Portfolio Chantiers</span>
+    </div>
+    <div style="display:flex;gap:.8rem;align-items:center">
+      <button class="btn g" style="margin-left:0" data-close-subsite><i class="ti ti-arrow-left"></i> Retour au site</button>
+      <button class="btn" data-subsite-devis="Projet similaire à une réalisation">Demander un devis</button>
+    </div>
+  </nav>
+
+  <header class="sub-hero">
+    <div class="kick">Références &amp; Savoir-faire terrain · Île-de-France</div>
+    <h1>Nos chantiers réalisés <em>en enveloppe du bâtiment.</em></h1>
+    <p>Découvrez une sélection de nos interventions auprès des syndics, professionnels du BTP et particuliers : réhabilitation de façades, zinguerie sur mesure, points singuliers en plomb et rénovation de toitures.</p>
+    <div class="sub-stats">
+      <div><b>100 %</b><span>Sur mesure &amp; conforme DTU</span></div>
+      <div><b>95 &amp; IDF</b><span>Intervention rapide</span></div>
+      <div><b>Décennale</b><span>Garantie sur les ouvrages</span></div>
+    </div>
+  </header>
+
+  <section class="sec" style="padding-top:4rem">
+    <div class="lab">Filtrer par nature de travaux</div>
+    <div class="tabs" id="proj-filters">
+      <button class="on" data-filter="all">Tous les chantiers</button>
+      <button data-filter="immeuble">Immeubles &amp; Façades</button>
+      <button data-filter="zinguerie">Zinguerie &amp; Étanchéité</button>
+      <button data-filter="toiture">Couverture &amp; Toiture</button>
+      <button data-filter="ite">Isolation &amp; Échafaudage</button>
+    </div>
+
+    <div class="proj-grid" id="proj-grid"></div>
+
+    <div class="cs" style="margin-top:4rem">
+      <div>
+        <b>Vous avez un chantier similaire à chiffrer ?</b>
+        <span>Transmettez-nous vos plans, photos ou cahier des charges pour une étude technique gratuite.</span>
+      </div>
+      <div style="display:flex;gap:.8rem;flex-wrap:wrap">
+        <button class="btn" data-subsite-devis="Étude de chantier">Chiffrer mon projet</button>
+        <button class="btn g" style="margin-left:0" data-close-subsite>Retour à l'accueil</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="fg">
+      <div><img src="logo sans fond.png" alt="CMS Expertise" class="logo-img" onerror="this.outerHTML='<span class=logo-txt>CMS <b>Expertise</b></span>'"><p style="margin-top:1rem">Portfolio des réalisations CMS Expertise — Enveloppe du bâtiment, couverture, zinguerie et isolation.</p></div>
+      <div><h4>Siège social</h4><p>11 Rue Gambetta</p><p>95390 Saint-Prix</p><p>SIRET : 840 067 755 00032</p></div>
+      <div><h4>Contact direct</h4><a href="tel:+33758362224">07 58 36 22 24</a><a href="mailto:contact@cmsexpertise.com">contact@cmsexpertise.com</a></div>
+      <div><h4>Navigation</h4><a data-close-subsite>← Retour au site principal</a><a data-subsite-devis="Demande depuis portfolio">Demander un devis gratuit</a></div>
+    </div>
+    <div class="fb"><span>© 2026 CMS Expertise — Tous droits réservés</span><span>Val-d’Oise (95) · Île-de-France</span></div>
+  </footer>
+</div>
+
+<!-- MODALE FICHE CHANTIER DÉTAILLÉE -->
+<div class="modal-bg" id="proj-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div class="modal-box">
+    <button class="modal-close" id="modal-close" aria-label="Fermer">✕</button>
+    <div class="modal-img"><img id="modal-img" src="" alt=""></div>
+    <div class="modal-content" id="modal-body"></div>
   </div>
-</section>
+</div>
 
-<section class="sec full dark" style="padding:5.5rem 2rem;text-align:center">
-  <div class="lab">Nos références</div><h2 class="ttl">Découvrez l'étendue de notre expertise</h2>
-  <p class="intro">Particuliers, entreprises générales, groupes du BTP, architectes, syndics et gestionnaires : échangeons sur vos besoins en travaux, entretien ou partenariat.</p>
-  <a class="btn" href="Brochure CMS.pdf" download><i class="ti ti-download"></i> Télécharger la plaquette</a>
-</section>
-
-<section class="sec">
-  <div class="lab rv">Expertise locale</div>
-  <h2 class="ttl rv d1">Couverture dans le Val-d’Oise : <em>une approche complète.</em></h2>
-  <div class="tabs" id="sb"></div><div class="seo" id="sp"></div>
-</section>
-
-<section class="sec" id="faq" style="padding-top:2rem">
-  <div class="lab rv">Questions fréquentes</div><h2 class="ttl rv d1">Avant de nous confier <em>votre toiture.</em></h2>
-  <div class="faq rv" id="fq"></div>
-</section>
-
-<section class="sec full" id="contact" style="background:#fff"><div class="ct">
-  <div class="rv"><div class="lab" style="text-align:left">Devis gratuit</div><h2 class="ttl" style="text-align:left">Parlons de votre toiture à Saint-Prix ou en Val d'Oise.</h2>
-    <p style="color:var(--mut);font-weight:300">Rénovation, fuite, entretien, zinguerie : laissez-nous l'essentiel, votre demande arrive directement à notre équipe.</p>
-    <ol><li><b>01</b>Demande rapide</li><li><b>02</b>Projet étudié avec soin</li><li><b>03</b>Devis gratuit</li></ol></div>
-  <form id="fm" class="rv d1" novalidate action="https://formsubmit.co/cms.expertise75@gmail.com" method="POST" enctype="multipart/form-data"><input type="hidden" name="_template" value="table"><input type="hidden" name="_captcha" value="false"><input type="hidden" name="_subject" value="Nouvelle demande de devis - CMS Expertise">
-    <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
-    <div class="row"><div class="f"><label for="nom">Nom *</label><input id="nom" name="Nom" autocomplete="name"></div><div class="f"><label for="tel">Téléphone *</label><input id="tel" name="Téléphone" type="tel" autocomplete="tel"></div></div>
-    <div class="row"><div class="f"><label for="email">E-mail *</label><input id="email" name="email" type="email" autocomplete="email"></div><div class="f"><label for="cpf">Code postal *</label><input id="cpf" name="Code postal" inputmode="numeric" maxlength="5"></div></div>
-    <div class="f"><label for="clientType">Vous êtes</label><select id="clientType" name="Type de client"><option value="Particulier">Particulier</option><option value="Entreprise / groupe BTP">Entreprise / groupe BTP</option><option value="Syndic / gestionnaire immobilier">Syndic / gestionnaire immobilier</option><option value="Architecte / maître d’œuvre">Architecte / maître d’œuvre</option><option value="Collectivité / établissement public">Collectivité / établissement public</option><option value="Autre professionnel">Autre professionnel</option></select></div><div class="f"><label for="svc2">Votre besoin *</label><select id="svc2" name="Service"><option value="">Sélectionner une prestation</option></select></div>
-    <div class="f"><label for="msg">Quelques détails</label><textarea id="msg" name="Message" placeholder="Décrivez le bâtiment, le chantier, la surface ou le nombre de sites, les délais, les contraintes d’accès et le besoin constaté…"></textarea></div>
-    <div class="f"><label for="ph">Photos ou cahier des charges (optionnel, 5 Mo max)</label><input id="ph" name="attachment" type="file" accept="image/*,.pdf" multiple></div>
-    <label class="chk"><input type="checkbox" id="rgpd"> J'accepte que mes informations soient utilisées uniquement pour traiter ma demande de devis.</label>
-    <button class="btn send" id="sbm" type="submit">Envoyer ma demande</button><div id="res" role="status"></div>
-  </form>
-</div></section>
-
-<footer>
-  <div class="fg">
-    <div><img src="logo sans fond.png" alt="CMS Expertise" class="logo-img" onerror="this.outerHTML='<span class=logo-txt>CMS <b>Expertise</b></span>'"><p style="margin-top:1rem">Couverture, rénovation, zinguerie et charpente pour particuliers et professionnels dans le Val-d’Oise et en Île-de-France.</p><div class="qr"><img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://www.linkedin.com/in/mahdi-sandali/" alt="QR code LinkedIn"></div></div>
-    <div><h4>Contact</h4><a href="mailto:cms.expertise75@gmail.com">cms.expertise75@gmail.com</a><p>Val-d’Oise (95) · Île-de-France</p><a class="tel" data-tel>Appeler</a></div>
-    <div><h4>Services</h4><a data-s="Rénovation de toiture">Rénovation</a><a data-s="Réparation de toiture">Réparation</a><a data-s="Démoussage de toiture">Démoussage</a><a data-s="Zinguerie">Zinguerie</a></div>
-    <div><h4>Entreprise</h4><a data-t="about">Notre approche</a><a data-t="real">Réalisations</a><a data-t="zone">Zone d'intervention</a><a data-t="contact">Contact</a></div>
-  </div>
-  <div class="fb"><span>© 2026 CMS Expertise</span><span><a href="#">Mentions légales</a><a href="#">Confidentialité</a></span></div>
-</footer>
 <button id="top" aria-label="Haut de page"><i class="ti ti-arrow-up"></i></button>
-<div class="pill"><a class="num" href="tel:+33758362224" aria-label="Appeler le 07 58 36 22 24"><i class="ti ti-phone-call"></i><div><span>Appelez-nous</span>07 58 36 22 24</div></a><button class="btn" data-t="contact">Demande de devis</button></div>
+<div class="pill"><a class="num" href="tel:+33758362224" aria-label="Appeler le 07 58 36 22 24"><i class="ti ti-phone-call"></i><div><span>Appelez-nous</span>07 58 36 22 24</div></a><button class="btn" data-subsite-devis="Demande de devis rapide">Demande de devis</button></div>
 
 <script>
-const EMAIL="cms.expertise75@gmail.com",TEL="07 58 36 22 24";
+const EMAIL="contact@cmsexpertise.com",TEL="07 58 36 22 24";
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
 let go=()=>{};
+
+/* =====================================================================
+   DONNÉES : ESPACE PARTICULIERS VS ENTREPRISES
+===================================================================== */
+const AUDIENCES = {
+  particulier: {
+    tag: "Espace Particuliers · Maisons individuelles",
+    title: "Protégez et valorisez votre maison en toute sérénité.",
+    desc: "Que vous fassiez face à une infiltration urgente ou que vous prépariez la rénovation complète de votre toiture, nous vous accompagnons avec des explications claires, un devis transparent et un chantier propre.",
+    points: [
+      "Recherche de fuite et mise hors d'eau rapide",
+      "Rénovation complète de toiture (tuiles, ardoise, zinc)",
+      "Nettoyage, démoussage et traitement hydrofuge",
+      "Pose et remplacement de fenêtres de toit (Velux)",
+      "Zinguerie, gouttières et habillages de bandeaux",
+      "Isolation thermique des combles et sous-toiture"
+    ],
+    boxTitle: "Vos garanties Particulier",
+    boxItems: [
+      "✓ Diagnostic sur site et devis gratuit détaillé",
+      "✓ Assurance Garantie Décennale fournie",
+      "✓ TVA réduite applicable selon nature des travaux",
+      "✓ Respect des abords et nettoyage complet en fin de chantier"
+    ],
+    clientValue: "Particulier",
+    ctaLabel: "Demander un devis pour ma maison"
+  },
+  entreprise: {
+    tag: "Espace Professionnels · BTP, Syndics & Architectes",
+    title: "Un partenaire technique réactif pour vos opérations et patrimoines.",
+    desc: "CMS Expertise intervient en tant que spécialiste de l'enveloppe du bâtiment auprès des entreprises générales, syndics de copropriété, gestionnaires immobiliers, architectes et collectivités en Île-de-France.",
+    points: [
+      "Réhabilitation de façades, bardage et ITE sur immeubles",
+      "Façonnage et pose de zinguerie technique sur mesure",
+      "Traitement des points singuliers, solins et abergements",
+      "Entretien préventif et curatif de parcs immobiliers",
+      "Intervention sécurisée en grande hauteur (échafaudage / filet)",
+      "Sous-traitance ou cotraitance sur lots couverture / enveloppe"
+    ],
+    boxTitle: "Engagements Professionnels & BTP",
+    boxItems: [
+      "✓ Étude sur plans, CCTP ou relevés sur site",
+      "✓ Respect strict des normes DTU et règles de sécurité",
+      "✓ Attestations décennale, RC Pro et conformité à jour",
+      "✓ Interlocuteur unique dédié au suivi de planning"
+    ],
+    clientValue: "Entreprise / groupe BTP",
+    ctaLabel: "Consulter notre équipe pro"
+  }
+};
+
+function renderAudience(key) {
+  const data = AUDIENCES[key];
+  $$('.aud-switch button').forEach(b => {
+    const active = b.dataset.aud === key;
+    b.classList.toggle('on', active);
+    b.setAttribute('aria-selected', active ? 'true' : 'false');
+  });
+  $('#aud-container').innerHTML = `
+    <div class="aud-panel">
+      <div>
+        <span class="tag-aud">${data.tag}</span>
+        <h3>${data.title}</h3>
+        <p>${data.desc}</p>
+        <ul class="aud-list">
+          ${data.points.map(pt => `<li><i class="ti ti-circle-check"></i><span>${pt}</span></li>`).join('')}
+        </ul>
+        <div style="display:flex;gap:.8rem;flex-wrap:wrap">
+          <button class="btn" id="aud-cta">${data.ctaLabel}</button>
+          <button class="btn dark-outline" data-open-subsite="all">Voir nos chantiers</button>
+        </div>
+      </div>
+      <div class="aud-box">
+        <h4>${data.boxTitle}</h4>
+        <ul>
+          ${data.boxItems.map(item => `<li>${item}</li>`).join('')}
+        </ul>
+        <p style="font-size:.82rem;color:rgba(255,255,255,.55);margin-bottom:1rem">Besoin d'échanger directement avec Mahdi Sandali ?</p>
+        <a href="tel:+33758362224" class="btn" style="width:100%;justify-content:center"><i class="ti ti-phone"></i> 07 58 36 22 24</a>
+      </div>
+    </div>
+  `;
+  $('#aud-cta').onclick = () => {
+    $('#clientType').value = data.clientValue;
+    go('contact');
+  };
+}
+$$('.aud-switch button').forEach(btn => btn.onclick = () => renderAudience(btn.dataset.aud));
+renderAudience('particulier');
+
+/* =====================================================================
+   DONNÉES : SOUS-SITE RÉALISATIONS (VOS CHANTIERS)
+===================================================================== */
+const PROJECTS = [
+  {
+    id: "chantier-1",
+    cat: "immeuble",
+    catLabel: "Immeubles & Façades",
+    title: "Réhabilitation globale de façade et habillages — Immeuble R+5",
+    location: "Île-de-France",
+    client: "Copropriété / Bailleur",
+    nature: "Enveloppe extérieure, habillage de bandeaux, finitions façade",
+    img: "chantier-immeuble.jpg",
+    fallback: "hero",
+    summary: "Intervention complète sur un bâtiment collectif de 5 étages comprenant la remise à neuf des façades claires, la création de lignes architecturales verticales anthracite et l'habillage complet des nez de balcons.",
+    details: [
+      "Mise en place d'un échafaudage périphérique sécurisé sur toute la hauteur du bâtiment.",
+      "Traitement et finition haute durabilité des parois verticales et des trumeaux gris anthracite.",
+      "Pose d'habillages métalliques blancs sur les bandeaux de balcons pour une protection durable contre le ruissellement.",
+      "Contrôle qualité des alignements et repli propre du chantier."
+    ]
+  },
+  {
+    id: "chantier-2",
+    cat: "zinguerie",
+    catLabel: "Zinguerie & Étanchéité",
+    title: "Façonnage et pose d'habillage zinc à tasseaux sur bandeau",
+    location: "Val-d’Oise (95)",
+    client: "Copropriété / Rénovation",
+    nature: "Zinguerie sur mesure, couverture à tasseaux, solins et soudures",
+    img: "chantier-zinc.jpg",
+    fallback: "reno",
+    summary: "Réalisation artisanale d'une couverture de bandeau en zinc naturel à tasseaux avec relevés d'étanchéité façonnés sur mesure et soudures à l'étain.",
+    details: [
+      "Prise de cotes sur site et pliage en atelier des feuilles de zinc naturel.",
+      "Pose avec système de tasseaux et couvre-joints permettant la libre dilatation thermique du métal.",
+      "Réalisation des relevés en solin contre façade existante et soudures soignées aux angles.",
+      "Protection pérenne des maçonneries exposées aux intempéries."
+    ]
+  },
+  {
+    id: "chantier-3",
+    cat: "zinguerie",
+    catLabel: "Zinguerie & Étanchéité",
+    title: "Étanchéité et abergement de souche de cheminée en plomb",
+    location: "Val-d’Oise (95)",
+    client: "Particulier / Résidentiel",
+    nature: "Point singulier, façonnage du plomb, solin et raccord tuiles",
+    img: "chantier-plomb.jpg",
+    fallback: "sky",
+    summary: "Reprise complète de l'étanchéité autour d'une souche de cheminée enduite sur couverture en tuiles terre cuite grand moule.",
+    details: [
+      "Façonnage et battage d'une bavette et d'un entourage complet en feuille de plomb épousant le galbe des tuiles.",
+      "Pose d'une bande porte-solin métallique encastrée et jointoyée en périphérie de la souche.",
+      "Vérification de l'écoulement des eaux pluviales en amont (besacière) et sur les côtés.",
+      "Suppression définitive des risques d'infiltration au niveau de la souche."
+    ]
+  },
+  {
+    id: "chantier-4",
+    cat: "toiture",
+    catLabel: "Couverture & Toiture",
+    title: "Rénovation, démoussage et remise à neuf d'une couverture tuiles",
+    location: "Val-d’Oise (95)",
+    client: "Résidence collective",
+    nature: "Nettoyage haute performance, révision de couverture, traitement",
+    img: "chantier-toiture.jpg",
+    fallback: "team",
+    summary: "Remise en état d'un grand versant en tuiles mécaniques terre cuite fortement encrassé par les mousses et lichens, avec mise en sécurité par échelles de toit.",
+    details: [
+      "Installation d'échelles de toit sécurisées et protection des gouttières et abords.",
+      "Élimination en profondeur des mousses, lichens et dépôts atmosphériques sans altérer la terre cuite.",
+      "Remplacement des tuiles fissurées ou gélives et contrôle des alignements.",
+      "Application d'un traitement fongicide et hydrofuge pour prolonger la durée de vie de la couverture."
+    ]
+  },
+  {
+    id: "chantier-5",
+    cat: "ite",
+    catLabel: "Isolation & Échafaudage",
+    title: "Isolation thermique par l'extérieur (ITE) et pare-pluie en hauteur",
+    location: "Île-de-France",
+    client: "Entreprise BTP / Marché collectif",
+    nature: "ITE, pose d'isolant, pare-pluie, échafaudage grande hauteur",
+    img: "chantier-ite.jpg",
+    fallback: "hero",
+    summary: "Travaux d'enveloppe thermique sur façade d'immeuble sous échafaudage complet : mise en œuvre de l'isolant et de l'écran pare-pluie haute perméabilité.",
+    details: [
+      "Montage et contrôle d'un échafaudage multidirectionnel sur toute la façade.",
+      "Pose rigoureuse des panneaux isolants et continuité de l'étanchéité à l'air et à l'eau.",
+      "Traitement soigné des tableaux de fenêtres et points singuliers.",
+      "Coordination fluide avec les équipes de finition et de bardage."
+    ]
+  },
+  {
+    id: "chantier-6",
+    cat: "toiture",
+    catLabel: "Couverture & Toiture",
+    title: "Réfection de couverture et souches sur immeuble ancien",
+    location: "Val-d’Oise (95)",
+    client: "Syndic de copropriété",
+    nature: "Couverture tuiles, échafaudage fileté, sécurité collective",
+    img: "chantier-collectif.jpg",
+    fallback: "team",
+    summary: "Intervention en site occupé sur un immeuble collectif R+4 avec installation d'un échafaudage périphérique fileté pour la révision de la toiture et des souches.",
+    details: [
+      "Sécurisation intégrale du périmètre avec filets de protection et garde-corps réglementaires.",
+      "Intervention des couvreurs équipés (EPI) sur les versants et autour des souches de cheminées.",
+      "Reprise des faîtages, rives et raccords d'étanchéité.",
+      "Maintien de l'accès des résidents pendant toute la durée de l'opération."
+    ]
+  }
+];
+
+function renderProjects(filter = "all") {
+  const list = filter === "all" ? PROJECTS : PROJECTS.filter(p => p.cat === filter);
+  $('#proj-grid').innerHTML = list.map(p => `
+    <article class="proj-card">
+      <div class="proj-img">
+        <span class="proj-cat">${p.catLabel}</span>
+        <span class="proj-loc">${p.location}</span>
+        <img src="${p.img}" alt="${p.title}" data-fallback="${p.fallback}">
+      </div>
+      <div class="proj-body">
+        <div class="proj-meta"><span>${p.client}</span><span>•</span><span>${p.nature}</span></div>
+        <h3>${p.title}</h3>
+        <p>${p.summary}</p>
+        <div class="proj-specs">
+          <div><strong>Nature des travaux :</strong> ${p.nature}</div>
+          <div><strong>Localisation :</strong> ${p.location}</div>
+        </div>
+        <div class="proj-foot">
+          <button class="lnk" data-proj-detail="${p.id}">Voir la fiche chantier →</button>
+          <button class="btn" style="padding:.6rem 1.2rem;font-size:.72rem" data-subsite-devis="${p.title}">Projet similaire</button>
+        </div>
+      </div>
+    </article>
+  `).join('');
+  applyImageFallbacks($('#proj-grid'));
+}
+
+$('#proj-filters').onclick = e => {
+  const btn = e.target.closest('button');
+  if (!btn) return;
+  $$('#proj-filters button').forEach(b => b.classList.toggle('on', b === btn));
+  renderProjects(btn.dataset.filter);
+};
+
+function openProjectModal(id) {
+  const p = PROJECTS.find(x => x.id === id);
+  if (!p) return;
+  const img = $('#modal-img');
+  img.src = p.img;
+  img.alt = p.title;
+  img.dataset.fallback = p.fallback;
+  applyImageFallbacks(img.parentElement);
+  $('#modal-body').innerHTML = `
+    <div class="proj-meta"><span>${p.catLabel}</span><span>•</span><span>${p.location}</span><span>•</span><span>${p.client}</span></div>
+    <h2 style="font:400 2.2rem/1.15 var(--fd);margin-bottom:1rem">${p.title}</h2>
+    <p style="color:var(--mut);font-weight:300;margin-bottom:1.4rem">${p.summary}</p>
+    <h4 style="font:600 1.25rem var(--fd);margin-bottom:.7rem">Détails techniques de l'intervention :</h4>
+    <ul style="padding-left:1.2rem;color:#2c3035;margin-bottom:1.8rem">
+      ${p.details.map(d => `<li style="margin-bottom:.45rem">${d}</li>`).join('')}
+    </ul>
+    <div style="display:flex;gap:.8rem;flex-wrap:wrap">
+      <button class="btn" id="modal-devis">Demander un devis pour un chantier similaire</button>
+      <button class="btn dark-outline" id="modal-close-btn">Fermer la fiche</button>
+    </div>
+  `;
+  $('#proj-modal').classList.add('open');
+  $('#modal-close-btn').onclick = () => $('#proj-modal').classList.remove('open');
+  $('#modal-devis').onclick = () => {
+    $('#proj-modal').classList.remove('open');
+    closeSubsiteAndGoContact(p.title);
+  };
+}
+$('#modal-close').onclick = () => $('#proj-modal').classList.remove('open');
+$('#proj-modal').onclick = e => { if (e.target === $('#proj-modal')) $('#proj-modal').classList.remove('open'); };
+
+/* =====================================================================
+   NAVIGATION ENTRE SITE PRINCIPAL & SOUS-SITE RÉALISATIONS
+===================================================================== */
+const wait = ms => new Promise(r => setTimeout(r, ms));
+let busy = false;
+
+async function transitionCurtain(callback) {
+  const cur = $('#cur');
+  if (!cur || matchMedia('(prefers-reduced-motion:reduce)').matches) {
+    callback();
+    return;
+  }
+  if (busy) return;
+  busy = true;
+  cur.style.transition = 'transform .42s cubic-bezier(.7,0,.2,1)';
+  cur.style.transform = 'translateX(0)';
+  await wait(440);
+  callback();
+  await wait(80);
+  cur.style.transform = 'translateX(101%)';
+  await wait(440);
+  cur.style.transition = 'none';
+  cur.style.transform = 'translateX(-101%)';
+  busy = false;
+}
+
+function openSubsite(filter = "all") {
+  transitionCurtain(() => {
+    document.body.classList.add('in-subsite');
+    const validFilter = ['all','immeuble','zinguerie','toiture','ite'].includes(filter) ? filter : 'all';
+    $$('#proj-filters button').forEach(b => b.classList.toggle('on', b.dataset.filter === validFilter));
+    renderProjects(validFilter);
+    scrollTo(0, 0);
+  });
+}
+
+function closeSubsite(targetId = "top0") {
+  transitionCurtain(() => {
+    document.body.classList.remove('in-subsite');
+    if (targetId && targetId !== 'top0') {
+      const el = document.getElementById(targetId);
+      if (el) scrollTo(0, Math.max(0, el.getBoundingClientRect().top + scrollY - 90));
+    } else {
+      scrollTo(0, 0);
+    }
+  });
+}
+
+function closeSubsiteAndGoContact(subjectText) {
+  const msg = $('#msg');
+  if (subjectText) {
+    msg.value = `Demande suite à la consultation de vos réalisations (${subjectText}) :\n`;
+  }
+  if (document.body.classList.contains('in-subsite')) {
+    closeSubsite('contact');
+  } else {
+    go('contact');
+  }
+}
+
+document.addEventListener('click', e => {
+  const openSub = e.target.closest('[data-open-subsite]');
+  if (openSub) {
+    e.preventDefault();
+    const nl = $('#nl'); if (nl) nl.classList.remove('open');
+    openSubsite(openSub.dataset.openSubsite);
+    return;
+  }
+  const closeSub = e.target.closest('[data-close-subsite]');
+  if (closeSub) {
+    e.preventDefault();
+    closeSubsite('top0');
+    return;
+  }
+  const subDevis = e.target.closest('[data-subsite-devis]');
+  if (subDevis) {
+    e.preventDefault();
+    closeSubsiteAndGoContact(subDevis.dataset.subsiteDevis);
+    return;
+  }
+  const detailBtn = e.target.closest('[data-proj-detail]');
+  if (detailBtn) {
+    e.preventDefault();
+    openProjectModal(detailBtn.dataset.projDetail);
+    return;
+  }
+  const s = e.target.closest('[data-s]');
+  if (s) {
+    $('#svc2').value = s.dataset.s;
+    go('contact');
+    return;
+  }
+  const t = e.target.closest('[data-t]');
+  if (t) {
+    e.preventDefault();
+    go(t.dataset.t === 'top0' ? 'top0' : t.dataset.t);
+  }
+});
+
+/* =====================================================================
+   SCRIPTS D'ORIGINE DU SITE PRINCIPAL
+===================================================================== */
 const SV=["Rénovation de toiture","Réparation de toiture","Dépannage toiture","Démoussage de toiture","Zinguerie","Charpente bois","Fenêtre de toit","Isolation de toiture","Autre projet toiture"];
 $('#svc2').innerHTML+=SV.map(s=>`<option>${s}</option>`).join('');
-document.addEventListener('click',e=>{const s=e.target.closest('[data-s]');if(s){$('#svc2').value=s.dataset.s;go('contact');return}const t=e.target.closest('[data-t]');if(t){e.preventDefault();go(t.dataset.t==='top0'?'top0':t.dataset.t)}});
 $('#bg').onclick=()=>$('#nl').classList.toggle('open');
-if(TEL){$$('.tel').forEach(e=>{e.style.display=e.classList.contains('btn')?'inline-block':'block';e.href='tel:+33'+TEL.replace(/\D/g,'').slice(1);e.textContent=TEL})}
+if(TEL){$$('.tel').forEach(e=>{e.style.display=e.classList.contains('btn')?'inline-flex':'block';e.href='tel:+33'+TEL.replace(/\D/g,'').slice(1);e.textContent=TEL})}
 addEventListener('scroll',()=>{$('#top').classList.toggle('show',scrollY>500);$('#bar').style.width=scrollY/(document.body.scrollHeight-innerHeight)*100+'%'},{passive:true});
-$('#top').onclick=()=>go('top0');
-const mq=["Couverture","Rénovation","Zinguerie","Démoussage","Réparation","Charpente","Fenêtres de toit","Isolation"].map(x=>`<span>${x}</span>`).join('');$('#mqi').innerHTML=mq+mq;
-const W=[["Diagnostic sur site","Observation de la toiture et écoute de vos besoins avant toute proposition."],["Devis gratuit et lisible","Besoin identifié, travaux proposés et principaux postes détaillés."],["Garantie décennale","Pour les travaux concernés, l'entreprise intervient avec une assurance décennale."],["Normes respectées","Isolants et écrans de sous-toiture posés selon les règles en vigueur."],["Chantier protégé","Accès, abords et zones de travail organisés pour limiter les nuisances."],["Un interlocuteur clair","Vous savez ce qui va être fait, et dans quel ordre."]];
+$('#top').onclick=()=>scrollTo({top:0,behavior:'smooth'});
+const mq=["Enveloppe du bâtiment","Couverture","Zinguerie","Isolation ITE","Rénovation","Démoussage","Charpente","Fenêtres de toit"].map(x=>`<span>${x}</span>`).join('');$('#mqi').innerHTML=mq+mq;
+const W=[["Diagnostic sur site","Observation de l'ouvrage et écoute de vos besoins avant toute proposition."],["Devis gratuit et lisible","Besoin identifié, travaux proposés et principaux postes détaillés."],["Garantie décennale","Pour les travaux concernés, l'entreprise intervient avec une assurance décennale."],["Normes DTU respectées","Matériaux, zinc, isolants et écrans posés selon les règles en vigueur."],["Chantier sécurisé","Échafaudages, filets et protections organisés pour la sécurité de tous."],["Un interlocuteur unique","Vous savez ce qui va être fait, et dans quel ordre."]];
 $('#why').innerHTML=W.map((w,i)=>`<div class="card rv d${i%3}"><span class="n">0${i+1}</span><h3>${w[0]}</h3><p>${w[1]}</p></div>`).join('');
-const S=[["Couverture & rénovation","Réfection complète ou partielle : tuiles, ardoise, shingle, zinc, cuivre ou acier.","Rénovation de toiture"],["Réparation de toiture","Reprise ciblée des tuiles, faîtages, rives et raccords.","Réparation de toiture"],["Dépannage toiture","Fuite ou infiltration : intervention pour limiter les dégâts.","Dépannage toiture"],["Nettoyage & démoussage","Entretien adapté à l'état de la couverture pour préserver sa durée de vie.","Démoussage de toiture"],["Zinguerie & gouttières","Gouttières, noues, solins et abergements pour maîtriser l'évacuation des eaux.","Zinguerie"],["Charpente bois","Installation complète, fondation solide de votre couverture.","Charpente bois"],["Fenêtres de toit","Fourniture et pose, remplacement et reprise d'étanchéité.","Fenêtre de toit"],["Isolation & sous-toiture","Isolants et écrans de sous-toiture coordonnés avec la couverture.","Isolation de toiture"]];
+const S=[["Couverture & rénovation","Réfection complète ou partielle : tuiles, ardoise, zinc, cuivre ou acier.","Rénovation de toiture"],["Zinguerie & étanchéité","Bandeaux à tasseaux, abergements plomb/zinc, gouttières, solins et noues.","Zinguerie"],["Isolation & ITE","Isolation thermique par l'extérieur, pare-pluie et isolation sous-toiture.","Isolation de toiture"],["Réparation de toiture","Reprise ciblée des tuiles, faîtages, rives et points singuliers.","Réparation de toiture"],["Dépannage & mise hors d'eau","Fuite ou infiltration : intervention rapide pour limiter les dégâts.","Dépannage toiture"],["Nettoyage & démoussage","Entretien haute performance adapté au matériau pour préserver sa durée de vie.","Démoussage de toiture"],["Charpente bois","Installation et reprise structurelle, fondation solide de votre couverture.","Charpente bois"],["Fenêtres de toit","Fourniture et pose, remplacement et reprise d'étanchéité périphérique.","Fenêtre de toit"]];
 $('#sv').innerHTML=S.map((s,i)=>`<div class="card rv d${i%3}"><span class="n">0${i+1}</span><h3>${s[0]}</h3><p>${s[1]}</p><button class="lnk" data-s="${s[2]}">Demander un devis →</button></div>`).join('');
-const P=[["Comprendre","Votre besoin, le contexte de la toiture et la priorité du chantier."],["Diagnostiquer","Identifier les points à traiter avant de définir une solution cohérente."],["Intervenir","Travaux soignés, protection du chantier et finitions maîtrisées."],["Contrôler","Vérification des détails essentiels avant la restitution."]];
+const P=[["Comprendre","Votre besoin, le contexte du bâtiment et les contraintes d'accès."],["Diagnostiquer","Identifier les points techniques à traiter avant de définir la solution."],["Intervenir","Travaux soignés, sécurisation du chantier et façonnages sur mesure."],["Contrôler","Vérification systématique des étanchéités et finitions avant réception."]];
 $('#st').innerHTML=P.map((p,i)=>`<div class="card rv d${i%3}"><span class="n">0${i+1}</span><h3>${p[0]}</h3><p>${p[1]}</p></div>`).join('');
-const T=[["Couverture dans le Val-d’Oise","Une toiture associe couverture, étanchéité, évacuation des eaux, ventilation et zinguerie. Un défaut localisé peut avoir des effets loin dans le bâtiment : nous cherchons donc d'abord l'origine du problème et l'état général du toit avant de décider des travaux."],["Rénovation","Rénovation complète ou reprise de zones fragiles : le choix du matériau, la compatibilité avec l'existant et la qualité des finitions comptent autant que l'aspect. Nous distinguons réparation ponctuelle et reprise plus globale."],["Entretien","Nettoyage et démoussage limitent l'humidité retenue et protègent la couverture. La méthode dépend du matériau et de son état : le support est observé avant de choisir la technique."],["Fuite & réparation","Une trace d'humidité n'indique pas toujours l'endroit exact de l'infiltration. Nous remontons le trajet de l'eau, puis réparons de façon ciblée plutôt que de refaire tout le toit."],["Décennale","Pour les travaux concernés, la garantie décennale couvre, dans les conditions du contrat d'assurance, certains désordres graves après réception. Les justificatifs peuvent être présentés."],["Devis","Un bon devis détaille la nature des travaux, les zones concernées et les matériaux. Votre commune, le problème constaté et quelques photos suffisent pour démarrer."]];
+const T=[["Enveloppe du bâtiment dans le Val-d’Oise","L'enveloppe du bâtiment regroupe la couverture, la zinguerie, l'étanchéité et l'isolation thermique. Un défaut localisé peut impacter l'ensemble de la structure : nous analysons globalement l'ouvrage avant toute préconisation."],["Zinguerie & Plomb","Le façonnage du zinc (bandeaux à tasseaux, couvertines) et du plomb (abergements de cheminées) assure l'étanchéité durable des points singuliers exposés aux intempéries."],["Rénovation & ITE","Réhabilitation de façades d'immeubles collectifs ou rénovation de toitures individuelles : nous adaptons nos moyens humains et matériels (échafaudages, filets) à l'envergure de chaque opération."],["Fuite & réparation","Une trace d'humidité n'indique pas toujours l'endroit exact de l'infiltration. Nous remontons le trajet de l'eau, puis réparons de façon ciblée et pérenne."],["Décennale","Pour les travaux concernés, la garantie décennale couvre, dans les conditions du contrat d'assurance, les désordres compromettant la solidité ou l'étanchéité après réception."],["Devis","Un bon devis détaille la nature des travaux, les zones concernées et les matériaux. Votre commune, le besoin constaté et quelques photos suffisent pour démarrer."]];
 $('#sb').innerHTML=T.map((t,i)=>`<button data-i="${i}">${t[0]}</button>`).join('');
 const st=i=>{$$('#sb button').forEach((b,j)=>b.classList.toggle('on',i==j));$('#sp').innerHTML=`<h3>${T[i][0]}</h3><p>${T[i][1]}</p>`};$('#sb').onclick=e=>{const b=e.target.closest('button');if(b)st(b.dataset.i)};st(0);
-const F=[["Faut-il refaire toute la toiture en cas d'infiltration ?","Pas forcément. L'eau peut venir d'une tuile déplacée, d'un raccord ou du faîtage. Le diagnostic détermine si une réparation ponctuelle suffit."],["Le devis est-il gratuit ?","Oui. Il détaille le périmètre des travaux pour que vous compreniez ce qui sera réalisé."],["Quels matériaux de couverture proposez-vous ?","Tuiles, ardoise, shingle, zinc, cuivre et acier, avec isolants et écrans de sous-toiture conformes."],["À quelle fréquence démousser une toiture ?","En général tous les 5 à 10 ans selon l'exposition, la végétation et le matériau."],["Les travaux sont-ils couverts par une garantie décennale ?","Les travaux concernés le sont, dans les conditions du contrat d'assurance. Les justificatifs peuvent être présentés."],["Intervenez-vous hors de votre commune de départ ?","Oui, dans tout le Val d'Oise et en Île-de-France. Indiquez votre code postal dans le formulaire."]];
+const F=[["Intervenez-vous aussi bien pour les particuliers que pour les professionnels ?","Oui. Nous accompagnons les propriétaires de maisons individuelles ainsi que les syndics, bailleurs, architectes et entreprises du BTP sur des chantiers collectifs et techniques."],["Le devis est-il gratuit ?","Oui. Il détaille le périmètre des travaux, les matériaux et les finitions pour une totale transparence."],["Quels matériaux travaillez-vous ?","Tuiles terre cuite, ardoise, zinc naturel ou prépatiné, plomb (abergements), cuivre, acier et complexes d'isolation thermique."],["À quelle fréquence entretenir une toiture ?","En général tous les 5 à 10 ans selon l'exposition, la végétation environnante et la nature du matériau."],["Les travaux sont-ils couverts par une garantie décennale ?","Oui, les travaux concernés sont couverts par notre assurance responsabilité civile et décennale."],["Quelle est votre zone d'intervention ?","Basés à Saint-Prix (95390), nous intervenons dans tout le Val-d'Oise et sur l'ensemble de l'Île-de-France."]];
 $('#fq').innerHTML=F.map(f=>`<details><summary>${f[0]}</summary><p>${f[1]}</p></details>`).join('');
 const cpInput=$('#cp'),cpMessage=$('#zmsg');
-function cz(){const v=cpInput.value.trim();if(!/^\d{5}$/.test(v)){cpMessage.className='zmsg';cpMessage.style.color='#a93226';cpMessage.textContent='Saisissez un code postal composé de 5 chiffres.';return}const dept=v.slice(0,2);if(['75','77','78','91','92','93','94','95'].includes(dept)){cpMessage.className='zmsg';cpMessage.style.color='#1e8449';cpMessage.textContent=dept==='95'?'Code postal du Val-d’Oise : vous êtes dans notre département principal. Contactez-nous pour étudier votre projet.':'Code postal en Île-de-France : votre demande peut être étudiée par notre équipe.'}else{cpMessage.className='zmsg';cpMessage.style.color='#a93226';cpMessage.textContent='Ce code postal est hors de notre zone habituelle d’intervention. Contactez-nous pour vérifier la faisabilité.'}}
+function cz(){const v=cpInput.value.trim();if(!/^\d{5}$/.test(v)){cpMessage.className='zmsg';cpMessage.style.color='#a93226';cpMessage.textContent='Saisissez un code postal composé de 5 chiffres.';return}const dept=v.slice(0,2);if(['75','77','78','91','92','93','94','95'].includes(dept)){cpMessage.className='zmsg';cpMessage.style.color='#1e8449';cpMessage.textContent=dept==='95'?'Code postal du Val-d’Oise (95) : vous êtes dans notre département d’implantation. Contactez-nous pour étudier votre projet.':'Code postal en Île-de-France : votre demande peut être étudiée par notre équipe.'}else{cpMessage.className='zmsg';cpMessage.style.color='#a93226';cpMessage.textContent='Ce code postal est hors de notre zone habituelle d’intervention. Contactez-nous pour vérifier la faisabilité.'}}
 cpInput.addEventListener('input',()=>{const clean=cpInput.value.replace(/\D/g,'').slice(0,5);if(cpInput.value!==clean)cpInput.value=clean;if(!clean){cpMessage.textContent='';return}if(clean.length<5){cpMessage.className='zmsg neutral';cpMessage.textContent=`Encore ${5-clean.length} chiffre(s) à saisir.`;return}cz()});
 $('#cpb').addEventListener('click',cz);cpInput.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();cz()}});
 const revealItems=$$('.rv');revealItems.forEach((el,i)=>{if(!el.classList.contains('from-left')&&!el.classList.contains('from-right'))el.classList.add(i%2?'from-right':'from-left')});const io=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('v');io.unobserve(entry.target)}}),{threshold:.12,rootMargin:'0px 0px -45px 0px'});revealItems.forEach(el=>io.observe(el));
+
 $('#fm').addEventListener('submit',async e=>{e.preventDefault();const f=e.target,res=$('#res'),btn=$('#sbm');res.className='';res.style.display='none';let ok=true;
 [['nom',v=>v.trim()],['tel',v=>v.replace(/\D/g,'').length>=9],['email',v=>/^\S+@\S+\.\S+$/.test(v)],['cpf',v=>/^\d{5}$/.test(v.trim())],['svc2',v=>v]].forEach(([id,fn])=>{const el=$('#'+id),bad=!fn(el.value);el.classList.toggle('err',bad);if(bad)ok=false});
 if(!$('#rgpd').checked)ok=false;
 if(!ok){res.className='ko';res.textContent='Merci de compléter les champs obligatoires et d\'accepter le traitement de vos données.';return}
-const fd=new FormData(f);fd.set('_subject','Demande de devis : '+$('#svc2').value+' (site CMS Expertise)');
+const fd=new FormData(f);fd.set('_subject','Demande de devis : '+$('#svc2').value+' ('+$('#clientType').value+')');
 if(!$('#ph').files.length)fd.delete('attachment');
 btn.disabled=true;btn.textContent='Envoi en cours…';
 try{const r=await fetch(f.action,{method:'POST',headers:{Accept:'application/json'},body:fd});const j=await r.json();
 if(j.success===true||j.success==='true'){res.className='ok';res.textContent='Merci, votre demande a bien été transmise. Nous vous recontactons très prochainement.';f.reset()}
-else{res.className='ko';res.textContent=(j.message||'Envoi refusé par le service.')+' Si c\'est le premier envoi, activez l\'adresse via le mail reçu sur '+EMAIL+' (vérifiez les spams).'}}
+else{res.className='ko';res.textContent=(j.message||'Envoi refusé par le service.')+' Si c\'est le premier envoi, activez l\'adresse via le mail reçu sur '+EMAIL+'.'}}
 catch(_){res.className='ok';res.textContent='Envoi de votre demande en cours, une page de confirmation va s\'ouvrir…';f.target='_blank';f.submit()}
 btn.disabled=false;btn.textContent='Envoyer ma demande'});
 
@@ -304,34 +847,36 @@ $('#zt').innerHTML=D.map((d,i)=>`<button data-i="${i}">${d[0]}</button>`).join('
 const zs=i=>{$$('#zt button').forEach((b,j)=>b.classList.toggle('on',i==j));$('#zc').innerHTML=D[i][1].split('|').map(c=>`<button class="city" data-c="${c}">${c}</button>`).join('')};
 $('#zt').onclick=e=>{const b=e.target.closest('button');if(b)zs(+b.dataset.i)};zs(0);
 $('#zc').onclick=e=>{const b=e.target.closest('.city');if(b){const m=$('#msg');if(!m.value)m.value='Commune : '+b.dataset.c+'\n';go('contact')}};
-const MT=[["Ardoise","ti-square-rotated","Élégance intemporelle, idéale pour les demeures de caractère.","Plus de 75 ans"],["Tuile","ti-layout-grid","Terre cuite plate, romane ou canal, fidèle à l'architecture locale.","50 à 100 ans"],["Zinc","ti-brand-terraform","Esthétique contemporaine, adapté aux toitures complexes.","50 à 80 ans"],["Cuivre","ti-coin","Matériau noble qui développe une patine unique.","Plus de 100 ans"],["Acier","ti-bolt","Robuste et rapide à poser sur de grandes surfaces.","30 à 50 ans"],["Shingle","ti-layers","Solution économique pour les toitures à faible pente.","20 à 30 ans"]];
+
+const MT=[["Zinc","ti-brand-terraform","Esthétique contemporaine et façonnage sur mesure pour bandeaux, couvertines et toitures.","50 à 80 ans"],["Tuile","ti-layout-grid","Terre cuite plate, romane ou mécanique, fidèle à l'architecture d'Île-de-France.","50 à 100 ans"],["Ardoise","ti-square-rotated","Élégance intemporelle et grande longévité pour les demeures de caractère.","Plus de 75 ans"],["Cuivre","ti-coin","Matériau noble d'exception qui développe une patine protectrice unique.","Plus de 100 ans"],["Acier","ti-bolt","Robuste et performant pour les grandes surfaces et bâtiments professionnels.","30 à 50 ans"],["Shingle","ti-layers","Solution légère adaptée aux toitures à faible pente et annexes.","20 à 30 ans"]];
 $('#mt').innerHTML=MT.map((m,i)=>`<button data-i="${i}">${m[0]}</button>`).join('');
 const sm=i=>{const m=MT[i];$$('#mt button').forEach((b,j)=>b.classList.toggle('on',i==j));$('#mpn').innerHTML=`<div class="pic"><i class="ti ${m[1]}"></i></div><div class="tx"><h3>${m[0]}</h3><p>${m[2]}</p><p style="color:#1a1a1a">Durée de vie indicative : <b>${m[3]}</b></p><button class="btn" data-s="Rénovation de toiture">Demander un devis</button></div>`};
 $('#mt').onclick=e=>{const b=e.target.closest('button');if(b)sm(+b.dataset.i)};sm(0);
+
 const Q=[
  {title:"Quel est le sujet principal de votre demande ?",hint:"Choisissez la situation qui se rapproche le plus de votre besoin.",options:[
   ["Une fuite ou une infiltration","Eau qui entre, auréole au plafond, humidité"],
   ["Des tuiles ou éléments abîmés","Éléments déplacés, cassés ou manquants"],
   ["Une toiture à entretenir","Mousse, lichens, salissures ou végétation"],
-  ["Une rénovation ou une isolation","Toiture ancienne, inconfort thermique, projet global"],
-  ["Des gouttières ou raccords à reprendre","Évacuation d'eau, solins, abergements, noues"],
+  ["Une rénovation ou une isolation (ITE / combles)","Toiture ou façade ancienne, confort thermique"],
+  ["Zinguerie, bandeaux ou raccords","Bavettes zinc, abergements plomb, gouttières, solins"],
   ["Une charpente ou une structure","Bois déformé, traces d'humidité, affaissement"],
   ["Une fenêtre de toit","Création, remplacement ou problème d'étanchéité"]
  ]},
  {title:"Qu'avez-vous constaté exactement ?",hint:"Cette précision affine l'orientation et les points à vérifier.",options:[
   ["Une fuite active ou de l'eau qui coule","L'eau entre actuellement ou après chaque pluie"],
   ["Des traces d'humidité ou une auréole","Tache, peinture qui cloque, odeur ou moisissure"],
-  ["Des éléments visiblement détériorés","Tuiles cassées, zinc abîmé, bois fragilisé"],
+  ["Des éléments visiblement détériorés","Tuiles cassées, zinc abîmé, façade dégradée"],
   ["Un encrassement progressif","Mousse, lichens, feuilles ou dépôts"],
-  ["Une perte de chaleur ou de confort","Combles froids, chaleur excessive, isolation à améliorer"],
-  ["Un projet préventif ou esthétique","Je souhaite anticiper ou améliorer l'aspect du toit"],
+  ["Une perte de chaleur ou de confort","Parois froides, chaleur excessive, isolation à améliorer"],
+  ["Un projet préventif ou esthétique","Je souhaite anticiper ou valoriser le bâtiment"],
   ["Je ne sais pas identifier le problème","J'ai besoin d'un avis professionnel"]
  ]},
  {title:"Sur quel type de bâtiment faut-il intervenir ?",hint:"Le contexte du bâtiment aide à préparer la visite.",options:[
   ["Maison individuelle","Maison principale ou secondaire"],
-  ["Immeuble ou copropriété","Parties communes, toiture collective"],
+  ["Immeuble ou copropriété","Parties communes, façade ou toiture collective"],
   ["Bâtiment professionnel ou commercial","Bureaux, commerce, atelier ou entrepôt"],
-  ["Bâtiment public ou autre bâtiment","Équipement, bâtiment collectif ou autre"]
+  ["Bâtiment public ou marché BTP","Équipement, opération collective ou consultation"]
  ]},
  {title:"Quel est votre délai souhaité ?",hint:"En cas de danger immédiat, ne montez pas sur le toit et sécurisez la zone depuis le sol.",options:[
   ["Urgent : dès que possible","Fuite active ou dégradation qui s'aggrave"],
@@ -344,35 +889,26 @@ let qi=0;const answers=[];
 const serviceFor=(a)=>{
  const main=a[0]||0,detail=a[1]||6,urgent=a[3]===0;
  const map=[
-  ["Réparation de toiture","Une recherche de l'origine de l'infiltration puis une réparation adaptée sont à privilégier.","Vérifier les tuiles, les raccords, le faîtage et les points singuliers. En cas de fuite active, protéger les biens à l'intérieur sans accéder au toit."],
-  ["Réparation de toiture","Les éléments de couverture doivent être contrôlés et remplacés ou refixés si nécessaire.","Contrôler la zone abîmée, les fixations, les éléments voisins et l'étanchéité sous-jacente."],
-  ["Démoussage de toiture","Un entretien adapté au matériau et à son état peut limiter l'accumulation de végétation.","Identifier le matériau, le niveau d'encrassement et les éventuelles fragilités avant de choisir la méthode d'entretien."],
-  ["Rénovation de toiture","Un état des lieux permettra de distinguer les réparations nécessaires d'une rénovation plus complète.","Examiner la couverture, l'écran sous-toiture, la ventilation et l'isolation selon le périmètre du projet."],
-  ["Zinguerie","Les gouttières, descentes et raccords d'étanchéité sont à contrôler pour assurer une bonne évacuation de l'eau.","Vérifier les pentes, les jonctions, les fixations, les soudures et les évacuations."],
-  ["Charpente bois","La structure doit être examinée pour apprécier l'origine et l'étendue des désordres.","Contrôler les éléments porteurs, les assemblages, les traces d'humidité et les éventuelles déformations."],
-  ["Fenêtre de toit","La pose, le remplacement ou la reprise d'étanchéité autour de la fenêtre sont à étudier.","Contrôler le raccord périphérique, les abords de couverture et l'état de la fenêtre."]
+  ["Réparation de toiture","Une recherche de l'origine de l'infiltration puis une réparation adaptée sont à privilégier.","Vérifier les tuiles, les raccords, le faîtage et les points singuliers."],
+  ["Réparation de toiture","Les éléments de couverture doivent être contrôlés et remplacés ou refixés si nécessaire.","Contrôler la zone abîmée, les fixations et l'étanchéité sous-jacente."],
+  ["Démoussage de toiture","Un entretien adapté au matériau et à son état peut limiter l'accumulation de végétation.","Identifier le matériau et le niveau d'encrassement avant le traitement."],
+  ["Rénovation de toiture","Un état des lieux permettra de définir le périmètre de rénovation de couverture ou d'isolation.","Examiner l'enveloppe, l'écran sous-toiture, la ventilation et l'isolation."],
+  ["Zinguerie","Les bandeaux zinc, abergements, gouttières et raccords sont à contrôler pour assurer l'étanchéité.","Vérifier les pentes, les jonctions, les soudures et les évacuations."],
+  ["Charpente bois","La structure doit être examinée pour apprécier l'origine et l'étendue des désordres.","Contrôler les éléments porteurs, les assemblages et les traces d'humidité."],
+  ["Fenêtre de toit","La pose, le remplacement ou la reprise d'étanchéité autour de la fenêtre sont à étudier.","Contrôler le raccord périphérique et les abords de couverture."]
  ];
  let [service,why,checks]=map[main];
- if(main===0 && detail===0) why="Une fuite active nécessite d'abord de limiter les dégâts, puis de localiser précisément le point d'entrée de l'eau.";
- if(main===0 && detail===1) why="Les traces visibles peuvent être éloignées du point d'entrée de l'eau : une vérification de la toiture et des raccords est nécessaire.";
- if(main===3 && detail===4){service="Isolation de toiture";why="Votre priorité semble être le confort thermique : l'isolation et la ventilation des combles sont à étudier avec l'état de la couverture.";checks="Examiner l'isolation existante, les ponts thermiques, la ventilation et l'état de la couverture avant de définir les travaux.";}
- if(main===1 && detail===2) checks="Contrôler les éléments cassés ou déplacés, leur mode de fixation et les zones voisines pour éviter une nouvelle infiltration.";
- if(main===4 && detail===0){service="Dépannage toiture";why="Si l'eau déborde ou s'infiltre actuellement, la priorité est de sécuriser la situation et de vérifier les évacuations et raccords.";}
- if(main===5 && detail===1) why="Les traces d'humidité peuvent affecter le bois à terme : il faut identifier la source de l'humidité avant toute réparation.";
+ if(main===3 && detail===4){service="Isolation de toiture";why="Votre priorité semble être le confort thermique : l'isolation extérieure (ITE) ou des combles est à étudier.";}
  const urgency=urgent?"Priorité élevée à organiser rapidement":a[3]===1?"À planifier prochainement":a[3]===2?"Projet à programmer":"Phase de conseil et de préparation";
- const building=["maison individuelle","immeuble ou copropriété","bâtiment professionnel ou commercial","bâtiment public ou autre bâtiment"][a[2]||0];
- let extra="";
- if(a[2]===1)extra="Pour une copropriété, pensez à préciser le bâtiment, l'accès à la toiture et, si possible, la zone concernée.";
- if(a[2]===2 || a[2]===3)extra="Pour un bâtiment professionnel ou collectif, indiquez si possible la surface approximative, les contraintes d'accès et les horaires possibles.";
- if(detail===6)extra+=(extra?" ":"")+"Si le problème n'est pas clairement identifiable, des photos prises depuis un endroit sûr peuvent aider à préparer le premier échange.";
- return {service,why,checks,urgency,building,extra,urgent};
+ const building=["maison individuelle","immeuble ou copropriété","bâtiment professionnel ou commercial","bâtiment public ou marché BTP"][a[2]||0];
+ return {service,why,checks,urgency,building};
 };
 const renderDiag=()=>{
  const b=$('#qb');
  if(qi>=Q.length){
   const r=serviceFor(answers),labels=Q.map((q,i)=>q.options[answers[i]][0]);
-  b.innerHTML=`<div class="diag-result"><span class="tag">Votre orientation personnalisée</span><h3>${r.service}</h3><p><b>${r.why}</b></p><p>${r.checks}</p><p><b>Votre situation :</b> ${labels[0]} · ${labels[1]} · ${r.building}.</p><p><b>Délai souhaité :</b> ${r.urgency}.</p>${r.extra?`<p>${r.extra}</p>`:''}<ul><li>Un premier échange permettra de préciser la zone et l'étendue des travaux.</li><li>Le diagnostic sur place confirmera les causes et les solutions adaptées.</li><li>Un devis détaillé pourra ensuite être établi selon les travaux retenus.</li></ul><div class="diag-actions"><button class="btn" id="diagContact">Demander un devis pour ce besoin</button><button class="btn g" id="diagBack">Modifier mes réponses</button><button class="btn g" id="diagReset">Recommencer</button></div><p class="diag-note">Cette orientation est indicative et ne remplace pas une inspection de la toiture. Ne montez jamais sur le toit pour prendre des photos ou vérifier un désordre. En cas de danger immédiat, éloignez-vous de la zone concernée.</p></div>`;
-  $('#diagContact').onclick=()=>{const msg=$('#msg');msg.value=`Diagnostic express CMS Expertise :\nBesoin : ${labels[0]}\nConstat : ${labels[1]}\nBâtiment : ${r.building}\nDélai : ${r.urgency}\nOrientation : ${r.service}\n\nPrécisions complémentaires : `;$('#svc2').value=r.service;go('contact')};
+  b.innerHTML=`<div class="diag-result"><span class="tag">Votre orientation personnalisée</span><h3>${r.service}</h3><p><b>${r.why}</b></p><p>${r.checks}</p><p><b>Votre situation :</b> ${labels[0]} · ${labels[1]} · ${r.building}.</p><p><b>Délai souhaité :</b> ${r.urgency}.</p><div class="diag-actions"><button class="btn" id="diagContact">Demander un devis pour ce besoin</button><button class="btn g" id="diagBack">Modifier mes réponses</button><button class="btn g" id="diagReset">Recommencer</button></div></div>`;
+  $('#diagContact').onclick=()=>{const msg=$('#msg');msg.value=`Diagnostic express CMS Expertise :\nBesoin : ${labels[0]}\nConstat : ${labels[1]}\nBâtiment : ${r.building}\nDélai : ${r.urgency}\nOrientation : ${r.service}\n\nPrécisions : `;$('#svc2').value=r.service;go('contact')};
   $('#diagBack').onclick=()=>{qi=Q.length-1;renderDiag()};$('#diagReset').onclick=resetDiag;return;
  }
  const q=Q[qi],chosen=answers[qi];
@@ -383,39 +919,50 @@ const renderDiag=()=>{
 };
 function resetDiag(){qi=0;answers.length=0;renderDiag()}
 renderDiag();
-const RW=["rénovation de toiture","réparation de toiture","zinguerie","démoussage","charpente bois","fenêtres de toit"];let ri=0,rc=0,rd=0,pz=0;
+
+const RW=["enveloppe du bâtiment","zinguerie sur mesure","rénovation de toiture","isolation extérieure ITE","étanchéité & plomb","charpente bois"];let ri=0,rc=0,rd=0,pz=0;
 setInterval(()=>{if(pz>0){pz--;return}const w=RW[ri],el=$('#rt');if(!rd){el.textContent=w.slice(0,++rc);if(rc==w.length){rd=1;pz=20}}else{el.textContent=w.slice(0,--rc);if(!rc){rd=0;ri=(ri+1)%RW.length}}},80);
 
+/* =====================================================================
+   RIDEAU DORÉ + FALLBACK IMAGES
+===================================================================== */
+const SVG_FALLBACKS = (() => {
+  const A=(c,b)=>'data:image/svg+xml,'+encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice"><defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="'+c[0]+'"/><stop offset="1" stop-color="'+c[1]+'"/></linearGradient><pattern id="t" width="44" height="26" patternUnits="userSpaceOnUse"><path d="M0 26Q22 2 44 26" fill="none" stroke="#0d0f10" stroke-opacity=".45" stroke-width="3"/></pattern></defs><rect width="800" height="600" fill="url(#g)"/>'+b+'</svg>');
+  const W=(cx,fy)=>'<g fill="#151719"><circle cx="'+cx+'" cy="'+(fy-110)+'" r="20"/><path d="M'+(cx-30)+' '+(fy-85)+'q30-18 60 0l8 85h-76z"/></g><path d="M'+(cx-24)+' '+(fy-118)+'q24-30 48 0z" fill="#c5a880"/>';
+  const SLOPE='<polygon points="0,600 0,150 800,60 800,600" fill="#4a5058"/><polygon points="0,600 0,150 800,60 800,600" fill="url(#t)"/>';
+  return {
+    hero: A(['#151719','#c5a880'],'<circle cx="620" cy="150" r="60" fill="#c5a880" opacity=".9"/><rect x="150" y="420" width="500" height="180" fill="#25282c"/><rect x="470" y="190" width="46" height="120" fill="#3a3f45"/><polygon points="70,430 400,170 730,430" fill="#4a5058"/><polygon points="70,430 400,170 730,430" fill="url(#t)"/><rect x="190" y="460" width="70" height="90" fill="#c5a880" opacity=".75"/><rect x="540" y="460" width="70" height="90" fill="#c5a880" opacity=".75"/>'),
+    reno: A(['#7a9bb5','#e8dcc6'],'<polygon points="0,600 0,180 800,60 800,600" fill="#8a6a46"/><polygon points="0,600 0,180 430,122 430,600" fill="#b5603a"/><polygon points="0,600 0,180 430,122 430,600" fill="url(#t)"/>'),
+    team: A(['#6f8ca3','#dfe6ea'],'<polygon points="0,470 800,230 800,600 0,600" fill="#4a5058"/><polygon points="0,470 800,230 800,600 0,600" fill="url(#t)"/>'+W(300,385)+W(560,307)),
+    sky:  A(['#25282c','#8aa1b3'],SLOPE+'<rect x="290" y="250" width="220" height="170" fill="#c5a880"/><rect x="304" y="264" width="192" height="142" fill="#bcd4e6"/>')
+  };
+})();
 
-/* Rideau doré + images */
+function applyImageFallbacks(root = document) {
+  root.querySelectorAll('img[data-fallback]').forEach(im => {
+    im.onerror = () => {
+      im.onerror = null;
+      im.src = SVG_FALLBACKS[im.dataset.fallback] || SVG_FALLBACKS.hero;
+    };
+  });
+}
+applyImageFallbacks();
+
 (()=>{
-const st=document.createElement('style');
-st.textContent='#cur{position:fixed;inset:0;background:linear-gradient(90deg,#c5a880,#d9c29c);z-index:2500;transform:translateX(-101%);pointer-events:none}#cur img{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);height:clamp(70px,16vw,130px);width:auto;max-width:70vw;object-fit:contain;}#cur span{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font:italic 2rem "Cormorant Garamond",serif;color:#151719}@keyframes land{0%{box-shadow:inset 0 5px 0 #c5a880,inset 0 0 140px rgba(197,168,128,.3)}100%{box-shadow:inset 0 5px 0 transparent,inset 0 0 0 transparent}}.land{animation:land 1.4s ease-out}';
-document.head.appendChild(st);
-const cur=document.createElement('div');cur.id='cur';cur.innerHTML='<img src="logo sans fond.png" alt="" onerror="this.outerHTML=\'<span>CMS Expertise</span>\'">';document.body.prepend(cur);
-const wait=ms=>new Promise(r=>setTimeout(r,ms));let busy=false;
-go=async id=>{const e=document.getElementById(id);if(!e)return;const nl=document.getElementById('nl');if(nl)nl.classList.remove('open');
-const y=Math.max(0,e.getBoundingClientRect().top+scrollY-90);
-if(matchMedia('(prefers-reduced-motion:reduce)').matches||Math.abs(y-scrollY)<2){scrollTo(0,y);return}
-if(busy)return;busy=true;
-cur.style.transition='transform .45s cubic-bezier(.7,0,.2,1)';cur.style.transform='translateX(0)';await wait(480);
-scrollTo(0,y);await wait(90);cur.style.transform='translateX(101%)';await wait(480);
-cur.style.transition='none';cur.style.transform='translateX(-101%)';
-e.classList.remove('land');void e.offsetWidth;e.classList.add('land');busy=false};
-
-/* Images : illustrations de toiture adaptées à chaque texte.
-   Pour utiliser vos vraies photos, déposez photos/hero.jpg, photos/reno.jpg, photos/team.jpg, photos/sky.jpg : elles remplaceront automatiquement les illustrations. */
-const A=(c,b)=>'data:image/svg+xml,'+encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice"><defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="'+c[0]+'"/><stop offset="1" stop-color="'+c[1]+'"/></linearGradient><pattern id="t" width="44" height="26" patternUnits="userSpaceOnUse"><path d="M0 26Q22 2 44 26" fill="none" stroke="#0d0f10" stroke-opacity=".45" stroke-width="3"/></pattern></defs><rect width="800" height="600" fill="url(#g)"/>'+b+'</svg>');
-const W=(cx,fy)=>'<g fill="#151719"><circle cx="'+cx+'" cy="'+(fy-110)+'" r="20"/><path d="M'+(cx-30)+' '+(fy-85)+'q30-18 60 0l8 85h-76z"/></g><path d="M'+(cx-24)+' '+(fy-118)+'q24-30 48 0z" fill="#c5a880"/>';
-const SLOPE='<polygon points="0,600 0,150 800,60 800,600" fill="#4a5058"/><polygon points="0,600 0,150 800,60 800,600" fill="url(#t)"/>';
-const S={
-hero:[['#151719','#c5a880'],'<circle cx="620" cy="150" r="60" fill="#c5a880" opacity=".9"/><rect x="150" y="420" width="500" height="180" fill="#25282c"/><rect x="470" y="190" width="46" height="120" fill="#3a3f45"/><polygon points="70,430 400,170 730,430" fill="#4a5058"/><polygon points="70,430 400,170 730,430" fill="url(#t)"/><rect x="190" y="460" width="70" height="90" fill="#c5a880" opacity=".75"/><rect x="540" y="460" width="70" height="90" fill="#c5a880" opacity=".75"/>'],
-reno:[['#7a9bb5','#e8dcc6'],'<polygon points="0,600 0,180 800,60 800,600" fill="#8a6a46"/><g stroke="#5a4328" stroke-width="6"><path d="M430 190L800 140M430 270L800 220M430 350L800 300M430 430L800 380M430 510L800 460"/></g><polygon points="0,600 0,180 430,122 430,600" fill="#b5603a"/><polygon points="0,600 0,180 430,122 430,600" fill="url(#t)"/><g stroke="#e8dcc6" stroke-width="9"><path d="M560 600L640 150M660 600L740 140"/></g><g stroke="#e8dcc6" stroke-width="6"><path d="M575 500L672 490M590 400L688 390M605 300L704 290M620 200L720 190"/></g>'],
-team:[['#6f8ca3','#dfe6ea'],'<polygon points="0,470 800,230 800,600 0,600" fill="#4a5058"/><polygon points="0,470 800,230 800,600 0,600" fill="url(#t)"/>'+W(300,385)+W(560,307)],
-sky:[['#25282c','#8aa1b3'],SLOPE+'<g transform="rotate(-6 400 330)"><rect x="290" y="250" width="220" height="170" fill="#c5a880"/><rect x="304" y="264" width="192" height="142" fill="#bcd4e6"/><path d="M304 406L496 264" stroke="#fff" stroke-opacity=".5" stroke-width="10"/><path d="M400 264V406M304 335H496" stroke="#c5a880" stroke-width="5"/></g>']};
-const K=['hero','reno','team','sky'],ALT=['Toiture de maison en tuiles au coucher du soleil','Rénovation de couverture : tuiles posées sur liteaux avec échelle','Couvreurs au travail sur une toiture','Fenêtre de toit installée dans une couverture'];
-[document.querySelector('.hr img'),...document.querySelectorAll('.gal img')].forEach((im,i)=>{if(!im||!K[i])return;im.removeAttribute('onerror');im.alt=ALT[i];im.src=A(...S[K[i]]);
-const real='photos/'+K[i]+'.jpg',t=new Image();t.onload=()=>{im.src=real};t.src=real});
+  const st=document.createElement('style');
+  st.textContent='#cur{position:fixed;inset:0;background:linear-gradient(90deg,#c5a880,#d9c29c);z-index:2500;transform:translateX(-101%);pointer-events:none}#cur img{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);height:clamp(70px,16vw,130px);width:auto;max-width:70vw;object-fit:contain;}#cur span{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font:italic 2rem "Cormorant Garamond",serif;color:#151719}@keyframes land{0%{box-shadow:inset 0 5px 0 #c5a880,inset 0 0 140px rgba(197,168,128,.3)}100%{box-shadow:inset 0 5px 0 transparent,inset 0 0 0 transparent}}.land{animation:land 1.4s ease-out}';
+  document.head.appendChild(st);
+  const cur=document.createElement('div');cur.id='cur';cur.innerHTML='<img src="logo sans fond.png" alt="" onerror="this.outerHTML=\'<span>CMS Expertise</span>\'">';document.body.prepend(cur);
+  go = id => {
+    const e=document.getElementById(id);if(!e)return;
+    const nl=document.getElementById('nl');if(nl)nl.classList.remove('open');
+    const y=Math.max(0,e.getBoundingClientRect().top+scrollY-90);
+    if(Math.abs(y-scrollY)<2)return;
+    transitionCurtain(() => {
+      scrollTo(0,y);
+      e.classList.remove('land');void e.offsetWidth;e.classList.add('land');
+    });
+  };
 })();
 </script>
 </body>
